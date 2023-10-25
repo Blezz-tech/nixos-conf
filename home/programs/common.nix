@@ -105,10 +105,15 @@
     jdk8
     jdk17
 
-    # Остальное ПО
+    # База знаний
     obsidian
+
+    # Запись видео и потоковое вещание
     obs-studio
 
+    # На сортировку
+    go-task
+    cargo-make
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
@@ -188,5 +193,4 @@
     #lyx
     #anki
   ];
-
 }
