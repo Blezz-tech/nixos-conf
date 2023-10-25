@@ -173,11 +173,9 @@
     vscodium
 
     # Браузеры
-    #brave
     vivaldi
     google-chrome
     firefox
-    #yandex-browser
 
     # Игры
     prismlauncher
@@ -188,8 +186,15 @@
 
     # Остальное ПО
     obsidian
-    #zotero
     obs-studio
+
+    # не устанавливается. Но нужно установить
+    #yandex-browser
+
+    # Не нужно
+    #zotero
+    #brave
+    #github-desktop
 
     # Шрифты
     noto-fonts
@@ -198,9 +203,6 @@
     noto-fonts-emoji
     corefonts
     vistafonts
-
-    # не устанавливается
-    #github-desktop
   ];
 
   environment.variables.EDITOR = "vim";
