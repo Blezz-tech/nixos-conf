@@ -2,6 +2,82 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    #lyx
+    texlive.combined.scheme-full
+    qbittorrent
+    yt-dlp
+    partition-manager
+    #anki
+    cataclysm-dda
+    python3
+    haruna
+    vlc
+    php
+    nodejs
+    pdf2svg
+    insomnia
+    cmatrix
+    ghc
+
+    # 3D редакторы
+    blender
+
+    # Музыкальные редакторы
+    musescore
+
+    # Программирование
+    cmake
+    sqlitebrowser
+    rstudioWrapper
+    android-studio
+    godot_4
+    stack
+    haskell-language-server
+
+    # Месседжеры
+    discord
+    telegram-desktop
+
+    # Редакторы epub
+    sigil
+
+    # Графические редакторы
+    gimp
+    inkscape
+    krita
+    drawio
+    aseprite
+
+    # Текстовые редакторы
+    kate
+    libreoffice
+    onlyoffice-bin
+    neovim
+    vscodium
+
+    # Браузеры
+    vivaldi
+    google-chrome
+    firefox
+
+    # Игры
+    prismlauncher
+    steam
+    steam-run
+    jdk8
+    jdk17
+
+    # Остальное ПО
+    obsidian
+    obs-studio
+
+    # не устанавливается. Но нужно установить
+    #yandex-browser
+
+    # Не нужно
+    #zotero
+    #brave
+    #github-desktop
     
 
     # Nix code formatter for nixpkgs 
