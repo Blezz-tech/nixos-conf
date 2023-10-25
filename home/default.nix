@@ -161,9 +161,9 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      myViewConf = "nvim /etc/nixos";
-      myEditConf = "sudo nvim /etc/nixos/";
-      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake /etc/nixos#default";
+      myViewConf = "nvim ~/nixos-conf";
+      myEditConf = "nvim ~/nixos-conf";
+      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
     };
   };
 
