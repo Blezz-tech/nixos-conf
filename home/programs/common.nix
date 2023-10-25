@@ -2,22 +2,29 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    #lyx
+    # LaTeX
     texlive.combined.scheme-full
+    pdf2svg
+
+    # Torrent
     qbittorrent
+
+    # Скачивание видео с ютуба
     yt-dlp
+
+    # Диспеер раздеов дисков
     partition-manager
-    #anki
+
+    # Игры
     cataclysm-dda
-    python3
+    cmatrix
+
+    # Аудио видео проигрыватели
     haruna
     vlc
-    php
-    nodejs
-    pdf2svg
+
+    # Альтернатива Postman'у
     insomnia
-    cmatrix
-    ghc
 
     # 3D редакторы
     blender
@@ -26,13 +33,44 @@
     musescore
 
     # Программирование
+
+    ## Системы сборки
     cmake
+
+    ## R
+    #rstudioWrapper
+
+    ## СУБД
     sqlitebrowser
-    rstudioWrapper
+
+    ## Android
     android-studio
+    
+    ## Игровые движки
     godot_4
+
+    ## haskell
     stack
     haskell-language-server
+    ghc
+
+    ## PHP
+    php
+
+    ## Node JS
+    nodejs
+
+    ## Python
+    python3
+
+    ## Rust 
+    cargo
+    rustc
+    rustfmt
+    nixpkgs-fmt
+
+    ## C
+    clang
 
     # Месседжеры
     discord
@@ -71,21 +109,6 @@
     obsidian
     obs-studio
 
-    # не устанавливается. Но нужно установить
-    #yandex-browser
-
-    # Не нужно
-    #zotero
-    #brave
-    #github-desktop
-    
-
-    # Nix code formatter for nixpkgs 
-    cargo
-    rustc
-    rustfmt
-    nixpkgs-fmt
-    clang
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
@@ -152,6 +175,18 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
+
+
+
+    # не устанавливается. Но нужно установить
+    #yandex-browser
+
+    # Не нужно
+    #zotero
+    #brave
+    #github-desktop
+    #lyx
+    #anki
   ];
 
 }
