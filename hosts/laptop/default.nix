@@ -110,7 +110,7 @@
 
   programs.partition-manager.enable = true;
 
-  programs.java.enable = true;
+  #programs.java.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
