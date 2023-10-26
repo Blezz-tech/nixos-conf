@@ -55,16 +55,16 @@
     extensions = with pkgs.vscode-extensions; [
       redhat.vscode-xml
       # rangav.vscode-thunder-client
-      # esbenp.prettier-vscode
+      esbenp.prettier-vscode
       # christian-kohler.npm-intellisense
       # yandeu.five-server
-      # james-yu.latex-workshop
-      # justusadam.language-haskell
-      # haskell.haskell
+      james-yu.latex-workshop
+      justusadam.language-haskell
+      haskell.haskell
       # kumar-harsh.graphql-for-vscode
       # formulahendry.auto-complete-tag
-      # ms-ceintl.vscode-language-pack-ru
-      # jnoortheen.nix-ide
+      ms-ceintl.vscode-language-pack-ru
+      jnoortheen.nix-ide
     ];
   };
 }
