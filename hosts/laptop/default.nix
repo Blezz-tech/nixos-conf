@@ -117,7 +117,7 @@
     vim
     wget
     curl
-
+    home-manager
 
     # Программирование
 
@@ -190,8 +190,6 @@
     corefonts
     vistafonts
   ];
-
-
 
   #nixpkgs.overlays = [
   #  (final: prev: {
