@@ -15,7 +15,6 @@
     userSettings = {
       workbench.sideBar.location = "right";
       haskell.manageHLS = "PATH";
-      editor.minimap.enabled = false;
       "[html]" = {
         editor.defaultFormatter = "vscode.html-language-features";
       };
@@ -30,25 +29,19 @@
       "[typescript]" = {
         editor.defaultFormatter = "vscode.typescript-language-features";
       };
-     "telemetry.enableTelemetry" = false;
-     "telemetry.enableCrashReporter" = false;
+      "telemetry.telemetryLevel" = "off";
+      editor = {
+        renderWhitespace = "all";
+        fontFamily = "Hack";
+        fontLigatures = false;
+        formatOnSave = false;
+        minimap.enabled = false;
+      };
     };
     # userSettings = {
-    # "editor.renderWhitespace" = "all";
-    # "files.autoSave" = "onFocusChange";
-    # "editor.rulers" = [ 80 120 ];
-    # "editor.tabSize" = 2;
-    # "files.exclude" = { "**/node_modules/**" = true; };
-    # "editor.formatOnSave" = false;
     # "breadcrumbs.enabled" = true;
-    # "editor.useTabStops" = false;
-    # "editor.fontFamily" = "JetBrainsMono Nerd Font";
-    # "editor.fontSize" = 16;
-    # "editor.fontLigatures" = true;
-    # "editor.lineHeight" = 20;
     # "workbench.fontAliasing" = "antialiased";
     # "files.trimTrailingWhitespace" = true;
-    # "editor.minimap.enabled" = false;
     # "workbench.editor.enablePreview" = false;
     # "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
     # };
