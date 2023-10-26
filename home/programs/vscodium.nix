@@ -30,13 +30,13 @@
       "[typescript]" = {
         editor.defaultFormatter = "vscode.typescript-language-features";
       };
+     "telemetry.enableTelemetry" = false;
+     "telemetry.enableCrashReporter" = false;
     };
     # userSettings = {
     # "editor.renderWhitespace" = "all";
     # "files.autoSave" = "onFocusChange";
     # "editor.rulers" = [ 80 120 ];
-    # "telemetry.enableTelemetry" = false;
-    # "telemetry.enableCrashReporter" = false;
     # "editor.tabSize" = 2;
     # "files.exclude" = { "**/node_modules/**" = true; };
     # "editor.formatOnSave" = false;
@@ -59,7 +59,7 @@
       justusadam.language-haskell
       haskell.haskell
       ms-ceintl.vscode-language-pack-ru
-     # jnoortheen.nix-ide
+      jnoortheen.nix-ide
       # kumar-harsh.graphql-for-vscode
       # formulahendry.auto-complete-tag
       # christian-kohler.npm-intellisense
