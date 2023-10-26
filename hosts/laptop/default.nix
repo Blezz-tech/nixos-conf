@@ -119,6 +119,7 @@
     curl
     home-manager
     google-chrome
+    gnumake
 
     # Программирование
 
