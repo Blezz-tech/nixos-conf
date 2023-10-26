@@ -12,6 +12,25 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
+    userSettings = {
+      workbench.sideBar.location = "right";
+      haskell.manageHLS = "PATH";
+      editor.minimap.enabled = false;
+      "[html]" = {
+        editor.defaultFormatter = "vscode.html-language-features";
+      };
+      "[jsonc]" = {
+        editor.defaultFormatter = "vscode.json-language-features";
+      };
+      git.confirmSync = false;
+      git.enableSmartCommit = true;
+      "[javascript]" = {
+        editor.defaultFormatter = "esbenp.prettier-vscode";
+      };
+      "[typescript]" = {
+        editor.defaultFormatter = "vscode.typescript-language-features";
+      };
+    };
     # userSettings = {
     # "editor.renderWhitespace" = "all";
     # "files.autoSave" = "onFocusChange";
@@ -35,17 +54,17 @@
     # };
     extensions = with pkgs.vscode-extensions; [
       redhat.vscode-xml
-      rangav.vscode-thunder-client
-      esbenp.prettier-vscode
-      christian-kohler.npm-intellisense
-      yandeu.five-server
-      james-yu.latex-workshop
-      justusadam.language-haskell
-      haskell.haskell
-      kumar-harsh.graphql-for-vscode
-      formulahendry.auto-complete-tag
-      ms-ceintl.vscode-language-pack-ru
-      jnoortheen.nix-ide
+      # rangav.vscode-thunder-client
+      # esbenp.prettier-vscode
+      # christian-kohler.npm-intellisense
+      # yandeu.five-server
+      # james-yu.latex-workshop
+      # justusadam.language-haskell
+      # haskell.haskell
+      # kumar-harsh.graphql-for-vscode
+      # formulahendry.auto-complete-tag
+      # ms-ceintl.vscode-language-pack-ru
+      # jnoortheen.nix-ide
     ];
   };
 }
