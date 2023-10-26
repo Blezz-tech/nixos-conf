@@ -118,6 +118,7 @@
     wget
     curl
     home-manager
+    google-chrome
 
     # Программирование
 

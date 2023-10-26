@@ -47,7 +47,6 @@
 
     # Браузеры
     vivaldi
-    google-chrome
     firefox
 
     # База знаний
