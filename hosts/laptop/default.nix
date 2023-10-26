@@ -118,6 +118,59 @@
     wget
     curl
 
+
+    # Программирование
+
+    ## Системы сборки
+    cmake
+
+    ## R
+    #rstudioWrapper
+
+    ## СУБД
+    sqlitebrowser
+
+    ## Android
+    android-studio
+    
+    ## Игровые движки
+    godot_4
+
+    ## haskell
+    stack
+    haskell-language-server
+    ghc
+
+    ## PHP
+    php
+
+    ## Node JS
+    nodejs
+
+    ## Python
+    python3
+
+    ## Rust 
+    cargo
+    rustc
+    rustfmt
+    nixpkgs-fmt
+
+    ## C
+    clang
+
+    # Игры
+    prismlauncher
+    steam
+    steam-run
+    jdk8
+    jdk17
+    cataclysm-dda
+    cmatrix
+
+    # Диспеер раздеов дисков
+    partition-manager
+
     # Шрифты
     noto-fonts
     noto-fonts-cjk-serif
