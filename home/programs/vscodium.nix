@@ -60,6 +60,7 @@
       haskell.haskell
       ms-ceintl.vscode-language-pack-ru
       jnoortheen.nix-ide
+
       # kumar-harsh.graphql-for-vscode
       # formulahendry.auto-complete-tag
       # christian-kohler.npm-intellisense
