@@ -5,9 +5,9 @@
   imports = [
     ./git.nix
     #  ./browsers.nix
-     ./common.nix
+    ./common.nix
     #  ./media.nix
-    #  ./vscodium.nix
+    ./vscodium.nix
     #  ./xdg.nix
   ];
 }
