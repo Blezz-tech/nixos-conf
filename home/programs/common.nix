@@ -44,7 +44,6 @@
     libreoffice
     onlyoffice-bin
     neovim
-    vscodium
 
     # Браузеры
     vivaldi

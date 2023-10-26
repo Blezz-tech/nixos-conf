@@ -7,7 +7,7 @@
     #  ./browsers.nix
      ./common.nix
     #  ./media.nix
-    #  ./vscode.nix
+      ./vscodium.nix
     #  ./xdg.nix
   ];
 }
