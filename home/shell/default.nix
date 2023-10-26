@@ -1,6 +1,7 @@
 { config, ... }: {
   imports = [
     ./starship.nix
+    ./alacritty.nix
   ];
 
   programs.bash = {
@@ -18,5 +19,4 @@
       myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
     };
   };
-
 }

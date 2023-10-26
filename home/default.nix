@@ -10,15 +10,6 @@
    ./shell
   ];
 
-
-  # basic configuration of git, please change to your own
-  #programs.git = {
-  #  enable = true;
-  #  userName = "blezz-tech";
-  #  userEmail = "markus.jenya04@yandex.ru";
-  #};
-
-
   home.username = "jenya";
   home.homeDirectory = "/home/jenya";
 
@@ -42,26 +33,6 @@
   #  "Xcursor.size" = 16;
   #  "Xft.dpi" = 172;
   #};
-
-  # alacritty - a cross-platform, GPU-accelerated terminal emulator
-  programs.alacritty = {
-    enable = true;
-    # custom settings
-    settings = {
-      env.TERM = "xterm-256color";
-      env.WINIT_X11_SCALE_FACTOR = "1.0";
-      font = {
-        size = 10.0;
-        normal.family = "Hack";
-        bold.family = "Hack";
-        italic.family = "Hack";
-        bold_italic.family = "Hack";
-        draw_bold_text_with_bright_colors = true;
-      };
-      scrolling.multiplier = 5;
-      selection.save_to_clipboard = true;
-    };
-  };
 
 
   # This value determines the home Manager release that your
