@@ -55,6 +55,7 @@
 
     # Autologin
     displayManager.autoLogin = {
+      defaultSession = "none+xmonad";
       enable = true;
       user = "jenya";
     };
