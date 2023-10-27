@@ -62,6 +62,12 @@
     # Configure keymap in X11
     layout = "us,ru";
     xkbVariant = "";
+
+    windowManager.xmonad = {
+      enable = true;
+      enableContribAndExtras = true;
+      config = builtins.readFile ./xmonad.hs;
+    };
   };
 
   # Enable CUPS to print documents.
@@ -136,7 +142,7 @@
 
     ## Android
     android-studio
-    
+
     ## Игровые движки
     godot_4
 
