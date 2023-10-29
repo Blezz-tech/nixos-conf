@@ -54,15 +54,15 @@
 
     displayManager = {
       sddm.enable = true;
-      # lightdm.enable = true;
       # defaultSession = "none+xmonad";
+
+      # Autologin
+      autoLogin = {
+        enable = true;
+        user = "jenya";
+      };
     };
 
-    # Autologin
-    displayManager.autoLogin = {
-      enable = true;
-      user = "jenya";
-    };
 
     # Configure keymap in X11
     layout = "us,ru";
