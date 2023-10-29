@@ -50,8 +50,14 @@
     enable = true;
 
     # Enable the KDE Plasma Desktop Environment.
-    # displayManager.sddm.enable = true;
-    # desktopManager.plasma5.enable = true;
+    #  desktopManager.plasma5.enable = true;
+
+    desktopManager.plasma5.enable = false;
+    displayManager = {
+      sddm.enable = false;
+      # lightdm.enable = true;
+      defaultSession = "none+xmonad";
+    };
 
     # Autologin
     # displayManager.autoLogin = {
@@ -66,7 +72,8 @@
     windowManager.xmonad = {
       enable = true;
       enableContribAndExtras = true;
-      config = builtins.readFile ./xmonad.hs;
+      # config = builtins.readFile ./xmonad.hs;
+      extraPackages = hp: [ hp.xmonad hp.xmonad-contrib hp.xmonad-extras ];
     };
   };
 

@@ -1,7 +1,8 @@
 import XMonad
 
-main = xmonad defaultConfig
-        { modMask = mod4Mask -- Use Super instead of Alt
-        , terminal = "urxvt"
-        -- more changes
-        }
+main = do 
+  xmonad $ def
+    { terminal = "alacritty"
+    , nodNask = mod4Mask
+    , borderWidth = 3
+    }
