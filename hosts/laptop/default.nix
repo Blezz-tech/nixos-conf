@@ -53,16 +53,16 @@
     desktopManager.plasma5.enable = true;
 
     displayManager = {
-      sddm.enable = false;
+      sddm.enable = true;
       # lightdm.enable = true;
-      defaultSession = "none+xmonad";
+      # defaultSession = "none+xmonad";
     };
 
     # Autologin
-    # displayManager.autoLogin = {
-    #   enable = true;
-    #   user = "jenya";
-    # };
+    displayManager.autoLogin = {
+      enable = true;
+      user = "jenya";
+    };
 
     # Configure keymap in X11
     layout = "us,ru";
