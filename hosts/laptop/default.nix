@@ -50,9 +50,8 @@
     enable = true;
 
     # Enable the KDE Plasma Desktop Environment.
-    #  desktopManager.plasma5.enable = true;
+    desktopManager.plasma5.enable = true;
 
-    desktopManager.plasma5.enable = false;
     displayManager = {
       sddm.enable = false;
       # lightdm.enable = true;
@@ -73,7 +72,11 @@
       enable = true;
       enableContribAndExtras = true;
       # config = builtins.readFile ./xmonad.hs;
-      extraPackages = hp: [ hp.xmonad hp.xmonad-contrib hp.xmonad-extras ];
+      extraPackages = haskellPackages: [
+        haskellPackages.xmonad
+        haskellPackages.xmonad-contrib
+        haskellPackages.xmonad-extras
+      ];
     };
   };
 
