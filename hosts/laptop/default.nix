@@ -50,14 +50,14 @@
     enable = true;
 
     # Enable the KDE Plasma Desktop Environment.
-    displayManager.sddm.enable = true;
-    desktopManager.plasma5.enable = true;
+    # displayManager.sddm.enable = true;
+    # desktopManager.plasma5.enable = true;
 
     # Autologin
-    displayManager.autoLogin = {
-      enable = true;
-      user = "jenya";
-    };
+    # displayManager.autoLogin = {
+    #   enable = true;
+    #   user = "jenya";
+    # };
 
     # Configure keymap in X11
     layout = "us,ru";
@@ -66,6 +66,7 @@
     windowManager.xmonad = {
       enable = true;
       enableContribAndExtras = true;
+      config = builtins.readFile ./xmonad.hs;
     };
   };
 
