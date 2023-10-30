@@ -68,16 +68,16 @@
     layout = "us,ru";
     xkbVariant = "";
 
-    windowManager.xmonad = {
-      enable = true;
-      enableContribAndExtras = true;
-      # config = builtins.readFile ./xmonad.hs;
-      extraPackages = haskellPackages: [
-        haskellPackages.xmonad
-        haskellPackages.xmonad-contrib
-        haskellPackages.xmonad-extras
-      ];
-    };
+  #   windowManager.xmonad = {
+  #     # enable = true;
+  #     # enableContribAndExtras = true;
+  #     # config = builtins.readFile ./xmonad.hs;
+  #     extraPackages = haskellPackages: [
+  #       haskellPackages.xmonad
+  #       haskellPackages.xmonad-contrib
+  #       haskellPackages.xmonad-extras
+  #     ];
+  #   };
   };
 
   # Enable CUPS to print documents.
