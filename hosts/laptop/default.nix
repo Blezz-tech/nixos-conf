@@ -138,6 +138,7 @@
     home-manager
     google-chrome
     gnumake
+    nushell
 
     # Программирование
 
