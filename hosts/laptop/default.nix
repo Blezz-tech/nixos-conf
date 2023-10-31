@@ -139,6 +139,7 @@
     google-chrome
     gnumake
     nushell
+    pandoc
 
     # Программирование
 

@@ -10,7 +10,7 @@
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" "rtw89" ]; # test "rtw89"
+  boot.kernelModules = [ "kvm-amd"  ]; # test "rtw89"
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
