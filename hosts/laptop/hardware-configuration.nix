@@ -10,8 +10,10 @@
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd"  ]; # test "rtw89"
-  boot.extraModulePackages = [ ];
+  boot.kernelModules = [ "kvm-amd" ]; # test "rtw89"
+  boot.extraModulePackages = [
+    #config.boot.kernelPackages.rtl8821ce
+  ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/f0ab1073-5d2f-47c6-a882-6da0d6e92e4e";
