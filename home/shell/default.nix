@@ -18,6 +18,7 @@
       myEditConf = "nvim ~/nixos-conf";
       myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
       myClearAll = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
+      myCheckErrors = "journalctl -p 3 -xb";
     };
   };
 }
