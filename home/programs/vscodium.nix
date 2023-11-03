@@ -12,32 +12,33 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
-    userSettings = {
-      workbench.sideBar.location = "right";
-      haskell.manageHLS = "PATH";
-      "[html]" = {
-        editor.defaultFormatter = "vscode.html-language-features";
-      };
-      "[jsonc]" = {
-        editor.defaultFormatter = "vscode.json-language-features";
-      };
-      git.confirmSync = false;
-      git.enableSmartCommit = true;
-      "[javascript]" = {
-        editor.defaultFormatter = "esbenp.prettier-vscode";
-      };
-      "[typescript]" = {
-        editor.defaultFormatter = "vscode.typescript-language-features";
-      };
-      "telemetry.telemetryLevel" = "off";
-      editor = {
-        renderWhitespace = "all";
-        fontFamily = "Hack";
-        fontLigatures = false;
-        formatOnSave = false;
-        minimap.enabled = false;
-      };
-    };
+    # userSettings = {
+    #   workbench.sideBar.location = "right";
+    #   haskell.manageHLS = "PATH";
+    #   "[html]" = {
+    #     editor.defaultFormatter = "vscode.html-language-features";
+    #   };
+    #   "[jsonc]" = {
+    #     editor.defaultFormatter = "vscode.json-language-features";
+    #   };
+    #   git.confirmSync = false;
+    #   git.enableSmartCommit = true;
+    #   "[javascript]" = {
+    #     editor.defaultFormatter = "esbenp.prettier-vscode";
+    #   };
+    #   "[typescript]" = {
+    #     editor.defaultFormatter = "vscode.typescript-language-features";
+    #   };
+    #   "telemetry.telemetryLevel" = "off";
+    #   editor = {
+    #     renderWhitespace = "all";
+    #     fontFamily = "Hack";
+    #     fontLigatures = false;
+    #     formatOnSave = false;
+    #     minimap.enabled = false;
+    #   };
+    # };
+
     # userSettings = {
     # "breadcrumbs.enabled" = true;
     # "workbench.fontAliasing" = "antialiased";
@@ -45,20 +46,21 @@
     # "workbench.editor.enablePreview" = false;
     # "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
     # };
-    extensions = with pkgs.vscode-extensions; [
-      redhat.vscode-xml
-      esbenp.prettier-vscode
-      james-yu.latex-workshop
-      justusadam.language-haskell
-      haskell.haskell
-      ms-ceintl.vscode-language-pack-ru
-      jnoortheen.nix-ide
+    
+    # extensions = with pkgs.vscode-extensions; [
+    #   redhat.vscode-xml
+    #   esbenp.prettier-vscode
+    #   james-yu.latex-workshop
+    #   justusadam.language-haskell
+    #   haskell.haskell
+    #   ms-ceintl.vscode-language-pack-ru
+    #   jnoortheen.nix-ide
 
-      # kumar-harsh.graphql-for-vscode
-      # formulahendry.auto-complete-tag
-      # christian-kohler.npm-intellisense
-      # yandeu.five-server
-      # rangav.vscode-thunder-client
-    ];
+    #   # kumar-harsh.graphql-for-vscode
+    #   # formulahendry.auto-complete-tag
+    #   # christian-kohler.npm-intellisense
+    #   # yandeu.five-server
+    #   # rangav.vscode-thunder-client
+    # ];
   };
 }
