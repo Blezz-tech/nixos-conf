@@ -176,6 +176,7 @@
     cargo
     rustc
     rustfmt
+    rustup
     nixpkgs-fmt
 
     ## C
