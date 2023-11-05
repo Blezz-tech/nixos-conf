@@ -19,6 +19,15 @@
       myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
       myClearAll = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
       myCheckErrors = "journalctl -p 3 -xb";
+      myGit = "cd ~/git-repos";
+
+      Downloads = "cd ~/Загрузки";
+      Images = "cd ~/Изображения";
+      Documents = "cd ~/Документы";
+      Videos = "cd ~/Видео";
+      Music = "cd ~/Музыка";
+      # Public = "cd ~/Общедоступные";
+      # Template = "cd ~/Шаблоны";
     };
   };
 }
