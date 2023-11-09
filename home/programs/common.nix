@@ -1,11 +1,11 @@
-{ pkgs, pkgs-unstable, ... }: {
+{ pkgs, config, pkgs-unstable, ... }: {
   
   programs.helix.enable = true;
   
   
 
   # Packages that should be installed to the user profile.
-  home.packages = with pkgs; [
+  home.packages = with pkgs-unstable; [
     # LaTeX
     # texlive.combined.scheme-full
     # pdf2svg

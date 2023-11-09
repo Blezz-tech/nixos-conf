@@ -42,7 +42,7 @@
             config.allowUnfree = true;
           };
         };
-        
+
         modules = [
           ./hosts/laptop
 
