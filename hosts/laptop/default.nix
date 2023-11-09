@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, ... }:
 
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -108,7 +108,9 @@
     isNormalUser = true;
     description = "jenya";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ ];
+    packages = [
+     pkgs-unstable.google-chrome
+    ];
   };
 
   # Allow unfree packages
@@ -126,8 +128,6 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
-  #programs.java.enable = true;
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -136,7 +136,6 @@
     wget
     curl
     home-manager
-    google-chrome
     vscode
     steam-run
     
