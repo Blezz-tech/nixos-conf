@@ -1,6 +1,15 @@
 { pkgs, ... }: {
   
   programs.helix.enable = true;
+  
+  # Для работы стима
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
+  
+  programs.partition-manager.enable = true;
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
@@ -56,6 +65,59 @@
 
     # Запись видео и потоковое вещание
     # obs-studio
+
+    # Программирование
+
+    ## Системы сборки
+    cmake
+
+    ## R
+    #rstudioWrapper
+
+    ## СУБД
+    sqlitebrowser
+
+    ## Android
+    android-studio
+
+    ## Игровые движки
+    godot_4
+
+    ## haskell
+    stack
+    haskell-language-server
+    ghc
+
+    ## PHP
+    php
+
+    ## Node JS
+    nodejs
+
+    ## Python
+    python3
+
+    ## Rust 
+    cargo
+    rustc
+    rustfmt
+    rustup
+    nixpkgs-fmt
+
+    ## C
+    clang
+
+    # Игры
+    prismlauncher
+    steam
+    steam-run
+    jdk8
+    jdk17
+    cataclysm-dda
+    cmatrix
+
+    # Диспеер раздеов дисков
+    partition-manager
 
     # На сортировку
     go-task

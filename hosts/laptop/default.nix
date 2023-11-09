@@ -114,17 +114,10 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Для работы стима
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
 
   # Чтобы не было ошибок
   programs.dconf.enable = true;
 
-  programs.partition-manager.enable = true;
 
   #programs.java.enable = true;
 
@@ -140,59 +133,6 @@
     gnumake
     nushell
     pandoc
-
-    # Программирование
-
-    ## Системы сборки
-    cmake
-
-    ## R
-    #rstudioWrapper
-
-    ## СУБД
-    sqlitebrowser
-
-    ## Android
-    android-studio
-
-    ## Игровые движки
-    godot_4
-
-    ## haskell
-    stack
-    haskell-language-server
-    ghc
-
-    ## PHP
-    php
-
-    ## Node JS
-    nodejs
-
-    ## Python
-    python3
-
-    ## Rust 
-    cargo
-    rustc
-    rustfmt
-    rustup
-    nixpkgs-fmt
-
-    ## C
-    clang
-
-    # Игры
-    prismlauncher
-    steam
-    steam-run
-    jdk8
-    jdk17
-    cataclysm-dda
-    cmatrix
-
-    # Диспеер раздеов дисков
-    partition-manager
 
     # Шрифты
     noto-fonts
@@ -213,18 +153,6 @@
     corefonts
     vistafonts
   ];
-
-  #nixpkgs.overlays = [
-  #  (final: prev: {
-  #    yandex-browser = prev.yandex-browser.override {
-  #      version = "23.7.1.1148-1";
-  #       src = fetchurl {
-  #       url = "http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${pname}-beta/${pname}-beta_${version}_amd64.deb";
-  #       sha256 = "";
-  #      };
-  #    }
-  #  })
-  #];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
