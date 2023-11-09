@@ -5,9 +5,9 @@
   imports = [
     # ./fcitx5
     # ./i3
-    ./programs
+    # ./programs
     # ./rofi
-    ./shell
+    # ./shell
   ];
 
   home.username = "jenya";

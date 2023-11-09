@@ -91,23 +91,23 @@
     python3
 
     ## Rust 
-    cargo
-    rustc
-    rustfmt
-    rustup
-    nixpkgs-fmt
+    # cargo
+    # rustc
+    # rustfmt
+    # rustup
 
     ## C
-    clang
+    # clang
 
     # Игры
     prismlauncher
-    jdk8
+    # jdk8
     jdk17
     cataclysm-dda
     cmatrix
 
     # На сортировку
+    nixpkgs-fmt
     go-task
     cargo-make
     helix
