@@ -5,8 +5,8 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     # LaTeX
-    texlive.combined.scheme-full
-    pdf2svg
+    # texlive.combined.scheme-full
+    # pdf2svg
 
     # Torrent
     qbittorrent
@@ -19,43 +19,43 @@
     vlc
 
     # Альтернатива Postman'у
-    insomnia
+    # insomnia
 
     # 3D редакторы
-    blender
+    # blender
 
     # Музыкальные редакторы
-    musescore
+    # musescore
 
     # Месседжеры
     discord
     telegram-desktop
 
     # Редакторы epub
-    sigil
+    # sigil
 
     # Графические редакторы
-    gimp
-    inkscape
-    krita
-    drawio
-    aseprite
+    # gimp
+    # inkscape
+    # krita
+    # drawio
+    # aseprite
 
     # Текстовые редакторы
-    kate
-    libreoffice
-    onlyoffice-bin
+    # kate
+    # libreoffice
+    # onlyoffice-bin
     neovim
 
     # Браузеры
-    vivaldi
+    # vivaldi
     firefox
 
     # База знаний
-    obsidian
+    # obsidian
 
     # Запись видео и потоковое вещание
-    obs-studio
+    # obs-studio
 
     # На сортировку
     go-task
