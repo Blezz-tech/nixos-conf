@@ -130,32 +130,10 @@
     curl
     home-manager
     google-chrome
-
     vscode
-
-    gnumake
-    nushell
-    pandoc
-
-    # Шрифты
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    corefonts
-    vistafonts
   ];
 
   environment.variables.EDITOR = "vim";
-
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    corefonts
-    vistafonts
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

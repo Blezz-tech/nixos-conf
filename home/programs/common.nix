@@ -5,6 +5,15 @@
   
   programs.partition-manager.enable = true;
 
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-serif
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    corefonts
+    vistafonts
+  ];
+
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     # LaTeX
@@ -113,10 +122,21 @@
     # Диспеер раздеов дисков
     partition-manager
 
+    # Шрифты
+    noto-fonts
+    noto-fonts-cjk-serif
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    corefonts
+    vistafonts
+
     # На сортировку
     go-task
     cargo-make
     helix
+    gnumake
+    nushell
+    pandoc
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them

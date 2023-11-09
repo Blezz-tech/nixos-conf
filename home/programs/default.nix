@@ -5,7 +5,7 @@
   imports = [
     ./common.nix
     ./git.nix
-    ./steam.nixs
+    ./steam.nix
     ./vscodium.nix
     #  ./browsers.nix
     #  ./media.nix
