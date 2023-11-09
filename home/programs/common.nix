@@ -8,7 +8,7 @@
   home.packages = with pkgs-unstable; [
     # LaTeX
     # texlive.combined.scheme-full
-    # pdf2svg
+    pdf2svg
 
     # Torrent
     qbittorrent
@@ -21,7 +21,7 @@
     vlc
 
     # Альтернатива Postman'у
-    # insomnia
+    insomnia
 
     # 3D редакторы
     # blender
@@ -37,9 +37,9 @@
     # sigil
 
     # Графические редакторы
-    # gimp
-    # inkscape
-    # krita
+    gimp
+    inkscape
+    krita
     # drawio
 
     # Текстовые редакторы
@@ -49,31 +49,22 @@
     neovim
 
     # Браузеры
-    # vivaldi
+     vivaldi
     firefox
 
     # База знаний
-    # obsidian
+     obsidian
 
     # Запись видео и потоковое вещание
     # obs-studio
 
     # Программирование
 
-    ## Системы сборки
-    cmake
-
-    ## R
-    #rstudioWrapper
-
-    ## СУБД
-    # sqlitebrowser
-
     ## Android
-    # android-studio
+     android-studio
 
     ## Игровые движки
-    # godot_4
+     godot_4
 
     ## haskell
     # stack
@@ -186,10 +177,13 @@
     #yandex-browser
 
     # Не нужно
-    #zotero
-    #brave
-    #github-desktop
-    #lyx
-    #anki
+    # zotero
+    # brave
+    # github-desktop
+    # lyx
+    # anki
+    #rstudioWrapper
+    # sqlitebrowser
+    # cmake
   ];
 }
