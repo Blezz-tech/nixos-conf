@@ -33,7 +33,7 @@
           }
         ];
       };
-      "base" = nixpkgs.lib.nixosSystem {
+      "base" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
 
         specialArgs = {
