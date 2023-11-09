@@ -1,11 +1,11 @@
 { pkgs, config, pkgs-unstable, ... }: {
   
-  programs.helix.enable = true;
+  # programs.helix.enable = true;
   
   
 
   # Packages that should be installed to the user profile.
-  home.packages = with pkgs; [
+  home.packages = with pkgs-unstable; [
     # LaTeX
     # texlive.combined.scheme-full
     # pdf2svg
@@ -109,7 +109,7 @@
     nixpkgs-fmt
     go-task
     cargo-make
-    helix
+    # helix
     gnumake
     nushell
     pandoc
@@ -130,7 +130,7 @@
     ripgrep # recursively searches directories for a regex pattern
     jq # A lightweight and flexible command-line JSON processor
     yq-go # yaml processer https://github.com/mikefarah/yq
-    exa # A modern replacement for ‘ls’
+    eza # A modern replacement for ‘ls’
     fzf # A command-line fuzzy finder
 
     # networking tools
