@@ -3,11 +3,11 @@
 {
 
   imports = [
+    ./programs
+    ./shell
     # ./fcitx5
     # ./i3
-    # ./programs
     # ./rofi
-    # ./shell
   ];
 
   home.username = "jenya";

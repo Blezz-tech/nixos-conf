@@ -8,13 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{
-    self,
-    nixpkgs,
-    nixpkgs-unstable,
-    home-manager,
-    ...
-  }: {
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, ... }: {
     nixosConfigurations = {
 
       "default" = nixpkgs.lib.nixosSystem {
