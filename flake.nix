@@ -35,6 +35,14 @@
       };
       "base" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+
+        specialArgs = {
+          pkgs-unstable = import nixpkgs-unstable {
+            system = system;
+            config.allowUnfree = true;
+          };
+        };
+        
         modules = [
           ./hosts/laptop
 

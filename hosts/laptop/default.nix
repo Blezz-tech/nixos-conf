@@ -68,16 +68,16 @@
     layout = "us,ru";
     xkbVariant = "";
 
-  #   windowManager.xmonad = {
-  #     # enable = true;
-  #     # enableContribAndExtras = true;
-  #     # config = builtins.readFile ./xmonad.hs;
-  #     extraPackages = haskellPackages: [
-  #       haskellPackages.xmonad
-  #       haskellPackages.xmonad-contrib
-  #       haskellPackages.xmonad-extras
-  #     ];
-  #   };
+    # windowManager.xmonad = {
+    #   # enable = true;
+    #   # enableContribAndExtras = true;
+    #   # config = builtins.readFile ./xmonad.hs;
+    #   extraPackages = haskellPackages: [
+    #     haskellPackages.xmonad
+    #     haskellPackages.xmonad-contrib
+    #     haskellPackages.xmonad-extras
+    #   ];
+    # };
   };
 
   # Enable CUPS to print documents.
@@ -108,9 +108,7 @@
     isNormalUser = true;
     description = "jenya";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = [
-     pkgs-unstable.google-chrome
-    ];
+    packages = [ ];
   };
 
   # Allow unfree packages
@@ -130,12 +128,13 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs-unstable; [
     git
     vim
     wget
     curl
     home-manager
+    google-chrome
     vscode
     steam-run
     
