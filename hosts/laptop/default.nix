@@ -50,18 +50,34 @@
     enable = true;
 
     # Enable the KDE Plasma Desktop Environment.
-    displayManager.sddm.enable = true;
     desktopManager.plasma5.enable = true;
 
-    # Autologin
-    displayManager.autoLogin = {
-      enable = true;
-      user = "jenya";
+    displayManager = {
+      sddm.enable = true;
+      # defaultSession = "none+xmonad";
+
+      # Autologin
+      autoLogin = {
+        enable = true;
+        user = "jenya";
+      };
     };
+
 
     # Configure keymap in X11
     layout = "us,ru";
     xkbVariant = "";
+
+  #   windowManager.xmonad = {
+  #     # enable = true;
+  #     # enableContribAndExtras = true;
+  #     # config = builtins.readFile ./xmonad.hs;
+  #     extraPackages = haskellPackages: [
+  #       haskellPackages.xmonad
+  #       haskellPackages.xmonad-contrib
+  #       haskellPackages.xmonad-extras
+  #     ];
+  #   };
   };
 
   # Enable CUPS to print documents.
@@ -122,6 +138,8 @@
     home-manager
     google-chrome
     gnumake
+    nushell
+    pandoc
 
     # Программирование
 
@@ -136,7 +154,7 @@
 
     ## Android
     android-studio
-    
+
     ## Игровые движки
     godot_4
 
@@ -158,6 +176,7 @@
     cargo
     rustc
     rustfmt
+    rustup
     nixpkgs-fmt
 
     ## C
