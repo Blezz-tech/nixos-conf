@@ -3,16 +3,6 @@
   programs.helix.enable = true;
   
   
-  programs.partition-manager.enable = true;
-
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    corefonts
-    vistafonts
-  ];
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
@@ -78,18 +68,18 @@
     #rstudioWrapper
 
     ## СУБД
-    sqlitebrowser
+    # sqlitebrowser
 
     ## Android
-    android-studio
+    # android-studio
 
     ## Игровые движки
-    godot_4
+    # godot_4
 
     ## haskell
-    stack
-    haskell-language-server
-    ghc
+    # stack
+    # haskell-language-server
+    # ghc
 
     ## PHP
     php
@@ -112,23 +102,10 @@
 
     # Игры
     prismlauncher
-    steam
-    steam-run
     jdk8
     jdk17
     cataclysm-dda
     cmatrix
-
-    # Диспеер раздеов дисков
-    partition-manager
-
-    # Шрифты
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    corefonts
-    vistafonts
 
     # На сортировку
     go-task

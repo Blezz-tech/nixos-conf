@@ -118,6 +118,13 @@
   # Чтобы не было ошибок
   programs.dconf.enable = true;
 
+  programs.partition-manager.enable = true;
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
 
   #programs.java.enable = true;
 
@@ -131,6 +138,27 @@
     home-manager
     google-chrome
     vscode
+    steam-run
+    
+    # Диспеер раздеов дисков
+    partition-manager
+
+    # Шрифты
+    noto-fonts
+    noto-fonts-cjk-serif
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    corefonts
+    vistafonts
+  ];
+
+  fonts.fonts = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-serif
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    corefonts
+    vistafonts
   ];
 
   environment.variables.EDITOR = "vim";
