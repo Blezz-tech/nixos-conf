@@ -10,20 +10,16 @@
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, ... }: {
     nixosConfigurations = {
-
       "default" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
-
         specialArgs = {
           pkgs-unstable = import nixpkgs-unstable {
             system = system;
             config.allowUnfree = true;
           };
         };
-
         modules = [
           ./hosts/laptop
-
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -35,17 +31,14 @@
       };
       "base" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
-
         specialArgs = {
           pkgs-unstable = import nixpkgs-unstable {
             system = system;
             config.allowUnfree = true;
           };
         };
-
         modules = [
           ./hosts/laptop
-
         ];
       };
     };
