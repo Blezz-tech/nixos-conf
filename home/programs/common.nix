@@ -8,7 +8,7 @@
   home.packages = with pkgs; [
     # LaTeX
     # texlive.combined.scheme-full
-    # pdf2svg
+    pdf2svg
 
     # Torrent
     qbittorrent
@@ -21,7 +21,7 @@
     vlc
 
     # Альтернатива Postman'у
-    # insomnia
+    insomnia
 
     # 3D редакторы
     # blender
@@ -37,11 +37,10 @@
     # sigil
 
     # Графические редакторы
-    # gimp
-    # inkscape
-    # krita
+    gimp
+    inkscape
+    krita
     # drawio
-    # aseprite
 
     # Текстовые редакторы
     # kate
@@ -50,11 +49,11 @@
     neovim
 
     # Браузеры
-    # vivaldi
+    vivaldi
     firefox
 
     # База знаний
-    # obsidian
+    obsidian
 
     # Запись видео и потоковое вещание
     # obs-studio
@@ -71,10 +70,10 @@
     # sqlitebrowser
 
     ## Android
-    # android-studio
+    android-studio
 
     ## Игровые движки
-    # godot_4
+    godot_4
 
     ## haskell
     # stack
@@ -93,11 +92,11 @@
     ## Rust 
     # cargo
     # rustc
-    # rustfmt
-    # rustup
+    rustfmt
+    rustup
 
     ## C
-    # clang
+    clang
 
     # Игры
     prismlauncher
