@@ -3,11 +3,12 @@
 , ...
 }: {
   imports = [
-    ./git.nix
-    #  ./browsers.nix
     ./common.nix
-    #  ./media.nix
+    ./git.nix
+    ./steam.nixs
     ./vscodium.nix
+    #  ./browsers.nix
+    #  ./media.nix
     #  ./xdg.nix
   ];
 }

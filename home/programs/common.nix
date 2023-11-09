@@ -2,12 +2,6 @@
   
   programs.helix.enable = true;
   
-  # Для работы стима
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
   
   programs.partition-manager.enable = true;
 

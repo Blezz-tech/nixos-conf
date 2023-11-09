@@ -130,6 +130,9 @@
     curl
     home-manager
     google-chrome
+
+    vscode
+
     gnumake
     nushell
     pandoc
