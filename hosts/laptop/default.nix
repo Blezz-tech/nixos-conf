@@ -49,6 +49,9 @@
     # Enable the X11 windowing system.
     enable = true;
 
+    # Drivers
+    videoDrivers = [ "amdgpu" ];
+
     # Enable the KDE Plasma Desktop Environment.
     desktopManager.plasma5.enable = true;
 
