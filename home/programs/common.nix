@@ -45,7 +45,7 @@
     # Текстовые редакторы
     # kate
     # libreoffice
-    # onlyoffice-bin
+    onlyoffice-bin
     neovim
 
     # Браузеры
