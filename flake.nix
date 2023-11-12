@@ -10,7 +10,7 @@
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, ... }:
     let
-    system = "x86_64-linux";
+      system = "x86_64-linux";
       specialArgs = {
         pkgs-unstable = import nixpkgs-unstable {
           inherit system;
@@ -25,7 +25,8 @@
           inherit specialArgs;
           modules = [
             ./hosts/laptop
-            home-manager.nixosModules.home-manager {
+            home-manager.nixosModules.home-manager
+            {
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;

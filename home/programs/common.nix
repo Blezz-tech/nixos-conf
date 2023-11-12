@@ -1,8 +1,8 @@
 { pkgs, config, pkgs-unstable, ... }: {
-  
+
   # programs.helix.enable = true;
-  
-  
+
+
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs-unstable; [
@@ -52,7 +52,7 @@
     firefox
 
     # База знаний
-     obsidian
+    obsidian
 
     # Запись видео и потоковое вещание
     # obs-studio
@@ -60,10 +60,10 @@
     # Программирование
 
     ## Android
-     android-studio
+    android-studio
 
     ## Игровые движки
-     godot_4
+    godot_4
 
     ## haskell
     # stack

@@ -17,9 +17,9 @@ in
       # window.padding = { x = 5; y = 5; };
       font = {
         size = 10.0;
-        normal.family = font;
-        bold.family = font;
-        italic.family = font;
+        normal.family      = font;
+        bold.family        = font;
+        italic.family      = font;
         bold_italic.family = font;
         draw_bold_text_with_bright_colors = true;
       };
