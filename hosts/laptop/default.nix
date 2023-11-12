@@ -17,32 +17,38 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  networking = {
+    hostName = "nixos"; # hostname
+    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Enable networking
-  networking.networkmanager.enable = true;
+    # Configure network proxy if necessary
+    # proxy.default = "http://user:password@proxy:port/";
+    # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+    # Enable networking
+    networking.networkmanager.enable = true;
+  };
+
 
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "ru_RU.UTF-8";
+  i18n = {
+    defaultLocale = "ru_RU.UTF-8";
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "ru_RU.UTF-8";
-    LC_IDENTIFICATION = "ru_RU.UTF-8";
-    LC_MEASUREMENT = "ru_RU.UTF-8";
-    LC_MONETARY = "ru_RU.UTF-8";
-    LC_NAME = "ru_RU.UTF-8";
-    LC_NUMERIC = "ru_RU.UTF-8";
-    LC_PAPER = "ru_RU.UTF-8";
-    LC_TELEPHONE = "ru_RU.UTF-8";
-    LC_TIME = "ru_RU.UTF-8";
+    extraLocaleSettings = {
+      LC_ADDRESS = "ru_RU.UTF-8";
+      LC_IDENTIFICATION = "ru_RU.UTF-8";
+      LC_MEASUREMENT = "ru_RU.UTF-8";
+      LC_MONETARY = "ru_RU.UTF-8";
+      LC_NAME = "ru_RU.UTF-8";
+      LC_NUMERIC = "ru_RU.UTF-8";
+      LC_PAPER = "ru_RU.UTF-8";
+      LC_TELEPHONE = "ru_RU.UTF-8";
+      LC_TIME = "ru_RU.UTF-8";
+    };
   };
 
   services.xserver = {
@@ -137,7 +143,7 @@
     google-chrome
     vscode
     steam-run
-    
+
     # Диспеер раздеов дисков
     partition-manager
 
