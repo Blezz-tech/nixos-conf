@@ -17,7 +17,6 @@
     yt-dlp
 
     # Аудио видео проигрыватели
-    haruna
     vlc
 
     # Альтернатива Postman'у
@@ -49,7 +48,7 @@
     neovim
 
     # Браузеры
-     vivaldi
+    vivaldi
     firefox
 
     # База знаний
@@ -91,6 +90,8 @@
 
     # Игры
     prismlauncher
+    # jre8
+    # jre17
     # jdk8
     jdk17
     cataclysm-dda
@@ -100,10 +101,10 @@
     nixpkgs-fmt
     go-task
     cargo-make
-    # helix
     gnumake
     nushell
     pandoc
+    typst
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
@@ -182,8 +183,10 @@
     # github-desktop
     # lyx
     # anki
-    #rstudioWrapper
+    # rstudioWrapper
     # sqlitebrowser
+    # helix
     # cmake
+    # haruna
   ];
 }
