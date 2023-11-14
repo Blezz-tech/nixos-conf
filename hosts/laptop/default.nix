@@ -113,7 +113,7 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" "kvm" "input" "disk" "libvrtid"];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = [ ];
   };
 
@@ -132,6 +132,7 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs-unstable; [
@@ -144,7 +145,7 @@
     vscode
     steam-run
     lutris
-    qemu
+    # qemu
 
     # Диспеер раздеов дисков
     partition-manager
