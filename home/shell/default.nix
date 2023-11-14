@@ -14,7 +14,7 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      myConf              = "cd ~/nix-conf";
+      myConf              = "cd ~/nixos-conf";
       myViewConf          = "cd myConf && nvim .";
       myBuildSystem       = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
       myErrors            = "journalctl -p 3 -xb";
