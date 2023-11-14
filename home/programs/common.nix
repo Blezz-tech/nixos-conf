@@ -2,6 +2,7 @@
 
   # programs.helix.enable = true;
 
+  programs.direnv.enable = true;
 
 
   # Packages that should be installed to the user profile.
