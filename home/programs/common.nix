@@ -42,7 +42,7 @@
     # drawio
 
     # Текстовые редакторы
-    # kate
+    kate
     # libreoffice
     onlyoffice-bin
     neovim
@@ -105,6 +105,7 @@
     nushell
     pandoc
     typst
+    nix-direnv
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them

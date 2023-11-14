@@ -14,7 +14,7 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      myConf              = "~/nix-conf";
+      myConf              = "cd ~/nix-conf";
       myViewConf          = "cd myConf && nvim .";
       myBuildSystem       = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
       myErrors            = "journalctl -p 3 -xb";
@@ -22,11 +22,11 @@
       myGenerations       = "nix profile history --profile /nix/var/nix/profiles/system";
       myDeleteGenerations = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
 
-      Downloads  = "~/Загрузки";
-      Images     = "~/Изображения";
-      Documents  = "~/Документы";
-      Videos     = "~/Видео";
-      Music      = "~/Музыка";
+      Downloads  = "cd ~/Загрузки";
+      Images     = "cd ~/Изображения";
+      Documents  = "cd ~/Документы";
+      Videos     = "cd ~/Видео";
+      Music      = "cd ~/Музыка";
       # Public   = "~/Общедоступные";
       # Template = "~/Шаблоны";
     };

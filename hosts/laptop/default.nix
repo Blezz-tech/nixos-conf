@@ -113,7 +113,7 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "kvm" "input" "disk" "libvrtid"];
     packages = [ ];
   };
 
@@ -143,6 +143,8 @@
     google-chrome
     vscode
     steam-run
+    lutris
+    qemu
 
     # Диспеер раздеов дисков
     partition-manager
