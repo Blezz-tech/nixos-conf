@@ -106,7 +106,11 @@
     nushell
     pandoc
     typst
+    typst-lsp
+    typst-fmt
     nix-direnv
+    tiled
+    unityhub
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
