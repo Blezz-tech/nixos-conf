@@ -30,6 +30,12 @@
     networkmanager.enable = true;
   };
 
+  # xdg_open should work in steam_run this way… well it’s not 
+  # https://github.com/NixOS/nixpkgs/issues/160923
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
