@@ -112,11 +112,6 @@
     #media-session.enable = true;
   };
 
-  services.kubo = {
-    enable = true;
-    settings.Addresses.API = [ "/ip4/127.0.0.1/tcp/5001" ];
-  };
-
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -157,7 +152,6 @@
     steam-run
     lutris
     # qemu
-    kubo
 
     # Диспеер раздеов дисков
     partition-manager
