@@ -91,10 +91,6 @@
 
     # Игры
     prismlauncher
-    # jre8
-    # jre17
-    # jdk8
-    # jdk17
     cataclysm-dda
     cmatrix
 
