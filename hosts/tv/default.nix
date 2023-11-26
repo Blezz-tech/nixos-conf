@@ -72,25 +72,13 @@
       # Autologin
       autoLogin = {
         enable = true;
-        user = "jenya";
+        user = "tv";
       };
     };
-
 
     # Configure keymap in X11
     layout = "us,ru";
     xkbVariant = "";
-
-    # windowManager.xmonad = {
-    #   # enable = true;
-    #   # enableContribAndExtras = true;
-    #   # config = builtins.readFile ./xmonad.hs;
-    #   extraPackages = haskellPackages: [
-    #     haskellPackages.xmonad
-    #     haskellPackages.xmonad-contrib
-    #     haskellPackages.xmonad-extras
-    #   ];
-    # };
   };
 
   # Enable CUPS to print documents.
@@ -117,9 +105,9 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.jenya = {
+  users.users.tv = {
     isNormalUser = true;
-    description = "jenya";
+    description = "tv";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = [ ];
   };
@@ -127,17 +115,10 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-
   # Чтобы не было ошибок
   programs.dconf.enable = true;
 
   programs.partition-manager.enable = true;
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
 
 
   # List packages installed in system profile. To search, run:
@@ -147,11 +128,8 @@
     vim
     wget
     curl
-    home-manager
     google-chrome
     vscode
-    steam-run
-    lutris
     # qemu
 
     # Диспеер раздеов дисков
