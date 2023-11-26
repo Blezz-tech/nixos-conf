@@ -129,8 +129,12 @@
     wget
     curl
     google-chrome
+    firefox
     vscode
     # qemu
+
+    # Аудио видео проигрыватели
+    vlc
 
     # Диспеер раздеов дисков
     partition-manager

@@ -147,18 +147,19 @@
     vim
     wget
     curl
-    home-manager
     google-chrome
     firefox
     vscode
+    # qemu
+
+    home-manager
+    
     steam-run
     lutris
-    # qemu
 
     # Аудио видео проигрыватели
     vlc
     
-
     # Диспеер раздеов дисков
     partition-manager
 
