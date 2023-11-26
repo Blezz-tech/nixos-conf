@@ -16,7 +16,7 @@
     shellAliases = {
       myConf              = "cd ~/nixos-conf";
       myViewConf          = "cd myConf && nvim .";
-      myBuildSystem       = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#default";
+      myBuildSystem       = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#laptop-full";
       myErrors            = "journalctl -p 3 -xb";
       myGit               = "~/git-repos";
       myGenerations       = "nix profile history --profile /nix/var/nix/profiles/system";

@@ -149,15 +149,10 @@
     curl
     home-manager
     google-chrome
-    firefox
     vscode
     steam-run
     lutris
     # qemu
-
-    # Аудио видео проигрыватели
-    vlc
-    
 
     # Диспеер раздеов дисков
     partition-manager
