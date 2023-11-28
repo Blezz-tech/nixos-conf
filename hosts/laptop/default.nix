@@ -66,7 +66,7 @@
 
     displayManager = {
       sddm.enable = true;
-      defaultSession = "plasmawayland";
+      # defaultSession = "plasmawayland";
       # defaultSession = "none+xmonad";
 
       # Autologin
