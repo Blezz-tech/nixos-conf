@@ -120,7 +120,7 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark"];
     packages = [ ];
   };
 
@@ -162,21 +162,24 @@
     
     # Диспеер раздеов дисков
     partition-manager
-
-    # Шрифты
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    corefonts
-    vistafonts
   ];
 
   fonts.fonts = with pkgs; [
+    # Шрифты paratype
+    paratype-pt-sans
+    paratype-pt-mono
+    paratype-pt-serif
+
+    # Шрифты terminus
+    terminus_font
+
+    # Шрифты noto
     noto-fonts
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
     noto-fonts-emoji
+    
+    # Шрифты windows
     corefonts
     vistafonts
   ];
