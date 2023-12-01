@@ -139,6 +139,7 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
+  programs.wireshark.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -151,6 +152,7 @@
     google-chrome
     firefox
     vscode
+    wireshark
     # qemu
 
     home-manager

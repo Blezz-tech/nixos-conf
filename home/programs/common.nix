@@ -4,7 +4,6 @@
 
   programs.direnv.enable = true;
 
-
   # Packages that should be installed to the user profile.
   home.packages = with pkgs-unstable; [
     # LaTeX
@@ -104,7 +103,6 @@
     tiled
     unityhub
     pdfarranger
-    wireshark
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
