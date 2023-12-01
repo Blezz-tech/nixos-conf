@@ -1,4 +1,8 @@
-{ pkgs, config, pkgs-unstable, ... }: {
+{ pkgs
+, config
+, pkgs-unstable
+, ...
+}: {
 
   # programs.helix.enable = true;
 

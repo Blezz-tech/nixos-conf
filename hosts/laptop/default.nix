@@ -2,7 +2,11 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, pkgs-unstable, ... }:
+{ config
+, pkgs
+, pkgs-unstable
+, ...
+}:
 
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -120,7 +124,7 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" "wireshark"];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
     packages = [ ];
   };
 
@@ -156,13 +160,13 @@
     # qemu
 
     home-manager
-    
+
     steam-run
     lutris
 
     # Аудио видео проигрыватели
     vlc
-    
+
     # Диспеер раздеов дисков
     partition-manager
   ];
@@ -181,7 +185,7 @@
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
     noto-fonts-emoji
-    
+
     # Шрифты windows
     corefonts
     vistafonts
