@@ -143,14 +143,6 @@
 
     # Диспеер раздеов дисков
     partition-manager
-
-    # Шрифты
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    corefonts
-    vistafonts
   ];
 
   fonts.packages = with pkgs; [
