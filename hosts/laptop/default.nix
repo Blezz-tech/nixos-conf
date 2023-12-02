@@ -171,7 +171,7 @@
     partition-manager
   ];
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     # Шрифты paratype
     paratype-pt-sans
     paratype-pt-mono
