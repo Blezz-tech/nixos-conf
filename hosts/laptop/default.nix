@@ -158,6 +158,7 @@
     firefox
     vscode
     wireshark
+    pwgen
     # qemu
 
     home-manager

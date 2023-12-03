@@ -135,6 +135,7 @@
     chromium
     firefox
     vscode
+    pwgen
     # qemu
 
     # Аудио видео проигрыватели
