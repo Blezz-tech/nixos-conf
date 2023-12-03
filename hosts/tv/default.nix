@@ -132,7 +132,7 @@
     vim
     wget
     curl
-    google-chrome
+    chromium
     firefox
     vscode
     # qemu
