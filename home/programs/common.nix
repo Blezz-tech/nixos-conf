@@ -1,6 +1,5 @@
 { pkgs
 , config
-, pkgs-unstable
 , ...
 }: {
 
@@ -9,7 +8,7 @@
   programs.direnv.enable = true;
 
   # Packages that should be installed to the user profile.
-  home.packages = with pkgs-unstable; [
+  home.packages = with pkgs; [
     # LaTeX
     # texlive.combined.scheme-full
     pdf2svg
