@@ -67,7 +67,7 @@
     ## haskell
     # stack
     # haskell-language-server
-    # ghc
+    ghc
 
     ## PHP
     php

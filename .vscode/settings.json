@@ -1,5 +1,5 @@
 {
-    "nix.serverPath": "nixd",
+    // "nix.serverPath": "nixd",
     "nix.enableLanguageServer": true,
 
 }
