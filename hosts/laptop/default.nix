@@ -159,6 +159,9 @@
     vscode
     wireshark
     pwgen
+
+    # nix LSP
+    nixd
     # qemu
 
     home-manager
