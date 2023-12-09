@@ -8,8 +8,10 @@
 }:
 
 {
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.settings.trusted-users = [ "root" "jenya" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    trusted-users = [ "root" "jenya" ];
+  };
 
   imports = [
     # Include the results of the hardware scan.
