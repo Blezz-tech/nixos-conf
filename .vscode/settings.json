@@ -1,12 +1,5 @@
 {
     "nix.serverPath": "nixd",
     "nix.enableLanguageServer": true,
-    "nix.formatterPath": "nixpkgs-fmt",
-    "nix.serverSettings": {
-        "formatting": {
-            "command": [
-                "nixpkgs-fmt"
-            ]
-        }
-    }
+
 }
