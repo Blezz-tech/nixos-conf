@@ -108,6 +108,7 @@
     pdfarranger
     ihp-new
     cachix
+    renpy
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
