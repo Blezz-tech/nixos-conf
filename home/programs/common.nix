@@ -67,25 +67,24 @@
     ## haskell
     # stack
     # haskell-language-server
-    ghc
+    # ghc
 
     ## PHP
-    php
+    # php
 
     ## Node JS
-    nodejs
+    # nodejs
 
     ## Python
-    python3
+    # python3
 
     ## Rust 
-    cargo
-    rustc
-    rustfmt
-    # rustup
+    # cargo
+    # rustc
+    # rustfmt
 
     ## C
-    clang
+    # clang
 
     # Игры
     prismlauncher
