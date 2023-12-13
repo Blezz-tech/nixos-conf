@@ -39,7 +39,7 @@
     gimp
     inkscape
     krita
-    # drawio
+    drawio
 
     # Текстовые редакторы
     kate
@@ -108,7 +108,6 @@
     pdfarranger
     ihp-new
     cachix
-    drawio
     vengi-tools
 
     # here is some command line tools I use frequently
