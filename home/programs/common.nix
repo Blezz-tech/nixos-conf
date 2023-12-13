@@ -188,5 +188,6 @@
     # cmake
     # haruna
     # renpy
+    # reaper
   ];
 }
