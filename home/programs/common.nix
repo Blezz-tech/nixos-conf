@@ -82,7 +82,7 @@
     cargo
     rustc
     rustfmt
-    rustup
+    # rustup
 
     ## C
     clang
