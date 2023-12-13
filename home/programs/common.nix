@@ -64,25 +64,6 @@
     ## Игровые движки
     godot_4
 
-    ## haskell
-    # stack
-    # haskell-language-server
-    # ghc
-
-    ## PHP
-    # php
-
-    ## Node JS
-    # nodejs
-
-    ## Python
-    # python3
-
-    ## Rust 
-    # cargo
-    # rustc
-    # rustfmt
-
     ## C
     # clang
 
