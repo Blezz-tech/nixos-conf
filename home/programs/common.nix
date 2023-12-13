@@ -108,7 +108,6 @@
     pdfarranger
     ihp-new
     cachix
-    renpy
     drawio
     vengi-tools
 
@@ -194,5 +193,6 @@
     # helix
     # cmake
     # haruna
+    # renpy
   ];
 }
