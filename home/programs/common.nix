@@ -58,12 +58,6 @@
 
     # Программирование
 
-    ## Android
-    android-studio
-
-    ## Игровые движки
-    godot_4
-
     ## C
     # clang
 
@@ -169,5 +163,11 @@
     # haruna
     # renpy
     # reaper
+
+    # Android
+    # android-studio
+
+    # Игровые движки
+    # godot_4
   ];
 }
