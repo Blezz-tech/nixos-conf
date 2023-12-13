@@ -176,11 +176,6 @@
     pciutils # lspci
     usbutils # lsusb
 
-
-
-    # не устанавливается. Но нужно установить
-    #yandex-browser
-
     # Не нужно
     # zotero
     # brave
