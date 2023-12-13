@@ -79,9 +79,9 @@
     python3
 
     ## Rust 
-    # cargo
-    # rustc
-    # rustfmt
+    cargo
+    rustc
+    rustfmt
     rustup
 
     ## C
