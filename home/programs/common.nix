@@ -5,7 +5,11 @@
 
   # programs.helix.enable = true;
 
-  programs.direnv.enable = true;
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    direnv.enable = true;
+  };
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
