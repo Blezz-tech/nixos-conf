@@ -23,6 +23,7 @@
       myGit = "~/git-repos";
       myGenerations = "nix profile history --profile /nix/var/nix/profiles/system";
       myDeleteGenerations = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
+      myClear = "nix store gc --debug";
 
       Downloads = "cd ~/Загрузки";
       Images = "cd ~/Изображения";
