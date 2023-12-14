@@ -8,7 +8,7 @@
   programs.direnv = {
     enable = true;
     enableZshIntegration = true;
-    direnv.enable = true;
+    nix-direnv.enable = true;
   };
 
   # Packages that should be installed to the user profile.
