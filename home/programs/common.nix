@@ -56,11 +56,6 @@
     # Запись видео и потоковое вещание
     # obs-studio
 
-    # Программирование
-
-    ## C
-    # clang
-
     # Игры
     prismlauncher
     cataclysm-dda
