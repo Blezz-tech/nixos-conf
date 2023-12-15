@@ -72,9 +72,6 @@
     gnumake
     nushell
     pandoc
-    typst
-    typst-lsp
-    typst-fmt
     nix-direnv
     tiled
     unityhub
