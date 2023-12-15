@@ -72,7 +72,6 @@
     gnumake
     nushell
     pandoc
-    nix-direnv
     tiled
     unityhub
     pdfarranger
