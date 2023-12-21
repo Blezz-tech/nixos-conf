@@ -79,7 +79,7 @@
     cachix
     vengi-tools
     ldtk
-    davinci-resolve
+    # davinci-resolve
 
     zoom-us
 
