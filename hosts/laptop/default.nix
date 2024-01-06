@@ -133,6 +133,25 @@
     #media-session.enable = true;
   };
 
+  # services.paperless = {
+  #   enable = true;
+  # };
+
+  services = {
+    gitea = {
+      enable = true;
+      lfs.enable = true;
+    };
+
+    # gitea-actions-runner.instances = {
+    #   "test" = {
+    #     token = "";
+    #     enable = true;
+
+    #   };
+    # };
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jenya = {
     isNormalUser = true;
