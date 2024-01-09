@@ -23,7 +23,6 @@ in
         bold.family = font;
         italic.family = font;
         bold_italic.family = font;
-        draw_bold_text_with_bright_colors = true;
       };
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
