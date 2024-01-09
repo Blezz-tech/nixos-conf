@@ -64,6 +64,7 @@
     prismlauncher
     cataclysm-dda
     cmatrix
+    keeperrl
 
     # На сортировку
     nixpkgs-fmt
