@@ -86,6 +86,21 @@
     xkbVariant = "";
   };
 
+  services = {
+    gitea = {
+      enable = true;
+      lfs.enable = true;
+    };
+
+    # gitea-actions-runner.instances = {
+    #   "test" = {
+    #     token = "";
+    #     enable = true;
+
+    #   };
+    # };
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
