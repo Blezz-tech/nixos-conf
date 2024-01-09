@@ -65,6 +65,8 @@
     cataclysm-dda
     cmatrix
     keeperrl
+    minetest
+    wesnoth
 
     # На сортировку
     nixpkgs-fmt
