@@ -139,9 +139,18 @@
 
   services = {
     gitea = {
+      settings.server = {
+        # PROTOCOL = "https";
+        # DOMAIN = "gitea.blezz-tech.ru";
+        ROOT_URL = "https://gitea.blezz-tech.ru:3000/";
+        
+        HTTP_ADDR = "192.168.31.97";
+        HTTP_PORT = 3000;
+      };
       enable = true;
       lfs.enable = true;
     };
+
 
     # gitea-actions-runner.instances = {
     #   "test" = {
@@ -242,8 +251,8 @@
   # Enable the OpenSSH daemon.
   services.openssh = {
     enable = true;
-    ports = [ 231 ];
-    settings.PasswordAuthentication = false;
+    ports = [ 22 231 ];
+    settings.PasswordAuthentication = true;
     settings.KbdInteractiveAuthentication = false;
   };
 
