@@ -15,7 +15,6 @@
   };
 
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../share/default.nix
   ];
@@ -25,15 +24,13 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking = {
-    hostName = "nixos"; # hostname
-    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+    hostName = "nixos";
+    wireless.enable = true;
+    networkmanager.enable = true;
 
     # Configure network proxy if necessary
     # proxy.default = "http://user:password@proxy:port/";
     # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-    # Enable networking
-    networkmanager.enable = true;
   };
 
   # xdg_open should work in steam_run this way… well it’s not 
