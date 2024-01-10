@@ -115,10 +115,6 @@
     #media-session.enable = true;
   };
 
-  services.paperless = {
-    enable = true;
-    port = 3221;
-  };
 
   security.acme = {
     acceptTerms = true;
@@ -130,6 +126,12 @@
   };
 
   services = {
+
+    paperless = {
+      enable = true;
+      port = 3221;
+    };
+
     gitea = {
       enable = true;
       lfs.enable = true;
@@ -159,7 +161,7 @@
             proxyPass = "http://localhost:3220";
           };
         };
-        
+
         "paperless.blezz-tech.ru" = {
           serverName = "paperless.blezz-tech.ru";
           forceSSL = true;
@@ -170,7 +172,7 @@
         };
       };
     };
-    
+
     # gitea-actions-runner.instances = {
     #   "test" = {
     #     token = "";
