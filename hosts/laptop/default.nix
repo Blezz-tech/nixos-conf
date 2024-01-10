@@ -84,7 +84,6 @@
     displayManager = {
       sddm.enable = true;
       # defaultSession = "plasmawayland";
-      # defaultSession = "none+xmonad";
 
       # Autologin
       autoLogin = {
@@ -100,17 +99,6 @@
     # Configure keymap in X11
     layout = "us,ru";
     xkbVariant = "";
-
-    # windowManager.xmonad = {
-    #   # enable = true;
-    #   # enableContribAndExtras = true;
-    #   # config = builtins.readFile ./xmonad.hs;
-    #   extraPackages = haskellPackages: [
-    #     haskellPackages.xmonad
-    #     haskellPackages.xmonad-contrib
-    #     haskellPackages.xmonad-extras
-    #   ];
-    # };
   };
 
   # Enable CUPS to print documents.
