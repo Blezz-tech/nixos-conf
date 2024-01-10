@@ -258,7 +258,7 @@
   # Enable the OpenSSH daemon.
   services.openssh = {
     enable = true;
-    ports = [ 22 231 ];
+    ports = [ 231 ];
     settings.PasswordAuthentication = true;
     settings.KbdInteractiveAuthentication = false;
   };
