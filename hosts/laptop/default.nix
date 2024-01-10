@@ -29,12 +29,13 @@
 
   networking = {
     hostName = "nixos";
-    wireless.enable = true;
     networkmanager.enable = true;
 
     # Configure network proxy if necessary
     # proxy.default = "http://user:password@proxy:port/";
     # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+    # wireless.enable = true;
   };
 
   # xdg_open should work in steam_run this way… well it’s not 
