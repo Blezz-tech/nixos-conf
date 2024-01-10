@@ -5,6 +5,10 @@
 
 {
 
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
+  # Allow electron for obsidian
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
@@ -158,8 +162,6 @@
     packages = [ ];
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # Чтобы не было ошибок
   programs.dconf.enable = true;
@@ -188,10 +190,7 @@
     wireshark
     pwgen
 
-    # nix LSP
     nixd
-    # qemu
-
     home-manager
 
     steam-run
