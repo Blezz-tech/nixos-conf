@@ -115,30 +115,26 @@
     #media-session.enable = true;
   };
 
-  # services.paperless = {
-  #   enable = true;
-  # };
+  services.paperless = {
+    enable = true;
+    port = 3221;
+  };
 
-  # security.acme = {
-  #   acceptTerms = true;
-  #   defaults = {
-  #     email = "blezz-tech+markus.jenya04@yandex.ru";
-  #     validMinDays = 60;
-  #   };
-  # };
+  security.acme = {
+    acceptTerms = true;
+    defaults = {
+      email = "blezz-tech+markus.jenya04@yandex.ru";
+      validMinDays = 60;
+      dnsProvider = "regru";
+    };
+  };
 
   services = {
     gitea = {
       enable = true;
       lfs.enable = true;
 
-      settings = {
-        server = {
-          # PROTOCOL = "https";
-
-          HTTP_PORT = 3218;
-        };
-      };
+      settings.server.HTTP_PORT = 3220;
     };
 
 
@@ -146,7 +142,7 @@
       enable = true;
       enableReload = true;
 
-      statusPage = true;
+      # statusPage = true;
 
       serverTokens = false;
 
@@ -157,17 +153,24 @@
 
       virtualHosts = {
         "gitea.blezz-tech.ru" = {
-          default = true;
-          forceSSL = false;
-          enableACME = false;
+          forceSSL = true;
+          enableACME = true;
           locations."/" = {
-            proxyPass = "http://localhost:3218";
+            proxyPass = "http://localhost:3220";
+          };
+        };
+        
+        "paperless.blezz-tech.ru" = {
+          serverName = "paperless.blezz-tech.ru";
+          forceSSL = true;
+          enableACME = true;
+          locations."/" = {
+            proxyPass = "http://localhost:3221";
           };
         };
       };
     };
-
-
+    
     # gitea-actions-runner.instances = {
     #   "test" = {
     #     token = "";
@@ -274,7 +277,7 @@
   programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 22 80 433 ];
+  networking.firewall.allowedTCPPorts = [ 80 433 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   networking.firewall.enable = true;
 
