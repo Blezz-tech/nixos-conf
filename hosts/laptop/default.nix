@@ -17,6 +17,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ../../share/default.nix
   ];
 
   # Bootloader.
@@ -44,28 +45,6 @@
 
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
-
-  # Select internationalisation properties.
-  i18n = {
-    defaultLocale = "ru_RU.UTF-8";
-
-    extraLocaleSettings = {
-      LANG = "ru_RU.UTF-8";
-      LC_CTYPE = "ru_RU.UTF-8";
-      LC_NUMERIC = "ru_RU.UTF-8";
-      LC_TIME = "ru_RU.UTF-8";
-      LC_COLLATE = "ru_RU.UTF-8";
-      LC_MONETARY = "ru_RU.UTF-8";
-      LC_MESSAGES = "ru_RU.UTF-8";
-      LC_PAPER = "ru_RU.UTF-8";
-      LC_NAME = "ru_RU.UTF-8";
-      LC_ADDRESS = "ru_RU.UTF-8";
-      LC_TELEPHONE = "ru_RU.UTF-8";
-      LC_MEASUREMENT = "ru_RU.UTF-8";
-      LC_IDENTIFICATION = "ru_RU.UTF-8";
-      LC_ALL = "ru_RU.UTF-8";
-    };
-  };
 
   services.xserver = {
     # Enable the X11 windowing system.
@@ -115,7 +94,6 @@
     #media-session.enable = true;
   };
 
-
   security.acme = {
     acceptTerms = true;
     defaults = {
@@ -155,7 +133,7 @@
 
       virtualHosts = {
         "gitea.blezz-tech.ru" = {
-          forceSSL = true;
+          # forceSSL = true;
           enableACME = true;
           locations."/" = {
             proxyPass = "http://localhost:3220";
@@ -164,7 +142,7 @@
 
         "paperless.blezz-tech.ru" = {
           serverName = "paperless.blezz-tech.ru";
-          forceSSL = true;
+          # forceSSL = true;
           enableACME = true;
           locations."/" = {
             proxyPass = "http://localhost:3221";
