@@ -128,6 +128,7 @@
 
       virtualHosts = {
         "gitea.blezz-tech.ru" = {
+          serverName = "gitea.blezz-tech.ru";
           # forceSSL = true;
           enableACME = true;
           locations."/" = {
@@ -141,6 +142,24 @@
           enableACME = true;
           locations."/" = {
             proxyPass = "http://localhost:3221";
+          };
+        };
+
+        "blezz-tech.ru" = {
+          serverName = "blezz-tech.ru";
+          # forceSSL = true;
+          # enableACME = true;
+          locations."/" = {
+            root = "/var/lib/blezz-tech.ru";
+          };
+        };
+
+        "www.blezz-tech.ru" = {
+          serverName = "www.blezz-tech.ru";
+          # forceSSL = true;
+          # enableACME = true;
+          locations."/" = {
+            root = "/var/lib/blezz-tech.ru";
           };
         };
       };
