@@ -125,19 +125,42 @@
   #   enable = true;
   # };
 
+  #security.acme = {
+  #  acceptTerms = true;
+  #  defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
+  #  
+  #};
+
+
+
   services = {
     gitea = {
-      settings.server = {
-        # PROTOCOL = "https";
-        # DOMAIN = "gitea.blezz-tech.ru";
-        ROOT_URL = "https://gitea.blezz-tech.ru:3000/";
-        
-        HTTP_ADDR = "192.168.31.97";
-        HTTP_PORT = 3000;
-      };
       enable = true;
       lfs.enable = true;
+      
+      settings = {
+        server = {
+          # PROTOCOL = "https";
+          DOMAIN = "gitea.blezz-tech.ru";
+          ROOT_URL = "https://gitea.blezz-tech.ru/";
+          
+          HTTP_PORT = 3218;
+        };
+      };
     };
+
+    
+  # nginx = {
+  #   virtualHosts = {
+  #     "gitea.blezz-tech.ru" = {
+  #       forceSSL = true;
+  #       enableACME = true;
+  #       locations."/" = {
+  #         proxyPass = "http://localhost:3218";
+  #       };
+  #     };
+  #   };
+  # };
 
 
     # gitea-actions-runner.instances = {
@@ -247,10 +270,9 @@
   programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedTCPPorts = [ 22 80 433 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  # networking.firewall.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
