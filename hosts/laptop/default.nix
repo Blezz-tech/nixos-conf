@@ -23,8 +23,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-
-
   networking = {
     hostName = "nixos"; # hostname
     # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -121,13 +119,13 @@
   #   enable = true;
   # };
 
-  #security.acme = {
-  #  acceptTerms = true;
-  #  defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
-  #  
-  #};
-
-
+  # security.acme = {
+  #   acceptTerms = true;
+  #   defaults = {
+  #     email = "blezz-tech+markus.jenya04@yandex.ru";
+  #     validMinDays = 60;
+  #   };
+  # };
 
   services = {
     gitea = {
@@ -137,8 +135,6 @@
       settings = {
         server = {
           # PROTOCOL = "https";
-          DOMAIN = "gitea.blezz-tech.ru";
-          ROOT_URL = "https://gitea.blezz-tech.ru/";
 
           HTTP_PORT = 3218;
         };
@@ -146,17 +142,30 @@
     };
 
 
-    # nginx = {
-    #   virtualHosts = {
-    #     "gitea.blezz-tech.ru" = {
-    #       forceSSL = true;
-    #       enableACME = true;
-    #       locations."/" = {
-    #         proxyPass = "http://localhost:3218";
-    #       };
-    #     };
-    #   };
-    # };
+    nginx = {
+      enable = true;
+      enableReload = true;
+
+      statusPage = true;
+
+      serverTokens = false;
+
+      recommendedGzipSettings = true;
+      recommendedOptimisation = true;
+      recommendedProxySettings = true;
+      recommendedTlsSettings = true;
+
+      virtualHosts = {
+        "gitea.blezz-tech.ru" = {
+          default = true;
+          forceSSL = false;
+          enableACME = false;
+          locations."/" = {
+            proxyPass = "http://localhost:3218";
+          };
+        };
+      };
+    };
 
 
     # gitea-actions-runner.instances = {
@@ -178,7 +187,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
 
   # Чтобы не было ошибок
   programs.dconf.enable = true;
@@ -259,16 +267,16 @@
   services.openssh = {
     enable = true;
     ports = [ 231 ];
-    settings.PasswordAuthentication = true;
+    settings.PasswordAuthentication = false;
     settings.KbdInteractiveAuthentication = false;
   };
 
   programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ 22 80 433 ];
+  networking.firewall.allowedTCPPorts = [ 22 80 433 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
-  # networking.firewall.enable = true;
+  networking.firewall.enable = true;
 
   system.stateVersion = "23.05";
 }
