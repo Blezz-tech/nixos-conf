@@ -97,15 +97,15 @@ in
   security.acme = {
     acceptTerms = true;
     defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
+    defaults.dnsProvider = "regru";
+    defaults.dnsPropagationCheck = false;
+    defaults.credentialsFile = "/var/lib/secrets/acme/acme.secret";
     # defaults.validMinDays = 60;
+    defaults.enableDebugLogs = true;
 
     certs.${hostname} = {
-      domain = "${hostname}";
       extraDomainNames = [ "*.${hostname}" ];
       group = "nginx";
-      dnsProvider = "regru";
-      dnsPropagationCheck = true;
-      credentialsFile = "/run/credentials/nginx-services/acme.secret";
     };
   };
 

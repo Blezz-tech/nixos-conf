@@ -22,8 +22,14 @@
       myErrors = "journalctl -p 3 -xb";
       myGit = "~/git-repos";
       myGenerations = "nix profile history --profile /nix/var/nix/profiles/system";
-      myDeleteGenerations = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
-      myClear = "nix store gc --debug";
+      myDeleteGenerations = ''
+        sudo nix profile wipe-history --profile /nix/var/nix/profiles/system \
+        nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager
+      '';
+      myClear = ''
+        sudo nix store gc \
+        sudo nix store optimise
+      '';
 
       Downloads = "cd ~/Загрузки";
       Images = "cd ~/Изображения";
