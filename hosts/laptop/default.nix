@@ -2,7 +2,9 @@
 , pkgs
 , ...
 }:
-
+let
+  hostname = "blezz-tech.ru";
+in
 {
 
   # Allow unfree packages
@@ -89,12 +91,21 @@
     #media-session.enable = true;
   };
 
+  users.users.nginx.extraGroups = [ "acme" ];
+
+
   security.acme = {
     acceptTerms = true;
-    defaults = {
-      email = "blezz-tech+markus.jenya04@yandex.ru";
-      validMinDays = 60;
+    defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
+    # defaults.validMinDays = 60;
+
+    certs.${hostname} = {
+      domain = "${hostname}";
+      extraDomainNames = [ "*.${hostname}" ];
+      group = "nginx";
       dnsProvider = "regru";
+      dnsPropagationCheck = true;
+      credentialsFile = "/run/credentials/nginx-services/acme.secret";
     };
   };
 
@@ -126,43 +137,32 @@
       recommendedProxySettings = true;
       recommendedTlsSettings = true;
 
-      virtualHosts = {
-        "gitea.blezz-tech.ru" = {
-          serverName = "gitea.blezz-tech.ru";
-          # forceSSL = true;
-          enableACME = true;
-          locations."/" = {
-            proxyPass = "http://localhost:3220";
+      virtualHosts =
+        let
+          def-cfg = cfg: cfg // {
+            # forceSSL = true;
+            enableACME = false;
+            useACMEHost = "${hostname}";
           };
-        };
+        in
+        {
+          "gitea.${hostname}" = def-cfg {
+            locations."/".proxyPass = "http://localhost:3220";
+          };
 
-        "paperless.blezz-tech.ru" = {
-          serverName = "paperless.blezz-tech.ru";
-          # forceSSL = true;
-          enableACME = true;
-          locations."/" = {
-            proxyPass = "http://localhost:3221";
+          "paperless.${hostname}" = def-cfg {
+            locations."/".proxyPass = "http://localhost:3221";
           };
-        };
 
-        "blezz-tech.ru" = {
-          serverName = "blezz-tech.ru";
-          # forceSSL = true;
-          # enableACME = true;
-          locations."/" = {
-            root = "/var/lib/blezz-tech.ru";
+          "${hostname}" = def-cfg {
+            locations."/".root = "/var/lib/blezz-tech.ru";
+            locations."/".index = "index.html";
           };
-        };
 
-        "www.blezz-tech.ru" = {
-          serverName = "www.blezz-tech.ru";
-          # forceSSL = true;
-          # enableACME = true;
-          locations."/" = {
-            root = "/var/lib/blezz-tech.ru";
+          "*.${hostname}" = def-cfg {
+            globalRedirect = hostname;
           };
         };
-      };
     };
 
     # gitea-actions-runner.instances = {
@@ -267,7 +267,7 @@
 
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [ 80 433 ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall.allowedUDPPorts = [ 53 ];
   networking.firewall.enable = true;
 
   system.stateVersion = "23.05";
