@@ -93,7 +93,6 @@ in
 
   users.users.nginx.extraGroups = [ "acme" ];
 
-
   security.acme = {
     acceptTerms = true;
     defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
@@ -164,14 +163,6 @@ in
           };
         };
     };
-
-    # gitea-actions-runner.instances = {
-    #   "test" = {
-    #     token = "";
-    #     enable = true;
-
-    #   };
-    # };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
