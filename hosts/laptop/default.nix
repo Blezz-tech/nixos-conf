@@ -97,10 +97,10 @@ in
     acceptTerms = true;
     defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
     defaults.dnsProvider = "regru";
-    defaults.dnsPropagationCheck = false;
     defaults.credentialsFile = "/var/lib/secrets/acme/acme.secret";
     # defaults.validMinDays = 60;
     defaults.enableDebugLogs = true;
+    defaults.dnsResolver = "194.58.117.15";
 
     certs.${hostname} = {
       extraDomainNames = [ "*.${hostname}" ];
@@ -257,8 +257,8 @@ in
   programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 80 433 ];
-  networking.firewall.allowedUDPPorts = [ 53 ];
+  networking.firewall.allowedTCPPorts = [ 80 443 ];
+  # networking.firewall.allowedUDPPorts = [ ];
   networking.firewall.enable = true;
 
   system.stateVersion = "23.05";
