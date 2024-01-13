@@ -23,11 +23,11 @@
       myGit = "~/git-repos";
       myGenerations = "nix profile history --profile /nix/var/nix/profiles/system";
       myDeleteGenerations = ''
-        sudo nix profile wipe-history --profile /nix/var/nix/profiles/system \
+        sudo nix profile wipe-history --profile /nix/var/nix/profiles/system
         nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager
       '';
       myClear = ''
-        sudo nix store gc \
+        sudo nix store gc
         sudo nix store optimise
       '';
       myServicesOption = "nixos-option services";
