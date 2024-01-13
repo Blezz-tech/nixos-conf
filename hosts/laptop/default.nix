@@ -139,7 +139,7 @@ in
       virtualHosts =
         let
           def-cfg = cfg: cfg // {
-            # forceSSL = true;
+            forceSSL = true;
             enableACME = false;
             useACMEHost = "${hostname}";
           };
