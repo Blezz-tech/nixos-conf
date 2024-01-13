@@ -30,6 +30,7 @@
         sudo nix store gc \
         sudo nix store optimise
       '';
+      myServicesOption = "nixos-option services";
 
       Downloads = "cd ~/Загрузки";
       Images = "cd ~/Изображения";
