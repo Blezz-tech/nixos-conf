@@ -122,12 +122,12 @@ in
       settings.server.HTTP_PORT = 3220;
     };
     
-    kavita = {
-      enable = true;
-      port = 3222;
-      ipAdresses = ["127.0.0.1"];
-      tokenKeyFile = "/var/lib/secrets/kavita/kavita.secret";
-    };
+    # kavita = {
+    #   enable = true;
+    #   port = 3222;
+    #   ipAdresses = ["127.0.0.1"];
+    #   tokenKeyFile = "/var/lib/secrets/kavita/kavita.secret";
+    # };
 
     nginx = {
       enable = true;
@@ -159,9 +159,9 @@ in
             locations."/".proxyPass = "http://localhost:3221";
           };
 
-          "kavita.${hostname}" = def-cfg {
-            locations."/".proxyPass = "http://localhost:3222";
-          };
+          # "kavita.${hostname}" = def-cfg {
+          #   locations."/".proxyPass = "http://localhost:3222";
+          # };
 
           "${hostname}" = def-cfg {
             locations."/".root = "/var/lib/blezz-tech.ru";
