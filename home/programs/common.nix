@@ -68,6 +68,7 @@
     minetest
     wesnoth
     openspades
+    airshipper
 
     # На сортировку
     nixpkgs-fmt
