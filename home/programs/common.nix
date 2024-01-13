@@ -67,6 +67,7 @@
     keeperrl
     minetest
     wesnoth
+    openspades
 
     # На сортировку
     nixpkgs-fmt
