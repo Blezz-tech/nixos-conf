@@ -136,13 +136,13 @@ in
     #   passwordFile = "/var/lib/secrets/photoprism/photoprism.secret";
     # };
 
-    vaultwarden = {
-      enable = true;
-      config = {
-        ROCKET_ADDRESS = "127.0.0.1";
-        ROCKET_PORT = 3224;
-      };
-    };
+    # vaultwarden = {
+    #   enable = true;
+    #   config = {
+    #     ROCKET_ADDRESS = "127.0.0.1";
+    #     ROCKET_PORT = 3224;
+    #   };
+    # };
 
     nginx = {
       enable = true;
@@ -182,9 +182,9 @@ in
           #   locations."/".proxyPass = "http://localhost:3223";
           # };
 
-          "vaultwarden.${hostname}" = def-cfg {
-            locations."/".proxyPass = "http://localhost:3224";
-          };
+          # "vaultwarden.${hostname}" = def-cfg {
+          #   locations."/".proxyPass = "http://localhost:3224";
+          # };
 
           "${hostname}" = def-cfg {
             locations."/".root = "/var/lib/blezz-tech.ru";
