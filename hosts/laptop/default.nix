@@ -129,7 +129,12 @@ in
     #   tokenKeyFile = "/var/lib/secrets/kavita/kavita.secret";
     # };
 
-
+    photoprism = {
+      enable = true;
+      port = 3223;
+      originalsPath = "${config.services.photoprism.storagePath}/data/photos";
+      passwordFile = "/var/lib/secrets/photoprism/photoprism.secret";
+    };
 
     nginx = {
       enable = true;
