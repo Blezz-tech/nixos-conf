@@ -110,16 +110,16 @@ in
 
   services = {
 
-    paperless = {
-      enable = true;
-      port = 3221;
-    };
-
     gitea = {
       enable = true;
       lfs.enable = true;
 
       settings.server.HTTP_PORT = 3220;
+    };
+
+    paperless = {
+      enable = true;
+      port = 3221;
     };
     
     # kavita = {
@@ -128,6 +128,8 @@ in
     #   ipAdresses = ["127.0.0.1"];
     #   tokenKeyFile = "/var/lib/secrets/kavita/kavita.secret";
     # };
+
+
 
     nginx = {
       enable = true;
