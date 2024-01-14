@@ -145,7 +145,7 @@ in
     # };
 
     nginx = {
-      enable = true;
+      # enable = true;
       enableReload = true;
 
       # statusPage = true;
