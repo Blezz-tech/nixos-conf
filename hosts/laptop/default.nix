@@ -91,7 +91,7 @@ in
     #media-session.enable = true;
   };
 
-  users.users.nginx.extraGroups = [ "acme" ];
+  # users.users.nginx.extraGroups = [ "acme" ];
 
   # security.acme = {
   #   acceptTerms = true;
