@@ -121,7 +121,7 @@ in
       enable = true;
       port = 3221;
     };
-    
+
     # kavita = {
     #   enable = true;
     #   port = 3222;
@@ -169,6 +169,10 @@ in
           # "kavita.${hostname}" = def-cfg {
           #   locations."/".proxyPass = "http://localhost:3222";
           # };
+
+          "photoprism.${hostname}" = def-cfg {
+            locations."/".proxyPass = "http://localhost:3223";
+          };
 
           "${hostname}" = def-cfg {
             locations."/".root = "/var/lib/blezz-tech.ru";
