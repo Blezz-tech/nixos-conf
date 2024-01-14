@@ -129,12 +129,12 @@ in
     #   tokenKeyFile = "/var/lib/secrets/kavita/kavita.secret";
     # };
 
-    photoprism = {
-      enable = true;
-      port = 3223;
-      originalsPath = "${config.services.photoprism.storagePath}/data/photos";
-      passwordFile = "/var/lib/secrets/photoprism/photoprism.secret";
-    };
+    # photoprism = {
+    #   enable = true;
+    #   port = 3223;
+    #   originalsPath = "${config.services.photoprism.storagePath}/data/photos";
+    #   passwordFile = "/var/lib/secrets/photoprism/photoprism.secret";
+    # };
 
     nginx = {
       enable = true;
@@ -170,9 +170,9 @@ in
           #   locations."/".proxyPass = "http://localhost:3222";
           # };
 
-          "photoprism.${hostname}" = def-cfg {
-            locations."/".proxyPass = "http://localhost:3223";
-          };
+          # "photoprism.${hostname}" = def-cfg {
+          #   locations."/".proxyPass = "http://localhost:3223";
+          # };
 
           "${hostname}" = def-cfg {
             locations."/".root = "/var/lib/blezz-tech.ru";
