@@ -117,10 +117,10 @@ in
       settings.server.HTTP_PORT = 3220;
     };
 
-    paperless = {
-      enable = true;
-      port = 3221;
-    };
+    # paperless = {
+    #   enable = true;
+    #   port = 3221;
+    # };
 
     # kavita = {
     #   enable = true;
@@ -162,9 +162,9 @@ in
             locations."/".proxyPass = "http://localhost:3220";
           };
 
-          "paperless.${hostname}" = def-cfg {
-            locations."/".proxyPass = "http://localhost:3221";
-          };
+          # "paperless.${hostname}" = def-cfg {
+          #   locations."/".proxyPass = "http://localhost:3221";
+          # };
 
           # "kavita.${hostname}" = def-cfg {
           #   locations."/".proxyPass = "http://localhost:3222";
