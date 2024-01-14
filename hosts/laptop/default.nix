@@ -136,6 +136,10 @@ in
     #   passwordFile = "/var/lib/secrets/photoprism/photoprism.secret";
     # };
 
+    vaultwarden = {
+      enable = true;
+    };
+
     nginx = {
       enable = true;
       enableReload = true;
