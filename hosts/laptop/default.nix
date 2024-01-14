@@ -182,6 +182,10 @@ in
           #   locations."/".proxyPass = "http://localhost:3223";
           # };
 
+          "vaultwarden.${hostname}" = def-cfg {
+            locations."/".proxyPass = "http://localhost:3224";
+          };
+
           "${hostname}" = def-cfg {
             locations."/".root = "/var/lib/blezz-tech.ru";
             locations."/".index = "index.html";
