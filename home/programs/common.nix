@@ -84,7 +84,6 @@
     cachix
     vengi-tools
     ldtk
-    # davinci-resolve
 
     zoom-us
 
@@ -168,6 +167,7 @@
     # haruna
     # renpy
     # reaper
+    # davinci-resolve
 
     # Android
     # android-studio
