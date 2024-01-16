@@ -84,7 +84,7 @@
     cachix
     vengi-tools
     ldtk
-    easyocr
+    # easyocr
     rhvoice
 
     zoom-us
