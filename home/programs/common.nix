@@ -86,6 +86,7 @@
     ldtk
     # easyocr
     rhvoice
+    speechd
 
     zoom-us
 
