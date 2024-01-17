@@ -27,7 +27,7 @@
     insomnia
 
     # 3D редакторы
-    # blender
+    blender
 
     # Музыкальные редакторы
     # musescore
