@@ -87,6 +87,7 @@
     # easyocr
     rhvoice
     speechd
+    figma-linux
 
     zoom-us
 
