@@ -88,6 +88,7 @@
     rhvoice
     speechd
     figma-linux
+    ventoy-full
 
     zoom-us
 
