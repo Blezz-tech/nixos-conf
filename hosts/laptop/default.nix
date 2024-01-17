@@ -117,10 +117,10 @@ in
     #   settings.server.HTTP_PORT = 3220;
     # };
 
-    # paperless = {
-    #   enable = true;
-    #   port = 3221;
-    # };
+    paperless = {
+      enable = true;
+      port = 3221;
+    };
 
     # kavita = {
     #   enable = true;
