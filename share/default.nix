@@ -7,6 +7,7 @@
 }:
 {
   i18n = {
+    supportedLocales = [ "all" ];
     defaultLocale = "ru_RU.UTF-8";
 
     extraLocaleSettings = {
