@@ -64,10 +64,10 @@
     prismlauncher
     # cataclysm-dda
     cmatrix
-    keeperrl
-    minetest
-    wesnoth
-    openspades
+    # keeperrl
+    # minetest
+    # wesnoth
+    # openspades
     airshipper
 
     # На сортировку
