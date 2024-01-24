@@ -33,8 +33,8 @@
       myServicesOption = "nixos-option services";
 
       Desktop = "cd ~/system/desktop";
-      Downloads = "cd ~/download";
-      Images = "cd ~/media/photos";
+      Downloads = "cd ~/downloads";
+      Images = "cd ~/media/images";
       Documents = "cd ~/system/documents";
       Videos = "cd ~/media/videos";
       Music = "cd ~/media/music";
