@@ -32,13 +32,14 @@
       '';
       myServicesOption = "nixos-option services";
 
-      Downloads = "cd ~/Загрузки";
-      Images = "cd ~/Изображения";
-      Documents = "cd ~/Документы";
-      Videos = "cd ~/Видео";
-      Music = "cd ~/Музыка";
-      # Public   = "~/Общедоступные";
-      # Template = "~/Шаблоны";
+      Desktop = "cd ~/system/desktop";
+      Downloads = "cd ~/download";
+      Images = "cd ~/media/photos";
+      Documents = "cd ~/system/documents";
+      Videos = "cd ~/media/videos";
+      Music = "cd ~/media/music";
+      # Public   = "~/system/public";
+      # Template = "~/system/templates";
     };
   };
 }
