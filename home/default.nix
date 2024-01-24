@@ -8,6 +8,7 @@
   imports = [
     ./programs
     ./shell
+    ./XDG
     # ./fcitx5
     # ./i3
     # ./rofi
