@@ -6,12 +6,12 @@
     enable = true;
     createDirectories = true;
     desktop = "${config.home.homeDirectory}/system/desktop";
-    download = "${config.home.homeDirectory}/download";
+    download = "${config.home.homeDirectory}/downloads";
     templates = "${config.home.homeDirectory}/system/templates";
     publicShare = "${config.home.homeDirectory}/system/public";
     documents = "${config.home.homeDirectory}/system/documents";
     music = "${config.home.homeDirectory}/media/music";
-    pictures = "${config.home.homeDirectory}/media/photos";
+    pictures = "${config.home.homeDirectory}/media/images";
     videos = "${config.home.homeDirectory}/media/videos";
 
     extraConfig = {
