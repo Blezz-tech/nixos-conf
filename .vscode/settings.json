@@ -1,5 +1,25 @@
 {
-    "nix.serverPath": "nixd",
     "nix.enableLanguageServer": true,
-
+    "nix.serverPath": "nixd",
+    "nix.serverSettings": {
+        // "nixd": {
+        //     "eval": {
+        //         "target": {
+        //             "args": [
+        //                 "-f",
+        //                 "flake.nix"
+        //             ],
+        //             "installable": ".#nixosConfigurations.laptop-full.config"
+        //         },
+        //         "workers": 5
+        //     },
+        //     "options": {
+        //         "enable": true,
+        //         "target": {
+        //             "args": [],
+        //             "installable": ".#nixosConfigurations.laptop-full.options"
+        //         }
+        //     }
+        // }
+    }
 }
