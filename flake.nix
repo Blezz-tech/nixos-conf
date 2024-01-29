@@ -28,9 +28,9 @@
     {
       nixosConfigurations = {
         "laptop-full" = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/laptop
-            sops-nix.nixosModules.sops
             home-manager.nixosModules.home-manager
             {
               home-manager = {

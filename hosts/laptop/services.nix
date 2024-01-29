@@ -1,11 +1,29 @@
 { config
 , pkgs
+, inputs
 , ...
 }:
 let
   hostname = "blezz-tech.ru";
 in
 {
+
+  imports = [
+    inputs.sops-nix.nixosModules.sops
+  ];
+
+  sops = {
+    defaultSopsFile = ./secrets/secrets.yaml;
+    defaultSopsFormat = "yaml";
+
+    age.keyFile = "/home/user/.config/sops/age/keys.txt";
+
+    secrets = {
+      "example-key" = {};
+      "myservice/my_subdir/my_secret" = {};
+    };
+  };
+
 
   # users.users.nginx.extraGroups = [ "acme" ];
 
