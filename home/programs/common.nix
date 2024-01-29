@@ -72,6 +72,7 @@
 
     # На сортировку
     nixpkgs-fmt
+    nixd
     go-task
     cargo-make
     gnumake
