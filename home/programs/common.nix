@@ -92,6 +92,7 @@
     ventoy-full
     appimage-run
     age
+    sops
 
     zoom-us
 
