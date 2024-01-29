@@ -19,9 +19,10 @@ in
     age.keyFile = "/home/jenya/.config/sops/age/keys.txt";
 
     secrets = {
-      "server/acme" = {};
-      "server/kavita" = {};
-      "server/photoprism" = {};    
+      "server/acme" = { };
+      "server/kavita" = { };
+      "server/photoprism" = { };
+      "server/gitea/lol-simple-image-generator" = { };
     };
   };
 
@@ -32,7 +33,7 @@ in
     acceptTerms = true;
     defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
     defaults.dnsProvider = "regru";
-    defaults.credentialsFile = "/run/secrets/server/acme";
+    defaults.credentialsFile = /run/secrets/server/acme;
     # defaults.validMinDays = 60;
     defaults.enableDebugLogs = true;
     defaults.dnsResolver = "194.58.117.15";
@@ -52,6 +53,18 @@ in
       settings.server.HTTP_PORT = 3220;
     };
 
+    gitea-actions-runner.instances = {
+      "lol-simple-image-generator" = {
+        enable = true;
+        url = "gitea-blezz-tech.ru";
+        name = "lol-simple-image-generator";
+        tokenFile = /run/secrets/server/gitea/lol-simple-image-generator;
+        labels = [
+          "ubuntu-latest:docker://node:18-bullseye"
+        ];
+      };
+    };
+
     # paperless = {
     #   enable = true;
     #   port = 3221;
@@ -61,14 +74,14 @@ in
     #   enable = true;
     #   port = 3222;
     #   ipAdresses = ["127.0.0.1"];
-    #   tokenKeyFile = "/run/secrets/server/kavita";
+    #   tokenKeyFile = /run/secrets/server/kavita;
     # };
 
     # photoprism = {
     #   enable = true;
     #   port = 3223;
     #   originalsPath = "${config.services.photoprism.storagePath}/data/photos";
-    #   passwordFile = "/run/secrets/server/photoprism";
+    #   passwordFile = /run/secrets/server/photoprism;
     # };
 
     # vaultwarden = {
