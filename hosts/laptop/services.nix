@@ -45,12 +45,12 @@ in
 
   services = {
 
-    # gitea = {
-    #   enable = true;
-    #   lfs.enable = true;
+    gitea = {
+      enable = true;
+      lfs.enable = true;
 
-    #   settings.server.HTTP_PORT = 3220;
-    # };
+      settings.server.HTTP_PORT = 3220;
+    };
 
     # paperless = {
     #   enable = true;
@@ -80,7 +80,7 @@ in
     # };
 
     nginx = {
-      # enable = true;
+      enable = true;
       enableReload = true;
 
       # statusPage = true;
@@ -101,9 +101,9 @@ in
           };
         in
         {
-          # "gitea.${hostname}" = def-cfg {
-          #   locations."/".proxyPass = "http://localhost:3220";
-          # };
+          "gitea.${hostname}" = def-cfg {
+            locations."/".proxyPass = "http://localhost:3220";
+          };
 
           # "paperless.${hostname}" = def-cfg {
           #   locations."/".proxyPass = "http://localhost:3221";
