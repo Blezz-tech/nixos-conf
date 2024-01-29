@@ -91,6 +91,7 @@
     figma-linux
     ventoy-full
     appimage-run
+    age
 
     zoom-us
 
