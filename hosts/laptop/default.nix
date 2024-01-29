@@ -182,7 +182,7 @@
   programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ 80 443 ];
+  networking.firewall.allowedTCPPorts = [ 80 443 ];
   # networking.firewall.allowedUDPPorts = [ ];
   networking.firewall.enable = true;
 
