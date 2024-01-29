@@ -90,6 +90,7 @@
     speechd
     figma-linux
     ventoy-full
+    appimage-run
 
     zoom-us
 
