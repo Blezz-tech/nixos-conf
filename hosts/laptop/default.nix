@@ -179,7 +179,7 @@
     settings.KbdInteractiveAuthentication = false;
   };
 
-  programs.ssh.startAgent = true;
+  # programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ 80 443 ];
