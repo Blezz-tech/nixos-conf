@@ -94,7 +94,7 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" "docker" ];
     packages = [ ];
   };
 
