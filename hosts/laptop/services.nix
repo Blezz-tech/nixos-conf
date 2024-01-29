@@ -32,7 +32,7 @@ in
   #   acceptTerms = true;
   #   defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
   #   defaults.dnsProvider = "regru";
-  #   defaults.credentialsFile = "/var/lib/secrets/acme/acme.secret";
+  #   defaults.credentialsFile = "/run/secrets/server/acme";
   #   # defaults.validMinDays = 60;
   #   defaults.enableDebugLogs = true;
   #   defaults.dnsResolver = "194.58.117.15";
@@ -61,14 +61,14 @@ in
     #   enable = true;
     #   port = 3222;
     #   ipAdresses = ["127.0.0.1"];
-    #   tokenKeyFile = "/var/lib/secrets/kavita/kavita.secret";
+    #   tokenKeyFile = "/run/secrets/server/kavita";
     # };
 
     # photoprism = {
     #   enable = true;
     #   port = 3223;
     #   originalsPath = "${config.services.photoprism.storagePath}/data/photos";
-    #   passwordFile = "/var/lib/secrets/photoprism/photoprism.secret";
+    #   passwordFile = "/run/secrets/server/photoprism";
     # };
 
     # vaultwarden = {
