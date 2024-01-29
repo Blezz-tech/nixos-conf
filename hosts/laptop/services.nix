@@ -26,22 +26,22 @@ in
   };
 
 
-  # users.users.nginx.extraGroups = [ "acme" ];
+  users.users.nginx.extraGroups = [ "acme" ];
 
-  # security.acme = {
-  #   acceptTerms = true;
-  #   defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
-  #   defaults.dnsProvider = "regru";
-  #   defaults.credentialsFile = "/run/secrets/server/acme";
-  #   # defaults.validMinDays = 60;
-  #   defaults.enableDebugLogs = true;
-  #   defaults.dnsResolver = "194.58.117.15";
+  security.acme = {
+    acceptTerms = true;
+    defaults.email = "blezz-tech+markus.jenya04@yandex.ru";
+    defaults.dnsProvider = "regru";
+    defaults.credentialsFile = "/run/secrets/server/acme";
+    # defaults.validMinDays = 60;
+    defaults.enableDebugLogs = true;
+    defaults.dnsResolver = "194.58.117.15";
 
-  #   certs.${hostname} = {
-  #     extraDomainNames = [ "*.${hostname}" ];
-  #     group = "nginx";
-  #   };
-  # };
+    certs.${hostname} = {
+      extraDomainNames = [ "*.${hostname}" ];
+      group = "nginx";
+    };
+  };
 
   services = {
 
