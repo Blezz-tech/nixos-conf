@@ -12,6 +12,11 @@ in
     inputs.sops-nix.nixosModules.sops
   ];
 
+  virtualisation.docker = {
+    enableOnBoot = true;
+    enable = true;
+  };
+
   sops = {
     defaultSopsFile = ../../secrets/secrets.yaml;
     defaultSopsFormat = "yaml";
@@ -54,14 +59,14 @@ in
     };
 
     gitea-actions-runner.instances = {
-      "lol-simple-image-generator" = {
+      "1" = {
         enable = true;
-        url = "gitea-blezz-tech.ru";
-        name = "lol-simple-image-generator";
-        tokenFile = /run/secrets/server/gitea/lol-simple-image-generator;
+        url = "https://gitea.blezz-tech.ru";
+        name = "ci";
         labels = [
-          "ubuntu-latest:docker://node:18-bullseye"
+          "ubuntu-latest:docker://node:18-bullseye"          
         ];
+        tokenFile = /run/secrets/server/gitea/lol-simple-image-generator;
       };
     };
 
