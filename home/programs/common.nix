@@ -93,6 +93,7 @@
     appimage-run
     age
     sops
+    imagemagick
 
     zoom-us
 
