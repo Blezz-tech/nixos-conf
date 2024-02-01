@@ -118,6 +118,8 @@ in
       recommendedProxySettings = true;
       recommendedTlsSettings = true;
 
+      clientMaxBodySize = "25M";
+
       virtualHosts =
         let
           def-cfg = cfg: cfg // {
