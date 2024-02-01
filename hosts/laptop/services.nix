@@ -55,7 +55,15 @@ in
       enable = true;
       lfs.enable = true;
 
-      settings.server.HTTP_PORT = 3220;
+      appName = "Blezz-tech gitea server";
+      settings = {
+        session.COOKUE_SECURE = true;
+        service.DISABLE_REGISTRATION = true;
+        server.DOOMAIN = "gitea.blezz-tech.ru";
+        server.HTTP_PORT = 3220;
+        server.ROOT_URL = "https://gitea.blezz-tech.ru/";
+      };
+
     };
 
     gitea-actions-runner.instances = {
@@ -66,17 +74,6 @@ in
         tokenFile = /run/secrets/server/gitea/lol-simple-image-generator;
         labels = [
           "ubuntu-latest:docker://node:18-bullseye"
-          "native:host"
-        ];
-        hostPackages = with pkgs; [
-          pandoc
-          bash
-          coreutils
-          curl
-          gawk
-          gitMinimal
-          gnused
-          wget
         ];
       };
     };
