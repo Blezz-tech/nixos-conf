@@ -68,7 +68,7 @@ in
           "ubuntu-latest:docker://node:18-bullseye"
           "native:host"
         ];
-        hostPackges = with pkgs; [
+        hostPackages = with pkgs; [
           pandoc
           bash
           coreutils
