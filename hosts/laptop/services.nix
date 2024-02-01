@@ -59,14 +59,25 @@ in
     };
 
     gitea-actions-runner.instances = {
-      "1" = {
+      "3" = {
         enable = true;
         url = "https://gitea.blezz-tech.ru";
         name = "ci";
-        labels = [
-          "ubuntu-latest:docker://node:18-bullseye"          
-        ];
         tokenFile = /run/secrets/server/gitea/lol-simple-image-generator;
+        labels = [
+          "ubuntu-latest:docker://node:18-bullseye"
+          "native:host"
+        ];
+        hostPackges = with pkgs; [
+          pandoc
+          bash
+          coreutils
+          curl
+          gawk
+          gitMinimal
+          gnused
+          wget
+        ];
       };
     };
 
