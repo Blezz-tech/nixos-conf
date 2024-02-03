@@ -74,6 +74,7 @@ in
         tokenFile = /run/secrets/server/gitea/lol-simple-image-generator;
         labels = [
           "ubuntu-latest:docker://node:18-bullseye"
+          "nixos-minimal:docker://gitea.blezz-tech.ru/blezz-tech/actions"
         ];
       };
     };
