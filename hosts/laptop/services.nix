@@ -118,7 +118,7 @@ in
       recommendedProxySettings = true;
       recommendedTlsSettings = true;
 
-      clientMaxBodySize = "25M";
+      clientMaxBodySize = "1024M";
 
       virtualHosts =
         let
