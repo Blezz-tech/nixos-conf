@@ -67,7 +67,7 @@ in
     };
 
     gitea-actions-runner.instances = {
-      "3" = {
+      "4" = {
         enable = true;
         url = "https://gitea.blezz-tech.ru";
         name = "ci";
