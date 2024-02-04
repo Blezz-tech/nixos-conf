@@ -76,7 +76,7 @@
     go-task
     cargo-make
     gnumake
-    nushell
+    nushellFull
     pandoc
     tiled
     unityhub
