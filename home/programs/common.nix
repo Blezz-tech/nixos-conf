@@ -94,7 +94,7 @@
     age
     sops
     imagemagick
-
+    crow-translate
     zoom-us
 
     # here is some command line tools I use frequently
