@@ -97,6 +97,8 @@
     crow-translate
     zoom-us
     element-desktop
+    poppler_utils
+    ocrmypdf
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
