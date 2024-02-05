@@ -157,6 +157,9 @@
     # Шрифты windows
     corefonts
     vistafonts
+
+    # Mono
+    hack-font
   ];
 
   environment.variables.EDITOR = "vim";
