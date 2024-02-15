@@ -30,6 +30,10 @@
         sudo nix store gc
         sudo nix store optimise
       '';
+      myClearHistory = ''
+        sudo journalctl --rotate
+        sudo journalctl --vacuum-time=1s
+      '';
       myServicesOption = "nixos-option services";
 
       Desktop = "cd ~/system/desktop";
