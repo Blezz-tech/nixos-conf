@@ -108,17 +108,20 @@ in
 
     home-assistant = {
       enable = true;
-      # extraComponents = [
-      #   # Components required to complete the onboarding
-      #   "esphome"
-      #   "met"
-      #   "radio_browser"
-      # ];
+      extraComponents = [
+        # Components required to complete the onboarding
+        "esphome"
+        "met"
+        "radio_browser"
+      ];
       config = {
         homeassistant = {
           name = "home assistant";
           temperature_unit = "C";
           unit_system = "metric";
+          currency = "RUB";
+          country = "RU";
+          # language = "";
         };
         http = {
           server_host = "127.0.0.1";
@@ -176,6 +179,7 @@ in
 
           "home.${hostname}" = def-cfg {
             locations."/".proxyPass = "http://localhost:3225";
+            locations."/".proxyWebsockets = true;
           };
 
           "${hostname}" = def-cfg {
