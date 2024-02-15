@@ -106,6 +106,25 @@ in
     #   };
     # };
 
+    home-assistant = {
+      enable = true;
+      # extraComponents = [
+      #   # Components required to complete the onboarding
+      #   "esphome"
+      #   "met"
+      #   "radio_browser"
+      # ];
+      config = {
+        http = {
+          server_host = "127.0.0.1";
+          server_port = 3225;
+          use_x_forwarded_for = true;
+          trusted_proxies = [ "127.0.0.1" ];
+        };
+        # default_config = {};
+      };
+    };
+
     nginx = {
       enable = true;
       enableReload = true;
@@ -149,6 +168,10 @@ in
           # "vaultwarden.${hostname}" = def-cfg {
           #   locations."/".proxyPass = "http://localhost:3224";
           # };
+
+          "home.${hostname}" = def-cfg {
+            locations."/".proxyPass = "http://localhost:3225";
+          };
 
           "${hostname}" = def-cfg {
             locations."/".root = "/var/lib/blezz-tech.ru";

@@ -10,6 +10,8 @@
   # Allow electron for obsidian
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
+
+    "openssl-1.1.1w" # for home assistant
   ];
 
   nix.settings = {
