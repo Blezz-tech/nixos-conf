@@ -115,16 +115,18 @@ in
       #   "radio_browser"
       # ];
       config = {
-        name = "home assistant";
-        temperature_unit = "C";
-        unit_system = "metric";
+        homeassistant = {
+          name = "home assistant";
+          temperature_unit = "C";
+          unit_system = "metric";
+        };
         http = {
           server_host = "127.0.0.1";
           server_port = 3225;
           use_x_forwarded_for = true;
           trusted_proxies = [ "127.0.0.1" ];
         };
-        default_config = {};
+        default_config = { };
       };
     };
 
