@@ -21,7 +21,7 @@
 
   imports = [
     ./hardware-configuration.nix
-    ./services.nix
+    # ./services.nix
     ../../share/default.nix
   ];
 
