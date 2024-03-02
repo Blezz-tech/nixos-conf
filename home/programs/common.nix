@@ -78,19 +78,19 @@
     gnumake
     nushellFull
     pandoc
-    tiled
+    # tiled
     unityhub
     pdfarranger
     ihp-new
     cachix
-    vengi-tools
-    ldtk
+    # vengi-tools
+    # ldtk
     # easyocr
-    rhvoice
-    speechd
-    figma-linux
+    # rhvoice
+    # speechd
+    # figma-linux
     ventoy-full
-    appimage-run
+    # appimage-run
     age
     sops
     imagemagick
@@ -99,7 +99,7 @@
     element-desktop
     # poppler_utils
     # ocrmypdf
-    stack
+    # stack
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
