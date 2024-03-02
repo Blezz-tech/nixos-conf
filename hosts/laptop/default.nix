@@ -51,9 +51,17 @@
     enable = true;
     videoDrivers = [ "amdgpu" ];
 
-    desktopManager.plasma5.enable = true;
+    # desktopManager.plasma5.enable = true;
+
+    desktopManager.plasma6 = {
+      enable = true;
+      # enableQt5Integration = true;
+    };
+
     displayManager = {
-      sddm.enable = true;
+      defaultSession = "plasma";
+      sddm.wayland.enable = true;
+      # sddm.enable = true;
       autoLogin = {
         enable = true;
         user = "jenya";
