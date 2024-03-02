@@ -97,6 +97,7 @@
     crow-translate
     zoom-us
     element-desktop
+    omegat
     # poppler_utils
     # ocrmypdf
     # stack
