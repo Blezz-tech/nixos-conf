@@ -65,8 +65,8 @@
 
 
     # Configure keymap in X11
-    layout = "us,ru";
-    xkbVariant = "";
+    xkb.layout = "us,ru";
+    xkb.variant = "";
   };
 
   # Enable CUPS to print documents.
