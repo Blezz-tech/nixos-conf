@@ -54,9 +54,6 @@
     # Браузеры
     vivaldi
 
-    # База знаний
-    obsidian
-
     # Запись видео и потоковое вещание
     # obs-studio
 
@@ -170,24 +167,8 @@
     usbutils # lsusb
 
     # Не нужно
-    # zotero
-    # brave
     # github-desktop
-    # lyx
-    # anki
-    # rstudioWrapper
     # sqlitebrowser
-    # helix
     # cmake
-    # haruna
-    # renpy
-    # reaper
-    # davinci-resolve
-
-    # Android
-    # android-studio
-
-    # Игровые движки
-    # godot_4
   ];
 }
