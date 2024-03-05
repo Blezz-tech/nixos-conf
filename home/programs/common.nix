@@ -63,11 +63,12 @@
     cmatrix
     # keeperrl
     # minetest
-    # wesnoth
+    wesnoth
     # openspades
     airshipper
 
     # На сортировку
+    python3
     nixpkgs-fmt
     nixd
     go-task
