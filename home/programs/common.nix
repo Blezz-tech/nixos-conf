@@ -70,6 +70,8 @@
     # На сортировку
     python3
     nodejs
+    jetbrains.pycharm-community
+
     nixpkgs-fmt
     nixd
     go-task
