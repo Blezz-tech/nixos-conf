@@ -69,6 +69,7 @@
 
     # На сортировку
     python3
+    nodejs
     nixpkgs-fmt
     nixd
     go-task
