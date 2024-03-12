@@ -74,7 +74,7 @@
     sqlitebrowser
 
     nixpkgs-fmt
-    nixd
+    # nixd
     go-task
     cargo-make
     gnumake

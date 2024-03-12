@@ -134,7 +134,6 @@
     wireshark
     pwgen
 
-    nixd
     home-manager
 
     steam-run
