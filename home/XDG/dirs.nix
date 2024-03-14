@@ -5,11 +5,11 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
-    desktop = "${config.home.homeDirectory}/system/desktop";
+    desktop = "${config.home.homeDirectory}/media/desktop";
     download = "${config.home.homeDirectory}/downloads";
-    templates = "${config.home.homeDirectory}/system/templates";
-    publicShare = "${config.home.homeDirectory}/system/public";
-    documents = "${config.home.homeDirectory}/system/documents";
+    templates = "${config.home.homeDirectory}/media/templates";
+    publicShare = "${config.home.homeDirectory}/media/public";
+    documents = "${config.home.homeDirectory}/media/documents";
     music = "${config.home.homeDirectory}/media/music";
     pictures = "${config.home.homeDirectory}/media/images";
     videos = "${config.home.homeDirectory}/media/videos";
