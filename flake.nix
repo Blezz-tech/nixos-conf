@@ -52,28 +52,6 @@
             ./hosts/laptop
           ];
         };
-        # "tv-full" = nixpkgs.lib.nixosSystem {
-        #   inherit system;
-        #   inherit specialArgs;
-        #   modules = [
-        #     ./hosts/tv
-        #     home-manager.nixosModules.home-manager
-        #     {
-        #       home-manager = {
-        #         useGlobalPkgs = true;
-        #         useUserPackages = true;
-
-        #         users.tv = import ./home;
-        #         extraSpecialArgs = specialArgs;
-        #       };
-        #     }
-        #   ];
-        # };
-        "tv-minimal" = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./hosts/tv
-          ];
-        };
       };
     };
 }
