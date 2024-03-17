@@ -132,6 +132,7 @@
     vscode
     wireshark
     pwgen
+    keepassxc
 
     home-manager
 
