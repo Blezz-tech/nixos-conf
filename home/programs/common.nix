@@ -100,6 +100,7 @@
     zoom-us
     element-desktop
     omegat
+    whatsapp-for-linux
     # poppler_utils
     # ocrmypdf
     # stack
