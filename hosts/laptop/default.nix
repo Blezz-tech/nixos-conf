@@ -192,9 +192,9 @@
   programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 80 443 22 ];
+  # networking.firewall.allowedTCPPorts = [ 80 443 22 ];
   # networking.firewall.allowedUDPPorts = [ ];
-  networking.firewall.enable = true;
+  # networking.firewall.enable = true;
 
   system.stateVersion = "23.05";
 }
