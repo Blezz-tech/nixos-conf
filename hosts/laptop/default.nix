@@ -7,7 +7,7 @@
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
 
   nixpkgs.config.permittedInsecurePackages = [
-    
+    "nix-2.16.2" # for nixd
   ];
 
   nix.settings = {
