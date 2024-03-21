@@ -7,9 +7,7 @@
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
 
   nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0" # Allow electron for obsidian
-
-    "openssl-1.1.1w" # for home assistant
+    
   ];
 
   nix.settings = {
