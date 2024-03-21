@@ -70,7 +70,7 @@
     # На сортировку
     python3
     nodejs
-    jetbrains.pycharm-community
+    # jetbrains.pycharm-community
     sqlitebrowser
 
     nixpkgs-fmt
