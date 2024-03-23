@@ -115,7 +115,7 @@
 
     # uwufetch
     neofetch
-    nnn # terminal file manager
+    # nnn # terminal file manager
 
     # archives
     zip
@@ -125,20 +125,20 @@
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
-    jq # A lightweight and flexible command-line JSON processor
-    yq-go # yaml processer https://github.com/mikefarah/yq
+    # jq # A lightweight and flexible command-line JSON processor
+    # yq-go # yaml processer https://github.com/mikefarah/yq
     eza # A modern replacement for ‘ls’
     fzf # A command-line fuzzy finder
 
     # networking tools
-    mtr # A network diagnostic tool
-    iperf3
-    dnsutils # `dig` + `nslookup`
-    ldns # replacement of `dig`, it provide the command `drill`
-    aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    socat # replacement of openbsd-netcat
-    nmap # A utility for network discovery and security auditing
-    ipcalc # it is a calculator for the IPv4/v6 addresses
+    # mtr # A network diagnostic tool
+    # iperf3
+    # dnsutils # `dig` + `nslookup`
+    # ldns # replacement of `dig`, it provide the command `drill`
+    # aria2 # A lightweight multi-protocol & multi-source command-line download utility
+    # socat # replacement of openbsd-netcat
+    # nmap # A utility for network discovery and security auditing
+    # ipcalc # it is a calculator for the IPv4/v6 addresses
 
     # misc
     cowsay
