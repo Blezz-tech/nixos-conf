@@ -75,14 +75,14 @@
 
     nixpkgs-fmt
     nixd
-    go-task
-    cargo-make
+    # go-task
+    # cargo-make
     gnumake
     nushellFull
     pandoc
     # tiled
     unityhub
-    pdfarranger
+    # pdfarranger
     ihp-new
     cachix
     # vengi-tools
