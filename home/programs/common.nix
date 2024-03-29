@@ -66,6 +66,16 @@
     wesnoth
     # openspades
     airshipper
+    kdePackages.kolf
+    kdePackages.kajongg
+    kdePackages.kmahjongg
+    kdePackages.knights
+    kdePackages.knavalbattle
+    kdePackages.ksirk
+    kdePackages.kmines
+    kdePackages.picmi
+    kdePackages.ksudoku
+    kdePackages.kpat
 
     # На сортировку
     python3
