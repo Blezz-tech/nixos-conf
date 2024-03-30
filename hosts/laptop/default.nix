@@ -45,20 +45,20 @@
 
   time.timeZone = "Europe/Moscow";
 
-  services.desktopManager.plasma6 = {
-      enable = true;
-      # enableQt5Integration = true;
-  };
+  # services.desktopManager.plasma6 = {
+  #     enable = true;
+  #     # enableQt5Integration = true;
+  # };
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
 
-    # desktopManager.plasma5.enable = true;
+    desktopManager.plasma5.enable = true;
 
     displayManager = {
-      defaultSession = "plasma";
-      sddm.wayland.enable = true;
-      # sddm.enable = true;
+      # defaultSession = "plasma";
+      # sddm.wayland.enable = true;
+      sddm.enable = true;
       autoLogin = {
         enable = true;
         user = "jenya";
