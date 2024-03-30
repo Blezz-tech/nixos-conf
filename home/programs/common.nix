@@ -71,7 +71,7 @@
     kdePackages.kmahjongg
     kdePackages.knights
     kdePackages.knavalbattle
-    kdePackages.ksirk
+    # kdePackages.ksirk
     kdePackages.kmines
     kdePackages.picmi
     kdePackages.ksudoku
