@@ -78,6 +78,7 @@
 
     # libsForQt5.ksirk
     # libsForQt5.kajongg
+    # libsForQt5.kwordquiz
 
     # На сортировку
     python3
@@ -120,7 +121,6 @@
     fractal
     tor-browser
     # kalzium
-    libsForQt5.kwordquiz
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
