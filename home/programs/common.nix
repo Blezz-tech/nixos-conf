@@ -67,7 +67,7 @@
     # openspades
     airshipper
     kdePackages.kolf
-    kdePackages.kajongg
+    # kdePackages.kajongg
     kdePackages.kmahjongg
     kdePackages.knights
     kdePackages.knavalbattle
