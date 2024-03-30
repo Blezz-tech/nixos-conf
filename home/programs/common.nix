@@ -66,16 +66,18 @@
     wesnoth
     # openspades
     airshipper
-    kdePackages.kolf
-    # kdePackages.kajongg
-    kdePackages.kmahjongg
-    kdePackages.knights
-    kdePackages.knavalbattle
-    # kdePackages.ksirk
-    kdePackages.kmines
-    kdePackages.picmi
-    kdePackages.ksudoku
-    kdePackages.kpat
+    
+    libsForQt5.kolf
+    libsForQt5.kmahjongg
+    libsForQt5.knights
+    libsForQt5.knavalbattle
+    libsForQt5.kmines
+    libsForQt5.picmi
+    libsForQt5.ksudoku
+    libsForQt5.kpat
+
+    # libsForQt5.ksirk
+    # libsForQt5.kajongg
 
     # На сортировку
     python3
@@ -114,11 +116,11 @@
     # ocrmypdf
     # stack
     nheko
-    kdePackages.neochat
+    libsForQt5.neochat
     fractal
     tor-browser
     # kalzium
-    kdePackages.kwordquiz
+    libsForQt5.kwordquiz
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
