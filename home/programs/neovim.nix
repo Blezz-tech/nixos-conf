@@ -1,12 +1,10 @@
 { pkgs
 , ...
 }: {
-
-
-  programs.nixvim = {
+  programs.neovim = {
     enable = true;
-
-    colorschemes.gruv.enable = true;
-    plugins.lightline.enable = true;
+    viAlias = true;
+    vimAlias = true;
+    
   };
 }

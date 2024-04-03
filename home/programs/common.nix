@@ -49,7 +49,6 @@
     kate
     # libreoffice
     onlyoffice-bin
-    neovim
 
     # Браузеры
     vivaldi

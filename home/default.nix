@@ -7,7 +7,6 @@
 {
 
   imports = [
-    # inputs.nixvim.homeManagerModules.nixvim
     ./programs
     ./shell
     ./XDG
