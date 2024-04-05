@@ -46,6 +46,7 @@
         enable = true;
       };
       telescope.enable = true;
+      lazy.enable = true;
     };
   };
 
