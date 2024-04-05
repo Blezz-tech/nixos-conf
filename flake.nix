@@ -14,6 +14,11 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -21,6 +26,7 @@
     , nixpkgs
     , home-manager
     , sops-nix
+    , nixvim
     , ...
     }@inputs:
     let
@@ -37,8 +43,8 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-
                 users.jenya = import ./home;
+                extraSpecialArgs.inputs = inputs;
               };
             }
           ];
