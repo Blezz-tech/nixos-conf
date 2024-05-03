@@ -130,6 +130,7 @@
     wireshark
     pwgen
     keepassxc
+    parted
 
     home-manager
 
