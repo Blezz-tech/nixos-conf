@@ -117,6 +117,10 @@
 
   programs.wireshark.enable = true;
 
+  environment.plasma6.excludePackages = with pkgs; [
+    kdePackages.konsole
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
