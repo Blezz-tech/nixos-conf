@@ -5,6 +5,15 @@
 
   # programs.helix.enable = true;
 
+  programs.chromium = {
+    enable = true;
+    package = pkgs.vivaldi;
+    commandLineArgs = [
+      "--disable-features=AllowQt --enable-blink-features=MiddleClickAutoscroll"
+      "--enable-blink-features=MiddleClickAutoscroll"
+    ];
+  };
+
   programs.direnv = {
     enable = true;
     enableZshIntegration = true;
@@ -49,9 +58,6 @@
     kate
     # libreoffice
     onlyoffice-bin
-
-    # Браузеры
-    vivaldi
 
     # Запись видео и потоковое вещание
     # obs-studio
