@@ -55,23 +55,22 @@
 
     # desktopManager.plasma5.enable = true;
 
-    displayManager = {
-      defaultSession = "plasma";
-      sddm.wayland.enable = true;
-      # sddm.enable = true;
-      autoLogin = {
-        enable = true;
-        user = "jenya";
-      };
-
-      # Enable touchpad support (enabled default in most desktopManager).
-      # libinput.enable = true;
-    };
-
-
     # Configure keymap in X11
     xkb.layout = "us,ru";
     xkb.variant = "";
+  };
+
+  services.displayManager = {
+    defaultSession = "plasma";
+    sddm.wayland.enable = true;
+    # sddm.enable = true;
+    autoLogin = {
+      enable = true;
+      user = "jenya";
+    };
+
+    # Enable touchpad support (enabled default in most desktopManager).
+    # libinput.enable = true;
   };
 
   # Enable CUPS to print documents.
