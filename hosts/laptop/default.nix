@@ -46,8 +46,8 @@
   time.timeZone = "Europe/Moscow";
 
   services.desktopManager.plasma6 = {
-      enable = true;
-      # enableQt5Integration = true;
+    enable = true;
+    # enableQt5Integration = true;
   };
   services.xserver = {
     enable = true;
@@ -120,6 +120,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    alacritty
+
     xdg_utils
     git
     wget
