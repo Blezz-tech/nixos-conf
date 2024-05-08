@@ -116,8 +116,8 @@
 
   programs.wireshark.enable = true;
 
-  environment.plasma6.excludePackages = with pkgs; [
-    kdePackages.konsole
+  environment.plasma6.excludePackages = [
+    pkgs.kdePackages.konsole
   ];
 
   # List packages installed in system profile. To search, run:
