@@ -23,7 +23,7 @@
         "laptop-full" = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
-            ./hosts/laptop
+            ./nixos
             home-manager.nixosModules.home-manager
             {
               home-manager = {
@@ -37,7 +37,7 @@
         };
         "laptop-minimal" = nixpkgs.lib.nixosSystem {
           modules = [
-            ./hosts/laptop
+            ./nixos
           ];
         };
       };
