@@ -1,6 +1,4 @@
-{ config
-, ...
-}: {
+{
   imports = [
     ./starship.nix
     ./alacritty.nix
