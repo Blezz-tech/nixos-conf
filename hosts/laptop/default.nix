@@ -4,6 +4,10 @@
 }:
 {
 
+  # boot.kernel.sysctl = {
+    
+  # };
+
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
 
   nixpkgs.config.permittedInsecurePackages = [
