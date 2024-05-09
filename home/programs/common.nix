@@ -72,14 +72,14 @@
     # openspades
     airshipper
     
-    kdePackages.kolf
-    kdePackages.kmahjongg
-    kdePackages.knights
-    kdePackages.knavalbattle
-    kdePackages.kmines
-    kdePackages.picmi
-    kdePackages.ksudoku
-    kdePackages.kpat
+    # kdePackages.kolf
+    # kdePackages.kmahjongg
+    # kdePackages.knights
+    # kdePackages.knavalbattle
+    # kdePackages.kmines
+    # kdePackages.picmi
+    # kdePackages.ksudoku
+    # kdePackages.kpat
 
     # kdePackages.ksirk
     # kdePackages.kajongg
@@ -101,7 +101,7 @@
     # tiled
     unityhub
     # pdfarranger
-    ihp-new
+    # ihp-new
     cachix
     # vengi-tools
     # ldtk
@@ -109,24 +109,24 @@
     # rhvoice
     # speechd
     # figma-linux
-    ventoy-full
+    # ventoy-full
     # appimage-run
     age
     sops
     imagemagick
-    crow-translate
+    # crow-translate
     zoom-us
-    element-desktop
+    # element-desktop
     omegat
     # poppler_utils
     # ocrmypdf
     # stack
-    nheko
-    kdePackages.neochat
-    fractal
+    # nheko
+    # kdePackages.neochat
+    # fractal
     tor-browser
     # kalzium
-    rustdesk
+    # rustdesk
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
