@@ -4,12 +4,12 @@
 {
 
   # boot.kernel.sysctl = {
-    
+
   # };
 
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
 
-  nixpkgs.config.permittedInsecurePackages = [];
+  nixpkgs.config.permittedInsecurePackages = [ ];
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
@@ -67,8 +67,8 @@
   time.timeZone = "Europe/Moscow";
 
   services.desktopManager.plasma6.enable = true;
-  environment.plasma6.excludePackages = [
-    pkgs.kdePackages.konsole
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    konsole
   ];
 
   services.xserver = {
