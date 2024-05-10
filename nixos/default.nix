@@ -66,10 +66,11 @@
 
   time.timeZone = "Europe/Moscow";
 
-  services.desktopManager.plasma6 = {
-    enable = true;
-    # enableQt5Integration = true;
-  };
+  services.desktopManager.plasma6.enable = true;
+  environment.plasma6.excludePackages = [
+    pkgs.kdePackages.konsole
+  ];
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
@@ -136,10 +137,6 @@
   };
 
   programs.wireshark.enable = true;
-
-  environment.plasma6.excludePackages = [
-    pkgs.kdePackages.konsole
-  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
