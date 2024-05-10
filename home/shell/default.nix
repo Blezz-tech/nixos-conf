@@ -14,16 +14,16 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      myConf = "cd ~/nixos-conf";
-      myViewConf = "cd myConf && nvim .";
-      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#laptop-full";
       myErrors = "journalctl -p 3 -xb";
-      myGit = "~/git-repos";
-      myGenerations = "nix profile history --profile /nix/var/nix/profiles/system";
-      myDeleteGenerations = ''
-        sudo nix profile wipe-history --profile /nix/var/nix/profiles/system
-        nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager
-      '';
+
+      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#laptop";
+      myBuildHome = "home-manager switch --flake ~/nixos-conf";
+      myBuildAll = "myBuildSystem ; myBuildHome";
+
+      myDeleteSystem = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
+      myDeleteHome = "nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager";
+      myDeleteAll = "myDeleteSystem ; myDeleteHome";
+
       myClear = ''
         sudo nix store gc
         sudo nix store optimise
@@ -32,7 +32,7 @@
         sudo journalctl --rotate
         sudo journalctl --vacuum-time=1s
       '';
-      myServicesOption = "nixos-option services";
+      myPasswordGenerator = "pwgen -c 30";
 
       Desktop = "cd ~/system/desktop";
       Downloads = "cd ~/downloads";

@@ -16,29 +16,19 @@
     , ...
     }@inputs:
     let
+      username = "jenya";
       system = "x86_64-linux";
     in
     {
-      nixosConfigurations = {
-        "laptop-full" = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./nixos
-            home-manager.nixosModules.home-manager
-            {
-              home-manager = {
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                users.jenya = import ./home;
-                extraSpecialArgs.inputs = inputs;
-              };
-            }
-          ];
-        };
-        "laptop-minimal" = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./nixos
-          ];
+      nixosConfigurations."laptop" = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs username; };
+        modules = [ ./nixos ];
+      };
+      homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        modules = [ ./home ];
+        extraSpecialArgs = {
+          inherit inputs system username;
         };
       };
     };

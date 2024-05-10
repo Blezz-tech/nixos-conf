@@ -10,5 +10,7 @@
   home.homeDirectory = "/home/jenya";
   home.stateVersion = "23.05";
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.home-manager.enable = true;
 }
