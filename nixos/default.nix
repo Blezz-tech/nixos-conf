@@ -9,9 +9,7 @@
 
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "nix-2.16.2" # for nixd
-  ];
+  nixpkgs.config.permittedInsecurePackages = [];
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
