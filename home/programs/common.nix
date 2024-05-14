@@ -94,6 +94,8 @@
     nixd
     # go-task
     # cargo-make
+    fd
+    gcc
     gnumake
     nushellFull
     pandoc
