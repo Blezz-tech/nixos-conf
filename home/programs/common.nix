@@ -97,7 +97,7 @@
     fd
     gcc
     gnumake
-    nushellFull
+    nushell
     pandoc
     # tiled
     unityhub
