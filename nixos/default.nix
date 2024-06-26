@@ -168,6 +168,8 @@
   ];
 
   fonts.packages = with pkgs; [
+    nerdfonts
+
     # Шрифты paratype
     paratype-pt-sans
     paratype-pt-mono
