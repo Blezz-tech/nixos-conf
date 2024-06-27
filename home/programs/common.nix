@@ -55,7 +55,7 @@
 
     # Текстовые редакторы
     kate
-    # libreoffice
+    libreoffice
     onlyoffice-bin
 
     # Запись видео и потоковое вещание
