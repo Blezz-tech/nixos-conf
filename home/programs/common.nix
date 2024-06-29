@@ -70,7 +70,7 @@
     wesnoth
     # openspades
     airshipper
-    
+
     # kdePackages.kolf
     # kdePackages.kmahjongg
     # kdePackages.knights
@@ -134,7 +134,13 @@
     ghc
     mysql-workbench
     zeal
+
     typst
+    typstfmt
+    typst-lsp
+    typst-live
+    typst-preview
+
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
