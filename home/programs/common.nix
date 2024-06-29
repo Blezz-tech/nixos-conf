@@ -55,7 +55,7 @@
 
     # Текстовые редакторы
     kate
-    libreoffice
+    libreoffice-qt6-fresh
     onlyoffice-bin_latest
 
     # Запись видео и потоковое вещание
