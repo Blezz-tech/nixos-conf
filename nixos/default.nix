@@ -17,6 +17,8 @@
 
     settings.experimental-features = [ "nix-command" "flakes" ];
     settings.auto-optimise-store = true;
+    trusted-users = [ "root" "jenya" ];
+
 
     gc.automatic = true;
     gc.dates = "daily";
