@@ -11,9 +11,16 @@
 
   nixpkgs.config.permittedInsecurePackages = [ ];
 
-  nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
-    trusted-users = [ "root" "jenya" ];
+
+  nix = {
+    optimise.automatic = true;
+
+    settings.experimental-features = [ "nix-command" "flakes" ];
+    settings.auto-optimise-store = true;
+
+    gc.automatic = true;
+    gc.dates = "daily";
+    gc.options = "--delete-older-than 14d";
   };
 
   imports = [
