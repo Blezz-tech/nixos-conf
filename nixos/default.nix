@@ -17,13 +17,16 @@
 
     settings.experimental-features = [ "nix-command" "flakes" ];
     settings.auto-optimise-store = true;
-    settings.trusted-public-keys = [
-      "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
+    settings.substituters = [
+      # "https://cache.nixos.org/"
     ];
     settings.trusted-substituters = [
       "https://digitallyinduced.cachix.org"
     ];
-    # settings.trusted-users = [ "root" "jenya" ];
+    settings.trusted-public-keys = [
+      # "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
+    ];
 
 
     gc.automatic = true;
