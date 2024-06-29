@@ -189,6 +189,9 @@
     corefonts
     vistafonts
 
+    # Замена шрифтов Windows
+    liberation_ttf
+
     # Mono
     hack-font
   ];
