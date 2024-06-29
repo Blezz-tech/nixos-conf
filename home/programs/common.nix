@@ -56,7 +56,7 @@
     # Текстовые редакторы
     kate
     libreoffice
-    onlyoffice-bin
+    onlyoffice-bin_latest
 
     # Запись видео и потоковое вещание
     # obs-studio
