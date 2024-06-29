@@ -170,6 +170,7 @@
 
   fonts.packages = with pkgs; [
     nerdfonts
+    scientifica
 
     # Шрифты paratype
     paratype-pt-sans
