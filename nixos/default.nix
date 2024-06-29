@@ -17,6 +17,12 @@
 
     settings.experimental-features = [ "nix-command" "flakes" ];
     settings.auto-optimise-store = true;
+    settings.trusted-public-keys = [
+      "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
+    ];
+    settings.trusted-substituters = [
+      "https://digitallyinduced.cachix.org"
+    ];
     # settings.trusted-users = [ "root" "jenya" ];
 
 
