@@ -173,7 +173,7 @@
     pwgen
     keepassxc
     parted
-    yakuake
+    kdePackages.yakuake
 
     home-manager
 
