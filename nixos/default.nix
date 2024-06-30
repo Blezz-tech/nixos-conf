@@ -184,6 +184,9 @@
 
     # Диспеер раздеов дисков
     partition-manager
+
+    # OpenGL
+    glxinfo
   ];
 
   fonts.packages = with pkgs; [
