@@ -88,7 +88,7 @@
   environment.plasma6.excludePackages = with pkgs; [
     kdePackages.konsole
   ];
-  
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
@@ -192,6 +192,9 @@
     glxinfo
     vulkan-tools
     wayland-utils
+
+    # Для vivaldi
+    kdePackages.kdialog
   ];
 
   fonts.packages = with pkgs; [
