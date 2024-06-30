@@ -173,6 +173,7 @@
     pwgen
     keepassxc
     parted
+    yakuake
 
     home-manager
 
