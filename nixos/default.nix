@@ -192,7 +192,6 @@
     glxinfo
     vulkan-tools
     wayland-utils
-    fwupd
   ];
 
   fonts.packages = with pkgs; [
