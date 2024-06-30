@@ -4,6 +4,14 @@
 
   # programs.helix.enable = true;
 
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Breeze-Dark";
+      package = pkgs.kdePackages.breeze-gtk;
+    };
+  };
+
   programs.chromium = {
     enable = true;
     package = pkgs.vivaldi;
@@ -59,7 +67,7 @@
     hunspell
     hunspellDicts.ru_RU
     hunspellDicts.en_US
-    
+
     onlyoffice-bin_latest
 
     # Запись видео и потоковое вещание
