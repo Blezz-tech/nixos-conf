@@ -185,8 +185,13 @@
     # Диспеер раздеов дисков
     partition-manager
 
-    # OpenGL
+    # Для KDE (Информация о система)
+    aha
+    clinfo
+    # eglinfo
     glxinfo
+    vulkan-tools
+    wayland-info
   ];
 
   fonts.packages = with pkgs; [
