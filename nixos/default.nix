@@ -191,7 +191,7 @@
     # eglinfo
     glxinfo
     vulkan-tools
-    wayland-info
+    wayland-utils
   ];
 
   fonts.packages = with pkgs; [
