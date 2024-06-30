@@ -54,7 +54,7 @@
     drawio
 
     # Текстовые редакторы
-    kate
+    kdePackages.kate
     libreoffice-qt6-fresh
     hunspell
     hunspellDicts.ru_RU

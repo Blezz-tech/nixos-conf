@@ -85,10 +85,10 @@
   time.timeZone = "Europe/Moscow";
 
   services.desktopManager.plasma6.enable = true;
-  environment.plasma6.excludePackages = [
-    pkgs.kdePackages.konsole
+  environment.plasma6.excludePackages = with pkgs; [
+    kdePackages.konsole
   ];
-
+  
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
