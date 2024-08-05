@@ -12,8 +12,8 @@
       myErrors = "journalctl -p 3 -xb";
 
       myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#laptop";
-      myBuildHome = "home-manager switch --flake ~/nixos-conf";
-      myBuildAll = "myBuildSystem ; myBuildHome";
+      # myBuildHome = "home-manager switch --flake ~/nixos-conf";
+      # myBuildAll = "myBuildSystem ; myBuildHome";
 
       myDeleteSystem = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
       myDeleteHome = "nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager";
