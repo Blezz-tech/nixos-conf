@@ -29,14 +29,14 @@
       '';
       myPasswordGenerator = "pwgen -c 30";
 
-      Desktop = "cd ~/system/desktop";
+      Desktop = "cd ~/media/desktop";
       Downloads = "cd ~/downloads";
       Images = "cd ~/media/images";
-      Documents = "cd ~/system/documents";
+      Documents = "cd ~/media/documents";
       Videos = "cd ~/media/videos";
       Music = "cd ~/media/music";
-      # Public   = "~/system/public";
-      # Template = "~/system/templates";
+      # Public   = "~/media/public";
+      # Template = "~/media/templates";
     };
   };
 }
