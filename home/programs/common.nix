@@ -151,7 +151,7 @@
     typstfmt
     typst-lsp
     typst-live
-    typst-preview
+    tinymist
 
 
     # here is some command line tools I use frequently
