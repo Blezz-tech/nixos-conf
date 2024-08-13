@@ -57,10 +57,10 @@
     yt-dlp
 
     # Альтернатива Postman'у
-    insomnia
+    # insomnia
 
     # 3D редакторы
-    blender
+    # blender
 
     # Музыкальные редакторы
     # musescore
@@ -73,19 +73,19 @@
     # sigil
 
     # Графические редакторы
-    gimp
-    inkscape
+    # gimp
+    # inkscape
     krita
     drawio
 
     # Текстовые редакторы
-    kdePackages.kate
-    libreoffice-qt6-fresh
-    hunspell
-    hunspellDicts.ru_RU
-    hunspellDicts.en_US
+    # kdePackages.kate
+    # libreoffice-qt6-fresh
+    # hunspell
+    # hunspellDicts.ru_RU
+    # hunspellDicts.en_US
 
-    onlyoffice-bin_latest
+    # onlyoffice-bin_latest
 
     # Запись видео и потоковое вещание
     # obs-studio
@@ -93,12 +93,12 @@
     # Игры
     prismlauncher
     # cataclysm-dda
-    cmatrix
+    # cmatrix
     # keeperrl
     # minetest
-    wesnoth
+    # wesnoth
     # openspades
-    airshipper
+    # airshipper
 
     # kdePackages.kolf
     # kdePackages.kmahjongg
@@ -114,25 +114,30 @@
     # kdePackages.kwordquiz
 
     # На сортировку
-    python3
-    nodejs
-    # jetbrains.pycharm-community
-    sqlitebrowser
+    # python3
+    # sqlitebrowser
+    # nodejs
+    # fd
+    # gcc
+    # gnumake
+    # nushell
+    # pandoc
+    # unityhub
+    # cachix
+    # age
+    # sops
+    # imagemagick
+    # zoom-us
+    # omegat
+
 
     nixpkgs-fmt
     nixd
     # go-task
     # cargo-make
-    fd
-    gcc
-    gnumake
-    nushell
-    pandoc
     # tiled
-    unityhub
     # pdfarranger
     # ihp-new
-    cachix
     # vengi-tools
     # ldtk
     # easyocr
@@ -141,13 +146,8 @@
     # figma-linux
     # ventoy-full
     # appimage-run
-    age
-    sops
-    imagemagick
     # crow-translate
-    zoom-us
     # element-desktop
-    omegat
     # poppler_utils
     # ocrmypdf
     # stack
@@ -158,11 +158,11 @@
     # kalzium
     # rustdesk
     vesktop
-    freetube
+    # freetube
     bottles
-    ghc
-    mysql-workbench
-    zeal
+    # ghc
+    # mysql-workbench
+    # zeal
 
     typst
     typstfmt
