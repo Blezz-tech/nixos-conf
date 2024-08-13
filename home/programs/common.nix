@@ -12,31 +12,31 @@
     };
   };
 
-  # programs.chromium = {
-  #   enable = true;
-  #   package = (pkgs.vivaldi.overrideAttrs (oldAttrs: {
-  #     dontWrapQtApps = false;
-  #     dontPatchELF = true;
-  #     nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
-  #   }));
-  #   commandLineArgs = [
-  #     # "--disable-features=AllowQt"
-  #     "--enable-blink-features=MiddleClickAutoscroll"
-
-  #     "--enable-features=VaapiVideoDecodeLinuxGL"
-  #     "--ignore-gpu-blocklist"
-  #     "--enable-zero-copy"
-  #   ];
-  # };
-
   programs.chromium = {
     enable = true;
-    package = pkgs.vivaldi;
+    package = (pkgs.vivaldi.overrideAttrs (oldAttrs: {
+      dontWrapQtApps = false;
+      dontPatchELF = true;
+      nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
+    }));
     commandLineArgs = [
-      "--disable-features=AllowQt"
+      # "--disable-features=AllowQt"
       "--enable-blink-features=MiddleClickAutoscroll"
+
+      "--enable-features=VaapiVideoDecodeLinuxGL"
+      "--ignore-gpu-blocklist"
+      "--enable-zero-copy"
     ];
   };
+
+  # programs.chromium = {
+  #   enable = true;
+  #   package = pkgs.vivaldi;
+  #   commandLineArgs = [
+  #     "--disable-features=AllowQt"
+  #     "--enable-blink-features=MiddleClickAutoscroll"
+  #   ];
+  # };
 
   programs.direnv = {
     enable = true;
