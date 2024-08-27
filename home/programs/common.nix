@@ -46,6 +46,26 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    # QSoft
+    nodejs_18
+
+    
+    php83
+    php83.packages.composer
+    php83.extensions.bcmath
+    php83.extensions.tokenizer
+    php83.extensions.curl
+    php83.extensions.gd
+    php83.extensions.intl
+    php83.extensions.xml
+    php83.extensions.mbstring
+    php83.extensions.zip
+    php83.extensions.sqlite3
+    php83.extensions.pdo_mysql
+    php83.extensions.mysqli
+
+    openssl
+
     # LaTeX
     # texlive.combined.scheme-full
     pdf2svg
@@ -116,7 +136,6 @@
     # На сортировку
     # python3
     # sqlitebrowser
-    # nodejs
     # fd
     # gcc
     # gnumake
