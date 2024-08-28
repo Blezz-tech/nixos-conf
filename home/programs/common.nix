@@ -71,18 +71,6 @@ in
 
     myPHPWithExtensions
     myComposerWithPHPExtensions
-    php83.extensions.bcmath
-    php83.extensions.tokenizer
-    php83.extensions.curl
-    php83.extensions.gd
-    php83.extensions.intl
-    php83.extensions.xml
-    php83.extensions.mbstring
-    php83.extensions.zip
-    php83.extensions.sqlite3
-    php83.extensions.pdo_mysql
-    php83.extensions.mysqli
-    php83.extensions.redis # Для Redis
 
     openssl
 
