@@ -65,6 +65,8 @@
     php83.extensions.pdo_mysql
     php83.extensions.mysqli
 
+    php83Extensions.redis # Для Redis
+
     openssl
 
     # LaTeX
