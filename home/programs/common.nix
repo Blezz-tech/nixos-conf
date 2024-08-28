@@ -22,13 +22,13 @@ in
 
   # programs.helix.enable = true;
 
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Breeze-Dark";
-      package = pkgs.kdePackages.breeze-gtk;
-    };
-  };
+  # gtk = {
+  #   enable = true;
+  #   theme = {
+  #     name = "Breeze-Dark";
+  #     package = pkgs.kdePackages.breeze-gtk;
+  #   };
+  # };
 
   programs.chromium = {
     enable = true;
