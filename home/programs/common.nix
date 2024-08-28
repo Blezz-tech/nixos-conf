@@ -51,21 +51,38 @@
     nodejs_18
 
     
-    php83
-    php83.packages.composer
-    php83.extensions.bcmath
-    php83.extensions.tokenizer
-    php83.extensions.curl
-    php83.extensions.gd
-    php83.extensions.intl
-    php83.extensions.xml
-    php83.extensions.mbstring
-    php83.extensions.zip
-    php83.extensions.sqlite3
-    php83.extensions.pdo_mysql
-    php83.extensions.mysqli
+    # php83
+    # php83.packages.composer
+    # php83.extensions.bcmath
+    # php83.extensions.tokenizer
+    # php83.extensions.curl
+    # php83.extensions.gd
+    # php83.extensions.intl
+    # php83.extensions.xml
+    # php83.extensions.mbstring
+    # php83.extensions.zip
+    # php83.extensions.sqlite3
+    # php83.extensions.pdo_mysql
+    # php83.extensions.mysqli
+    # php83.extensions.redis # Для Redis
 
-    php83Extensions.redis # Для Redis
+    (let
+      myPHPWithExtensions = php83.withExtensions ({ enabled, all }: enabled ++ [
+        all.bcmath
+        all.tokenizer
+        all.curl
+        all.gd
+        all.intl
+        all.xml
+        all.mbstring
+        all.zip
+        all.sqlite3
+        all.pdo_mysql
+        all.mysqli
+        all.redis # Для Redis
+      ]);
+      myPHPWithExtensionsAndExtensions = myPHPWithExtensions.packages.composer;
+    in myPHPWithExtensionsAndExtensions)
 
     openssl
 
