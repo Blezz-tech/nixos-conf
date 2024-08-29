@@ -66,6 +66,9 @@ in
 
   home.packages = with pkgs; [
     poppler_utils
+
+    jetbrains.idea-community
+
     # QSoft
     nodejs_18
 
