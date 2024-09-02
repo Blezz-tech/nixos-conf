@@ -88,8 +88,8 @@ in
     yt-dlp
 
     # Альтернатива Postman'у
-    postman
-    # insomnia
+    # postman
+    insomnia
 
     # 3D редакторы
     # blender
