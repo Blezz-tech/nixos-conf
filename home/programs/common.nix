@@ -146,7 +146,10 @@ in
     # kdePackages.kwordquiz
 
     # На сортировку
-    # python3
+    (python3.withPackages (python-pkgs: [
+      python-pkgs.pandas
+      python-pkgs.requests
+    ]))
     # sqlitebrowser
     # fd
     # gcc
