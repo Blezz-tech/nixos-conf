@@ -112,10 +112,10 @@ in
 
     # Текстовые редакторы
     # kdePackages.kate
-    # libreoffice-qt6-fresh
-    # hunspell
-    # hunspellDicts.ru_RU
-    # hunspellDicts.en_US
+    libreoffice-qt6-fresh
+    hunspell
+    hunspellDicts.ru_RU
+    hunspellDicts.en_US
 
     # onlyoffice-bin_latest
 
