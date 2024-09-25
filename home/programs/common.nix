@@ -150,6 +150,7 @@ in
       python-pkgs.pandas
       python-pkgs.requests
     ]))
+    goldendict-ng
     # sqlitebrowser
     # fd
     # gcc
