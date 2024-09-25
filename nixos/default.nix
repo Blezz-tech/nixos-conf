@@ -2,6 +2,8 @@
 , ...
 }:
 {
+  programs.kdeconnect.enable = true;
+
   programs.java.enable = true;
 
   services.mysql.enable = true;
