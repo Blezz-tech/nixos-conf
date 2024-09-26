@@ -149,6 +149,7 @@ in
     (python3.withPackages (python-pkgs: [
       python-pkgs.pandas
       python-pkgs.requests
+      python-pkgs.jupyter
     ]))
     goldendict-ng
     # sqlitebrowser
