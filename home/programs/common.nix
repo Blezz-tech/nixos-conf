@@ -150,6 +150,9 @@ in
       python-pkgs.pandas
       python-pkgs.requests
       python-pkgs.jupyter
+      python-pkgs.matplotlib
+      python-pkgs.pandas
+      python-pkgs.scikit-learn
     ]))
     goldendict-ng
     # sqlitebrowser
