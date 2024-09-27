@@ -8,7 +8,6 @@ let
     all.curl
     all.gd
     all.intl
-    all.xml
     all.mbstring
     all.zip
     all.sqlite3
