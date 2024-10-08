@@ -64,6 +64,9 @@ in
   # Packages that should be installed to the user profile.
 
   home.packages = with pkgs; [
+    dbeaver-bin
+    nextcloud-client
+
     poppler_utils
 
     jetbrains.idea-community
