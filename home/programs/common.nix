@@ -96,7 +96,7 @@ in
     # musescore
 
     # Месседжеры
-    # discord-canary
+    discord-canary
     telegram-desktop
 
     # Редакторы epub
