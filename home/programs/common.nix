@@ -31,11 +31,7 @@ in
 
   programs.chromium = {
     enable = true;
-    package = (pkgs.vivaldi.overrideAttrs (oldAttrs: {
-      dontWrapQtApps = false;
-      dontPatchELF = true;
-      nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
-    }));
+    package = pkgs.vivaldi;
     commandLineArgs = [
       # "--disable-features=AllowQt"
       "--enable-blink-features=MiddleClickAutoscroll"
@@ -64,20 +60,20 @@ in
   # Packages that should be installed to the user profile.
 
   home.packages = with pkgs; [
-    dbeaver-bin
-    nextcloud-client
+    # dbeaver-bin
+    # nextcloud-client
 
     poppler_utils
 
-    jetbrains.idea-community
+    # jetbrains.idea-community
 
     # QSoft
-    nodejs_18
+    # nodejs_18
 
-    myPHPWithExtensions
-    myComposerWithPHPExtensions
+    # myPHPWithExtensions
+    # myComposerWithPHPExtensions
 
-    openssl
+    # openssl
 
     # LaTeX
     # texlive.combined.scheme-full
@@ -91,7 +87,7 @@ in
 
     # Альтернатива Postman'у
     # postman
-    insomnia
+    # insomnia
 
     # 3D редакторы
     # blender
@@ -100,7 +96,7 @@ in
     # musescore
 
     # Месседжеры
-    discord
+    # discord-canary
     telegram-desktop
 
     # Редакторы epub
@@ -109,8 +105,8 @@ in
     # Графические редакторы
     # gimp
     # inkscape
-    krita
-    drawio
+    # krita
+    # drawio
 
     # Текстовые редакторы
     # kdePackages.kate
@@ -125,7 +121,7 @@ in
     # obs-studio
 
     # Игры
-    prismlauncher
+    # prismlauncher
     # cataclysm-dda
     # cmatrix
     # keeperrl
@@ -156,7 +152,7 @@ in
       python-pkgs.pandas
       python-pkgs.scikit-learn
     ]))
-    goldendict-ng
+    # goldendict-ng
     # sqlitebrowser
     # fd
     # gcc
@@ -170,7 +166,6 @@ in
     # imagemagick
     # zoom-us
     # omegat
-
 
     nixpkgs-fmt
     nixd
@@ -205,18 +200,18 @@ in
     # mysql-workbench
     # zeal
 
-    typst
-    typstfmt
-    typst-lsp
-    typst-live
-    tinymist
+    # typst
+    # typstfmt
+    # typst-lsp
+    # typst-live
+    # tinymist
 
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
 
     # uwufetch
-    neofetch
+    # neofetch
     # nnn # terminal file manager
 
     # archives
