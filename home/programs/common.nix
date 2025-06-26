@@ -110,10 +110,10 @@ in
 
     # Текстовые редакторы
     # kdePackages.kate
-    libreoffice-qt6-fresh
-    hunspell
-    hunspellDicts.ru_RU
-    hunspellDicts.en_US
+    # libreoffice-qt6-fresh
+    # hunspell
+    # hunspellDicts.ru_RU
+    # hunspellDicts.en_US
 
     # onlyoffice-bin_latest
 
@@ -144,14 +144,14 @@ in
     # kdePackages.kwordquiz
 
     # На сортировку
-    (python3.withPackages (python-pkgs: [
-      python-pkgs.pandas
-      python-pkgs.requests
-      python-pkgs.jupyter
-      python-pkgs.matplotlib
-      python-pkgs.pandas
-      python-pkgs.scikit-learn
-    ]))
+    # (python3.withPackages (python-pkgs: [
+    #   python-pkgs.pandas
+    #   python-pkgs.requests
+    #   python-pkgs.jupyter
+    #   python-pkgs.matplotlib
+    #   python-pkgs.pandas
+    #   python-pkgs.scikit-learn
+    # ]))
     # goldendict-ng
     # sqlitebrowser
     # fd
@@ -195,7 +195,7 @@ in
     # rustdesk
     vesktop
     # freetube
-    bottles
+    # bottles
     # ghc
     # mysql-workbench
     # zeal

@@ -4,18 +4,18 @@
 {
   programs.kdeconnect.enable = true;
 
-  programs.java.enable = true;
+  # programs.java.enable = true;
 
-  services.mysql.enable = true;
-  services.mysql.package = pkgs.mysql84;
+  # services.mysql.enable = true;
+  # services.mysql.package = pkgs.mysql84;
 
-  services.redis.servers."" = {
-    enable = true;
-  };
+  # services.redis.servers."" = {
+  #   enable = true;
+  # };
 
-  programs.npm.enable = true;
+  # programs.npm.enable = true;
 
-  programs.nix-ld.enable = true;
+  programs.nix-ld.enable = false;
   programs.nix-ld.libraries = with pkgs; [
     SDL
     SDL2
@@ -150,11 +150,11 @@
       # "https://cache.nixos.org/"
     ];
     settings.trusted-substituters = [
-      "https://digitallyinduced.cachix.org"
+      # "https://digitallyinduced.cachix.org"
     ];
     settings.trusted-public-keys = [
       # "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
+      # "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
     ];
 
 
@@ -165,6 +165,7 @@
 
   imports = [
     ./hardware-configuration.nix
+    ./services
   ];
 
   i18n = {
@@ -243,10 +244,10 @@
   };
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  # services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -283,14 +284,14 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
-  programs.wireshark.enable = true;
+  # programs.wireshark.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # alacritty
 
-    xdg_utils
+    xdg-utils
     git
     wget
     curl
@@ -312,7 +313,7 @@
     vlc
 
     # Диспеер раздеов дисков
-    partition-manager
+    kdePackages.partitionmanager
 
     # Для KDE (Информация о система)
     aha
@@ -327,7 +328,7 @@
   ];
 
   fonts.packages = with pkgs; [
-    nerdfonts
+    # nerdfonts
     font-awesome
     # scientifica
 
@@ -385,4 +386,33 @@
   # networking.firewall.enable = true;
 
   system.stateVersion = "23.05";
+
+  nixpkgs.overlays = [
+    (self: super: {
+      blezz-pkgs = {
+        zapret = pkgs.zapret.overrideAttrs (prev: {
+          postInstall = (prev.postInstall or "") + ''
+            mkdir -p $out/files/
+            cp -r $src/files/fake/ $out/files/
+          '';
+        });
+        zdyPackages =
+          let
+            versions = [
+              { name = "1_7_2b"; zdy_version = "1.7.2b"; zdy_hash = "sha256-59kG0UA+zUkpL/ZOwjSEpOlGJspgI8bQapxdv/FvzX8="; }
+              { name = "1_8_0"; zdy_version = "1.8.0"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
+            ];
+          in
+          builtins.listToAttrs (map
+            (v: {
+              name = v.name;
+              value = pkgs.callPackage ./pkgs/zapret-discord-youtube {
+                zdy_version = v.zdy_version;
+                zdy_hash = v.zdy_hash;
+              };
+            })
+            versions);
+      };
+    })
+  ];
 }
