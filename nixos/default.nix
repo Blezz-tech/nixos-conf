@@ -325,6 +325,8 @@
 
     # Для vivaldi
     kdePackages.kdialog
+
+    blezz-pkgs.discord-krisp-patcher
   ];
 
   fonts.packages = with pkgs; [
