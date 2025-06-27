@@ -76,7 +76,18 @@ in
     # openssl
 
     # LaTeX
-    # texlive.combined.scheme-full
+    (texliveMedium.withPackages (
+      ps: with ps; [
+      fontspec
+      polyglossia
+      amsmath
+      hyphen-russian
+      standalone
+      luatex85
+      pgfplots
+      ]
+    ))
+    
     pdf2svg
 
     # Torrent
