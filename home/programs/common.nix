@@ -86,6 +86,7 @@ in
       luatex85
       pgfplots
       lastpage
+      noto
       ]
     ))
     
