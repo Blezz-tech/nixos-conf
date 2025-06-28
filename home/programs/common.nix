@@ -89,6 +89,7 @@ in
       noto
       lm-math
       enumitem
+      paralist
       ]
     ))
     
