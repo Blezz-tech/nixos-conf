@@ -85,6 +85,7 @@ in
       standalone
       luatex85
       pgfplots
+      lastpage
       ]
     ))
     
