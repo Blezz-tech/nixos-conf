@@ -87,6 +87,7 @@ in
       pgfplots
       lastpage
       noto
+      lm-math
       ]
     ))
     
