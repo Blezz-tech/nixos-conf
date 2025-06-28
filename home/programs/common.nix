@@ -88,6 +88,7 @@ in
       lastpage
       noto
       lm-math
+      enumitem
       ]
     ))
     
