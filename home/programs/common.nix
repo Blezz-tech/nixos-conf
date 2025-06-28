@@ -155,14 +155,15 @@ in
     # kdePackages.kwordquiz
 
     # На сортировку
-    # (python3.withPackages (python-pkgs: [
-    #   python-pkgs.pandas
-    #   python-pkgs.requests
-    #   python-pkgs.jupyter
-    #   python-pkgs.matplotlib
-    #   python-pkgs.pandas
-    #   python-pkgs.scikit-learn
-    # ]))
+    (python3.withPackages (python-pkgs: [
+      python-pkgs.pandas
+      python-pkgs.requests
+      # python-pkgs.jupyter
+      python-pkgs.matplotlib
+      python-pkgs.pandas
+      # python-pkgs.scikit-learn
+      python-pkgs.pylatex
+    ]))
     # goldendict-ng
     # sqlitebrowser
     # fd
