@@ -138,7 +138,7 @@ in
     # obs-studio
 
     # Игры
-    # prismlauncher
+    prismlauncher
     # cataclysm-dda
     # cmatrix
     # keeperrl
