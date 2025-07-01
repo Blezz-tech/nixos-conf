@@ -185,6 +185,8 @@ in
     # zoom-us
     # omegat
 
+    cargo
+    rustc
     nixpkgs-fmt
     nixd
     # go-task
