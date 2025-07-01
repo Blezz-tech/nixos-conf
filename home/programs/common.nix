@@ -173,7 +173,7 @@ in
     # goldendict-ng
     # sqlitebrowser
     # fd
-    # gcc
+    gcc
     # gnumake
     # nushell
     # pandoc
