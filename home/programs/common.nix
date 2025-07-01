@@ -90,6 +90,7 @@ in
       lm-math
       enumitem
       paralist
+      tikz-3dplot
       ]
     ))
     
