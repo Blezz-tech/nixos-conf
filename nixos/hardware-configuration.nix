@@ -25,8 +25,13 @@
   };
 
   fileSystems."/run/media/jenya/disk_d" = {
-    device = "/dev/sda1";
+    device = "/dev/disk/by-uuid/ab06cb47-dfb2-4fbd-99ad-2f22455d00cc";
     fsType = "ext4";
+  };
+
+  fileSystems."/run/media/jenya/test_fs" = {
+    device = "/dev/disk/by-uuid/f2f160ee-2d95-4db5-815a-9ee8eaba1f69";
+    fsType = "btrfs";
   };
 
   swapDevices = [ ];
