@@ -127,7 +127,7 @@ in
 
     # Текстовые редакторы
     # kdePackages.kate
-    # libreoffice-qt6-fresh
+    libreoffice-qt6-fresh
     # hunspell
     # hunspellDicts.ru_RU
     # hunspellDicts.en_US
