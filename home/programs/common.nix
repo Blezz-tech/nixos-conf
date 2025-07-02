@@ -215,7 +215,7 @@ in
     # rustdesk
     vesktop
     # freetube
-    # bottles
+    bottles
     # ghc
     # mysql-workbench
     # zeal
