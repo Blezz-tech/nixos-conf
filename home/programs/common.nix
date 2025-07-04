@@ -174,6 +174,7 @@ in
     # sqlitebrowser
     # fd
     gcc
+    geogebra6
     # gnumake
     # nushell
     # pandoc
