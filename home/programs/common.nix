@@ -215,7 +215,9 @@ in
     # rustdesk
     vesktop
     # freetube
-    bottles
+    (bottles.override {
+      removeWarningPopup = true;
+    })
     # ghc
     # mysql-workbench
     # zeal
