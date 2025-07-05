@@ -173,6 +173,7 @@ in
     # goldendict-ng
     # sqlitebrowser
     # fd
+    parsec-bin
     gcc
     geogebra6
     # gnumake
