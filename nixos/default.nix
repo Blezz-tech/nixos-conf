@@ -359,6 +359,11 @@
     hack-font
   ];
 
+  # nix helper
+  programs.nh.enable = true;
+  programs.nh.flake = "/home/jenya/nixos-conf";
+
+
   environment.variables.EDITOR = "nvim";
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
