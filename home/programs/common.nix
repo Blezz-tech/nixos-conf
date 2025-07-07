@@ -172,6 +172,8 @@ in
     ]))
     google-chrome
     ffmpeg-full
+    rar
+    unrar-free
     # goldendict-ng
     # sqlitebrowser
     # fd
