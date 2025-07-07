@@ -170,6 +170,7 @@ in
       # python-pkgs.scikit-learn
       python-pkgs.pylatex
     ]))
+    google-chrome
     # goldendict-ng
     # sqlitebrowser
     # fd
