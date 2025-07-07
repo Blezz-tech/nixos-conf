@@ -171,6 +171,7 @@ in
       python-pkgs.pylatex
     ]))
     google-chrome
+    ffmpeg-full
     # goldendict-ng
     # sqlitebrowser
     # fd
