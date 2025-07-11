@@ -122,7 +122,7 @@ in
     # Графические редакторы
     # gimp
     # inkscape
-    # krita
+    krita
     # drawio
 
     # Текстовые редакторы
