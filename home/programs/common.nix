@@ -92,6 +92,7 @@ in
       paralist
       tikz-3dplot
       asana-math
+      stix2
       ]
     ))
     
