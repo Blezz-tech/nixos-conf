@@ -68,7 +68,7 @@ in
     # jetbrains.idea-community
 
     # QSoft
-    # nodejs_18
+    nodejs
 
     # myPHPWithExtensions
     # myComposerWithPHPExtensions
