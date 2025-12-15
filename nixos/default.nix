@@ -319,7 +319,7 @@
     aha
     clinfo
     # eglinfo
-    glxinfo
+    # glxinfo # mesa-demos
     vulkan-tools
     wayland-utils
 
@@ -346,11 +346,11 @@
     noto-fonts
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
-    noto-fonts-emoji
+    noto-fonts-color-emoji
 
     # Шрифты windows
     corefonts
-    vistafonts
+    vista-fonts
 
     # Замена шрифтов Windows
     liberation_ttf

@@ -63,7 +63,7 @@ in
     # dbeaver-bin
     # nextcloud-client
 
-    poppler_utils
+    poppler-utils
 
     # jetbrains.idea-community
 
@@ -115,7 +115,7 @@ in
     # musescore
 
     # Месседжеры
-    discord-canary
+    # discord-canary
     telegram-desktop
 
     # Редакторы epub
@@ -212,7 +212,6 @@ in
     # appimage-run
     # crow-translate
     # element-desktop
-    # poppler_utils
     # ocrmypdf
     # stack
     # nheko
