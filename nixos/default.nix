@@ -384,6 +384,8 @@
     settings.PasswordAuthentication = false;
     settings.KbdInteractiveAuthentication = false;
   };
+  
+  services.v2raya.enable = true;
 
   # programs.ssh.startAgent = true;
 
