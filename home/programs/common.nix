@@ -123,7 +123,7 @@ in
 
     # Графические редакторы
     # gimp
-    # inkscape
+    inkscape
     krita
     drawio
 
