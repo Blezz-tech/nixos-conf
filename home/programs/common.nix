@@ -193,6 +193,8 @@ in
     # zoom-us
     # omegat
 
+    v2rayn
+    lunacy
     cargo
     rustc
     nixpkgs-fmt
