@@ -125,7 +125,7 @@ in
     # gimp
     inkscape
     krita
-    drawio
+    # drawio
 
     # Текстовые редакторы
     # kdePackages.kate
@@ -194,7 +194,6 @@ in
     # omegat
 
     v2rayn
-    lunacy
     cargo
     rustc
     nixpkgs-fmt
