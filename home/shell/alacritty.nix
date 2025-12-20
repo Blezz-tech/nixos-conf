@@ -3,7 +3,7 @@ let
 in
 {
   programs.alacritty = {
-    enable = false;
+    enable = true;
     settings = {
       env.TERM = "xterm-256color";
       env.WINIT_X11_SCALE_FACTOR = "1.0";
