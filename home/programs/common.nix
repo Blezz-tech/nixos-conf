@@ -125,7 +125,7 @@ in
     # gimp
     inkscape
     krita
-    # drawio
+    drawio
 
     # Текстовые редакторы
     # kdePackages.kate
