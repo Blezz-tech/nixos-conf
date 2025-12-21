@@ -177,7 +177,7 @@ in
     rar
     unrar-free
     # goldendict-ng
-    # sqlitebrowser
+    sqlitebrowser
     # fd
     parsec-bin
     gcc
