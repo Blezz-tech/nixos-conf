@@ -193,6 +193,8 @@ in
     # zoom-us
     # omegat
 
+    loco
+    sea-orm-cli
     v2rayn
     cargo
     rustc
