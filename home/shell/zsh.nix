@@ -1,13 +1,32 @@
 {
-  programs.bash = {
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
-    # # TODO add your cusotm bashrc here
-    # bashrcExtra = ''
-    #   export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
-    # '';
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
 
+    initContent = ''
+      # Возращение НОРМАЛЬНОГО поведения в zsh для Ctrl + Arrow Left/Right
+      bindkey "^[[1;5C" forward-word
+      bindkey "^[[1;5D" backward-word
+    '';
+
+    oh-my-zsh = {
+      enable = false;
+      plugins = [ "git" "sudo" ];
+      theme = "agnoster";
+    };
   };
+  
+  # programs.bash = {
+  #   enable = true;
+  #   enableCompletion = true;
+  #   # # TODO add your cusotm bashrc here
+  #   # bashrcExtra = ''
+  #   #   export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+  #   # '';
+
+  # };
 
   # set some aliases, feel free to add more or remove some
   home.shellAliases = {

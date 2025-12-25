@@ -1,7 +1,7 @@
 {
   imports = [
     ./alacritty.nix
-    ./bash.nix
+    ./zsh.nix
     ./starship.nix
   ];
 }

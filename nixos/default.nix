@@ -272,7 +272,7 @@
       # pkgs.brgenml1lpr #  — Generic drivers for more Brother printers [1]
       # pkgs.brgenml1cupswrapper  # — Generic drivers for more Brother printers [1]
       pkgs.cnijfilter2 # — Drivers for some Canon Pixma devices (Proprietary driver)
-	
+
       pkgs.cups-filters
       pkgs.cups-browsed
     ];
@@ -299,13 +299,18 @@
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.jenya = {
-    isNormalUser = true;
-    description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" "wireshark" "docker" ];
-    packages = [ ];
+  users = {
+    defaultUserShell = pkgs.zsh;
+
+    users.jenya = {
+      isNormalUser = true;
+      description = "jenya";
+      extraGroups = [ "networkmanager" "wheel" "wireshark" "docker" ];
+      packages = [ ];
+    };
   };
 
+  programs.zsh.enable = true;
 
   # Чтобы не было ошибок
   programs.dconf.enable = true;
