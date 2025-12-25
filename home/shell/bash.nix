@@ -7,36 +7,37 @@
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
 
-    # set some aliases, feel free to add more or remove some
-    shellAliases = {
-      myErrors = "journalctl -p 3 -xb";
+  };
 
-      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#laptop";
-      # myBuildHome = "home-manager switch --flake ~/nixos-conf";
-      # myBuildAll = "myBuildSystem ; myBuildHome";
+  # set some aliases, feel free to add more or remove some
+  home.shellAliases = {
+    myErrors = "journalctl -p 3 -xb";
 
-      myDeleteSystem = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
-      myDeleteHome = "nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager";
-      myDeleteAll = "myDeleteSystem ; myDeleteHome";
+    myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-conf#laptop";
+    # myBuildHome = "home-manager switch --flake ~/nixos-conf";
+    # myBuildAll = "myBuildSystem ; myBuildHome";
 
-      myClear = ''
-        sudo nix store gc
-        sudo nix store optimise
-      '';
-      myClearHistory = ''
-        sudo journalctl --rotate
-        sudo journalctl --vacuum-time=1s
-      '';
-      myPasswordGenerator = "pwgen -c 30";
+    myDeleteSystem = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system";
+    myDeleteHome = "nix profile wipe-history --profile ~/.local/state/nix/profiles/home-manager";
+    myDeleteAll = "myDeleteSystem ; myDeleteHome";
 
-      Desktop = "cd ~/media/desktop";
-      Downloads = "cd ~/downloads";
-      Images = "cd ~/media/images";
-      Documents = "cd ~/media/documents";
-      Videos = "cd ~/media/videos";
-      Music = "cd ~/media/music";
-      # Public   = "~/media/public";
-      # Template = "~/media/templates";
-    };
+    myClear = ''
+      sudo nix store gc
+      sudo nix store optimise
+    '';
+    myClearHistory = ''
+      sudo journalctl --rotate
+      sudo journalctl --vacuum-time=1s
+    '';
+    myPasswordGenerator = "pwgen -c 30";
+
+    Desktop = "cd ~/media/desktop";
+    Downloads = "cd ~/downloads";
+    Images = "cd ~/media/images";
+    Documents = "cd ~/media/documents";
+    Videos = "cd ~/media/videos";
+    Music = "cd ~/media/music";
+    # Public   = "~/media/public";
+    # Template = "~/media/templates";
   };
 }
