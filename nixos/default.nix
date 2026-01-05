@@ -239,7 +239,7 @@
     sddm.wayland.enable = true;
     # sddm.enable = true;
     autoLogin = {
-      enable = true;
+      enable = false;
       user = "jenya";
     };
 
