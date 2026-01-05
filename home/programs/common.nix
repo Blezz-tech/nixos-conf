@@ -232,11 +232,10 @@ in
     # mysql-workbench
     # zeal
 
-    # typst
-    # typstfmt
-    # typst-lsp
-    # typst-live
-    # tinymist
+    typst
+    typstyle
+    typst-live
+    tinymist
 
 
     # here is some command line tools I use frequently
