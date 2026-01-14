@@ -255,7 +255,12 @@
   # };
 
   # scanning
-  hardware.sane.enable = true;
+  hardware.sane = {
+    enable = true;
+    extraBackends = [ 
+      pkgs.hplipWithPlugin
+    ];
+  };
 
   services.printing = {
     enable = true;
