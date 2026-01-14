@@ -254,6 +254,9 @@
   #   openFirewall = true;
   # };
 
+  # scanning
+  hardware.sane.enable = true;
+
   services.printing = {
     enable = true;
     drivers = [
@@ -304,7 +307,14 @@
     users.jenya = {
       isNormalUser = true;
       description = "jenya";
-      extraGroups = [ "networkmanager" "wheel" "wireshark" "docker" ];
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+        "wireshark"
+        "docker"
+        "scanner"
+        "lp"
+      ];
       packages = [ ];
     };
   };
