@@ -344,6 +344,8 @@
     parted
     kdePackages.yakuake
 
+    hplip
+
     home-manager
 
     steam-run
