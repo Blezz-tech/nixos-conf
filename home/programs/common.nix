@@ -194,6 +194,7 @@ in
     # omegat
 
     loco
+    obsidian
     sea-orm-cli
     v2rayn
     cargo
