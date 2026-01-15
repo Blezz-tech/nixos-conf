@@ -257,9 +257,19 @@
   # scanning
   hardware.sane = {
     enable = true;
-    extraBackends = [ 
+    extraBackends = [
       pkgs.hplipWithPlugin
     ];
+  };
+
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    publish = {
+      enable = true;
+      addresses = true;
+      userServices = true;
+    };
   };
 
   services.printing = {
