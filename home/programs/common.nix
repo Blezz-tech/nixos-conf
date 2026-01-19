@@ -60,7 +60,7 @@ in
   # Packages that should be installed to the user profile.
 
   home.packages = with pkgs; [
-    # dbeaver-bin
+    dbeaver-bin
     # nextcloud-client
 
     poppler-utils
