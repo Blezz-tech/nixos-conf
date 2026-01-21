@@ -78,24 +78,24 @@ in
     # LaTeX
     (texliveMedium.withPackages (
       ps: with ps; [
-      fontspec
-      polyglossia
-      amsmath
-      hyphen-russian
-      standalone
-      luatex85
-      pgfplots
-      lastpage
-      noto
-      lm-math
-      enumitem
-      paralist
-      tikz-3dplot
-      asana-math
-      stix2-otf
+        fontspec
+        polyglossia
+        amsmath
+        hyphen-russian
+        standalone
+        luatex85
+        pgfplots
+        lastpage
+        noto
+        lm-math
+        enumitem
+        paralist
+        tikz-3dplot
+        asana-math
+        stix2-otf
       ]
     ))
-    
+
     pdf2svg
 
     # Torrent
@@ -180,7 +180,7 @@ in
     sqlitebrowser
     # fd
     parsec-bin
-    gcc
+    # gcc
     geogebra6
     # gnumake
     # nushell
@@ -199,6 +199,9 @@ in
     v2rayn
     cargo
     rustc
+    rust-analyzer
+    clang
+    mold
     nixpkgs-fmt
     nixd
     # go-task
