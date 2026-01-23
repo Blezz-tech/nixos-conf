@@ -181,7 +181,7 @@ in
     # fd
     parsec-bin
     # gcc
-    geogebra6
+    # geogebra6
     # gnumake
     # nushell
     # pandoc
