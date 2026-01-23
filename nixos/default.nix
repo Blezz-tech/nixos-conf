@@ -132,9 +132,9 @@
     zlib
   ];
 
-  # boot.kernel.sysctl = {
-  #   "net.ipv4.ip_default_ttl" = 65;
-  # };
+  boot.kernel.sysctl = {
+    "net.ipv4.ip_default_ttl" = 65;
+  };
 
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
 
