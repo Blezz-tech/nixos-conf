@@ -367,6 +367,7 @@
     keepassxc
     parted
     kdePackages.yakuake
+    code-cursor
 
     home-manager
 
