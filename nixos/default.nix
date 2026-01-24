@@ -462,6 +462,16 @@
   system.stateVersion = "23.05";
 
   nixpkgs.overlays = [
+    (final: prev: {
+      prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
+        patches = (old.patches or [ ]) ++ [
+          (final.fetchpatch {
+            url = "https://gist.githubusercontent.com/Blezz-tech/bc9acc9d02e4eb77c4a0b407f589da26/raw/a413cb08d722bda5b91a1d6ace78c9699ce86588/0001-fix-online-account.patch";
+            sha256 = "0qygn2jx8iv7ac12bd1wxph3ha1mya4z8i5s3d7rhyzcgv122l5i";
+          })
+        ];
+      });
+    })
     (self: super: {
       blezz-pkgs = {
         zapret = pkgs.zapret.overrideAttrs (prev: {
