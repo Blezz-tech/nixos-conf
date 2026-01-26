@@ -183,6 +183,7 @@ in
     # gcc
     # geogebra6
     # gnumake
+    bun
     # nushell
     # pandoc
     # unityhub
