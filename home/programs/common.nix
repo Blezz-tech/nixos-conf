@@ -171,7 +171,9 @@ in
       python-pkgs.pandas
       # python-pkgs.scikit-learn
       python-pkgs.pylatex
+      python-pkgs.python-docx
     ]))
+    kdePackages.kolourpaint
     google-chrome
     ffmpeg-full
     rar
