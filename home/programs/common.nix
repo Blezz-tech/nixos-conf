@@ -176,6 +176,7 @@ in
     ]))
     kdePackages.kolourpaint
     google-chrome
+    jdk
     ffmpeg-full
     rar
     unrar-free
