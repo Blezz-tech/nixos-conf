@@ -234,6 +234,7 @@ in
     # rustdesk
     vesktop
     # freetube
+    pkgs.marksman
     (bottles.override {
       removeWarningPopup = true;
     })
