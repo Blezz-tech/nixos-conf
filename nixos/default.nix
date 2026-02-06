@@ -368,6 +368,7 @@
     parted
     kdePackages.yakuake
     code-cursor
+    ntfs3g
 
     home-manager
 

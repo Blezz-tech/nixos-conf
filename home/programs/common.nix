@@ -173,6 +173,7 @@ in
       # python-pkgs.scikit-learn
       python-pkgs.pylatex
       python-pkgs.python-docx
+      python-pkgs.pyyaml
     ]))
     kdePackages.kolourpaint
     google-chrome
