@@ -399,6 +399,7 @@
     # nerdfonts
     font-awesome
     # scientifica
+    pkgs.ocr-a
 
     # Шрифты paratype
     paratype-pt-sans
