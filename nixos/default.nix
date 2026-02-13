@@ -374,6 +374,7 @@
 
     steam-run
     lutris
+    recoll
 
     # Аудио видео проигрыватели
     vlc
