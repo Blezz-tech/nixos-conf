@@ -162,6 +162,8 @@ in
     # kdePackages.kajongg
     # kdePackages.kwordquiz
     kdePackages.kdenlive
+    tesseract
+    kdePackages.qrca
 
     # На сортировку
     (python3.withPackages (python-pkgs: [
