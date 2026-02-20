@@ -164,6 +164,13 @@ in
     kdePackages.kdenlive
     tesseract
     kdePackages.qrca
+    (kdePackages.spectacle.override {
+      tesseractLanguages = [
+        "eng"
+        "rus"
+      ];
+    }
+    )
 
     # На сортировку
     (python3.withPackages (python-pkgs: [
@@ -177,6 +184,7 @@ in
       python-pkgs.python-docx
       python-pkgs.pyyaml
     ]))
+    kdePackages.plasma-keyboard
     kdePackages.kolourpaint
     google-chrome
     jdk
