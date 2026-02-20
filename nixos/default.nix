@@ -235,10 +235,7 @@
   };
 
   services.displayManager = {
-    defaultSession = "plasma";
-    sddm.wayland.enable = true;
-    sddm.enable = true;
-    # plasma-login-manager.enable = true;
+    plasma-login-manager.enable = true;
     autoLogin = {
       enable = false;
       user = "jenya";
