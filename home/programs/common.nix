@@ -192,6 +192,7 @@ in
     rar
     unrar-free
     # goldendict-ng
+    far2l
     sqlitebrowser
     # fd
     parsec-bin
