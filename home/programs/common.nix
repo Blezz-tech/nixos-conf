@@ -190,6 +190,7 @@ in
     jdk
     ffmpeg-full
     rar
+    vcmi
     unrar-free
     # goldendict-ng
     far2l
