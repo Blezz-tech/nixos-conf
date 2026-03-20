@@ -363,12 +363,12 @@
     chromium
     firefox
     vscode
-    wireshark
+    # wireshark
     pwgen
     keepassxc
     parted
-    kdePackages.yakuake
-    code-cursor
+    # kdePackages.yakuake
+    # code-cursor
     ntfs3g
 
     home-manager
