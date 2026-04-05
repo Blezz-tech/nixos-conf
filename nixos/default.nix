@@ -157,7 +157,7 @@
       # "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
     ];
     settings = {
-      # max-jobs = 1;
+      max-jobs = 1;
     };
 
 
@@ -363,12 +363,12 @@
     chromium
     firefox
     vscode
-    wireshark
+    # wireshark
     pwgen
     keepassxc
     parted
-    kdePackages.yakuake
-    code-cursor
+    # kdePackages.yakuake
+    # code-cursor
     ntfs3g
 
     home-manager

@@ -76,25 +76,30 @@ in
     # openssl
 
     # LaTeX
-    (texliveMedium.withPackages (
-      ps: with ps; [
-        fontspec
-        polyglossia
-        amsmath
-        hyphen-russian
-        standalone
-        luatex85
-        pgfplots
-        lastpage
-        noto
-        lm-math
-        enumitem
-        paralist
-        tikz-3dplot
-        asana-math
-        stix2-otf
-      ]
-    ))
+    # (texliveMedium.withPackages (
+    #   ps: with ps; [
+    #     fontspec
+    #     polyglossia
+    #     amsmath
+    #     hyphen-russian
+    #     standalone
+    #     luatex85
+    #     pgfplots
+    #     lastpage
+    #     noto
+    #     lm-math
+    #     enumitem
+    #     paralist
+    #     tikz-3dplot
+    #     asana-math
+    #     stix2-otf
+    #   ]
+    # ))
+
+    # (pkgs.emacs.pkgs.withPackages (epkgs: with epkgs; [
+    #   org
+    #   nixmode
+    # ]))
 
     pdf2svg
 
