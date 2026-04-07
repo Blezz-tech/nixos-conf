@@ -2,7 +2,7 @@
 , ...
 }:
 let
-  myPHPWithExtensions = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
+  myPHPWithExtensions = pkgs.php84.withExtensions ({ enabled, all }: enabled ++ [
     all.bcmath
     all.tokenizer
     all.curl
