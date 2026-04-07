@@ -96,10 +96,10 @@ in
     #   ]
     # ))
 
-    (pkgs.emacs.pkgs.withPackages (epkgs: with epkgs; [
-      org
-      # nixmode
-    ]))
+    # (pkgs.emacs.pkgs.withPackages (epkgs: with epkgs; [
+    #   org
+    #   # nixmode
+    # ]))
 
     pdf2svg
 
