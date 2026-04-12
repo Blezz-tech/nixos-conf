@@ -482,6 +482,14 @@
         ];
       });
     })
+    (final: prev: {
+      my-obsidian = prev.obsidian.overrideAttrs (oldAttrs: {
+        icon = builtins.fetchurl {
+          url = "file:///run/media/jenya/disk_d/obsidian-logo-gradient.svg";
+          sha256 = "sha256-EZsBuWyZ9zYJh0LDKfRAMTtnY70q6iLK/ggXlplDEoA=";
+        };
+      });
+    })
     (self: super: {
       blezz-pkgs = {
         zapret = pkgs.zapret.overrideAttrs (prev: {
