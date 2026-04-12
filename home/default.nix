@@ -8,7 +8,7 @@
 
   home.username = "jenya";
   home.homeDirectory = "/home/jenya";
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
 
   programs.home-manager.enable = true;
 }
