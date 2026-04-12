@@ -193,6 +193,11 @@
     };
   };
 
+  programs.thunderbird = {
+    enable = true;
+    package = pkgs.thunderbird-latest;
+  };
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
