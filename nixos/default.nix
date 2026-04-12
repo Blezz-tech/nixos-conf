@@ -157,7 +157,7 @@
       # "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
     ];
     settings = {
-      max-jobs = 1;
+      # max-jobs = 1;
     };
 
 
