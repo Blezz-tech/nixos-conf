@@ -60,7 +60,7 @@ in
   # Packages that should be installed to the user profile.
 
   home.packages = with pkgs; [
-    dbeaver-bin
+    # dbeaver-bin
     # nextcloud-client
 
     poppler-utils
@@ -68,10 +68,10 @@ in
     # jetbrains.idea-community
 
     # QSoft
-    nodejs
+    # nodejs
 
-    myPHPWithExtensions
-    myComposerWithPHPExtensions
+    # myPHPWithExtensions
+    # myComposerWithPHPExtensions
 
     # openssl
 
@@ -166,9 +166,9 @@ in
     # kdePackages.ksirk
     # kdePackages.kajongg
     # kdePackages.kwordquiz
-    kdePackages.kdenlive
-    tesseract
-    kdePackages.qrca
+    # kdePackages.kdenlive
+    # tesseract
+    # kdePackages.qrca
     (kdePackages.spectacle.override {
       tesseractLanguages = [
         "eng"
@@ -198,14 +198,14 @@ in
     vcmi
     unrar-free
     # goldendict-ng
-    far2l
-    sqlitebrowser
+    # far2l
+    # sqlitebrowser
     # fd
     parsec-bin
     # gcc
     # geogebra6
     # gnumake
-    bun
+    # bun
     # nushell
     # pandoc
     # unityhub
@@ -218,13 +218,13 @@ in
 
     loco
     obsidian
-    sea-orm-cli
+    # sea-orm-cli
     v2rayn
-    cargo
-    rustc
-    rust-analyzer
-    clang
-    mold
+    # cargo
+    # rustc
+    # rust-analyzer
+    # clang
+    # mold
     nixpkgs-fmt
     nixd
     # go-task
