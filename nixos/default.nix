@@ -379,7 +379,7 @@
     home-manager
 
     steam-run
-    lutris
+    # lutris
     recoll
     fsearch
 
