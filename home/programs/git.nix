@@ -7,6 +7,7 @@
       user.email = "markus.jenya04@yandex.ru";
 
       core.quotepath = true;
+      signing.format = "openpgp";
     };
   };
 }

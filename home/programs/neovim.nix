@@ -8,6 +8,7 @@
     plugins = [
 
     ];
+    withPython3 = true;
   };
 
   # imports = [
