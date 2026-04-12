@@ -469,7 +469,7 @@
   # networking.firewall.allowedUDPPorts = [ ];
   # networking.firewall.enable = true;
 
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 
   nixpkgs.overlays = [
     (final: prev: {
