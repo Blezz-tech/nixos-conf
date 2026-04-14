@@ -167,15 +167,10 @@ in
     # kdePackages.kajongg
     # kdePackages.kwordquiz
     # kdePackages.kdenlive
-    # tesseract
+    tesseract
     # kdePackages.qrca
-    (kdePackages.spectacle.override {
-      tesseractLanguages = [
-        "eng"
-        "rus"
-      ];
-    }
-    )
+    (kdePackages.spectacle.override { tesseractLanguages = null; })
+    (kdePackages.skanpage.override { tesseractLanguages = null; })
 
     # На сортировку
     (python3.withPackages (python-pkgs: [
