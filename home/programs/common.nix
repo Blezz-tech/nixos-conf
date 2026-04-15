@@ -214,7 +214,7 @@ in
     # cachix
     # age
     # sops
-    # imagemagick
+    imagemagick
     # zoom-us
     # omegat
 
