@@ -61,6 +61,7 @@ in
 
   home.packages = with pkgs; [
     dbeaver-bin
+
     # nextcloud-client
 
     poppler-utils
@@ -206,7 +207,7 @@ in
     parsec-bin
     # gcc
     # geogebra6
-    # gnumake
+    gnumake
     # bun
     # nushell
     # pandoc
