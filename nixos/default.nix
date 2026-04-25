@@ -440,6 +440,7 @@
 
 
   environment.variables.EDITOR = "nvim";
+  environment.variables.IHP_EDITOR="code --goto";
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Some programs need SUID wrappers, can be configured further or are
