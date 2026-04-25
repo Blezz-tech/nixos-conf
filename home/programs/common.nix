@@ -63,6 +63,7 @@ in
     dbeaver-bin
 
     # nextcloud-client
+    commitlint
 
     poppler-utils
 
