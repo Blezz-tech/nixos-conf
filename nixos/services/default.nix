@@ -4,6 +4,6 @@
   ];
 
   services.postgresql = {
-    enable = false;
+    enable = true;
   };
 }
