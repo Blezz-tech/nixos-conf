@@ -234,7 +234,7 @@ in
     # cargo-make
     # tiled
     # pdfarranger
-    # ihp-new
+    ihp-new
     # vengi-tools
     # ldtk
     # easyocr
