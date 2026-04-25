@@ -148,9 +148,14 @@
     settings.auto-optimise-store = true;
     settings.substituters = [
       # "https://cache.nixos.org/"
+      "https://devenv.cachix.org"
+      "https://cachix.cachix.org"
+      "https://digitallyinduced.cachix.org"
     ];
     settings.trusted-substituters = [
-      # "https://digitallyinduced.cachix.org"
+      "https://devenv.cachix.org"
+      "https://cachix.cachix.org"
+      "https://digitallyinduced.cachix.org"
     ];
     settings.trusted-public-keys = [
       # "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
