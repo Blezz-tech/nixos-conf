@@ -199,7 +199,7 @@ in
     jdk
     ffmpeg-full
     rar
-    vcmi
+    # vcmi
     unrar-free
     # goldendict-ng
     # far2l
