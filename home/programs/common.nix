@@ -169,7 +169,7 @@ in
     # kdePackages.kajongg
     # kdePackages.kwordquiz
     # kdePackages.kdenlive
-    tesseract
+    # tesseract
     # kdePackages.qrca
     ((kdePackages.spectacle.override { tesseractLanguages = null; }).overrideAttrs {
       patches = [
