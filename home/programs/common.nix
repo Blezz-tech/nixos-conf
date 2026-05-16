@@ -185,6 +185,7 @@ in
     (python3.withPackages (python-pkgs: [
       python-pkgs.pandas
       python-pkgs.requests
+      python-pkgs.beautifulsoup4
       # python-pkgs.jupyter
       python-pkgs.matplotlib
       python-pkgs.pandas
