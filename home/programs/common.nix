@@ -258,9 +258,9 @@ in
     vesktop
     # freetube
     pkgs.marksman
-    # (bottles.override {
-    #   removeWarningPopup = true;
-    # })
+    (bottles.override {
+      removeWarningPopup = true;
+    })
     # ghc
     # mysql-workbench
     # zeal
