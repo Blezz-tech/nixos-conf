@@ -220,6 +220,7 @@ in
     imagemagick
     # zoom-us
     # omegat
+    arx-libertatis
 
     loco
     my-obsidian
