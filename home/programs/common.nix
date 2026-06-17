@@ -202,6 +202,7 @@ in
     rar
     # vcmi
     unrar-free
+    kdePackages.kio-gdrive
     # goldendict-ng
     # far2l
     # sqlitebrowser
