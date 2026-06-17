@@ -203,6 +203,7 @@ in
     # vcmi
     unrar-free
     kdePackages.kio-gdrive
+    kdePackages.kaccounts-integration
     # goldendict-ng
     # far2l
     # sqlitebrowser
