@@ -434,6 +434,9 @@
     hack-font
   ];
 
+  # chromium integration
+  programs.chromium.enablePlasmaBrowserIntegration = true;
+
   # nix helper
   programs.nh.enable = true;
   programs.nh.flake = "/home/jenya/nixos-conf";
