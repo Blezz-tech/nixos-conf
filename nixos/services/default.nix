@@ -1,6 +1,6 @@
 {
   imports = [
-    ./zapret.nix
+    # ./zapret.nix
   ];
 
   services.postgresql = {
