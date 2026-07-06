@@ -404,6 +404,8 @@
   ];
 
   fonts.packages = with pkgs; [
+    cdrkit
+
     # nerdfonts
     font-awesome
     # scientifica
