@@ -265,6 +265,7 @@
     enable = true;
     extraBackends = [
       pkgs.hplipWithPlugin
+      pkgs.samsung-unified-linux-driver
     ];
   };
 
