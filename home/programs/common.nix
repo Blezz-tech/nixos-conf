@@ -70,7 +70,7 @@ in
     # jetbrains.idea-community
 
     # QSoft
-    # nodejs
+    nodejs
 
     # myPHPWithExtensions
     # myComposerWithPHPExtensions
