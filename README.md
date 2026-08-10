@@ -33,3 +33,6 @@ services.displayManager = {
   # libinput.enable = true;
 };
 ```
+
+
+easyatag add to main conf

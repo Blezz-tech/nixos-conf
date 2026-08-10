@@ -104,6 +104,7 @@ in
     # ]))
 
     pdf2svg
+    easytag
 
     # Torrent
     qbittorrent
