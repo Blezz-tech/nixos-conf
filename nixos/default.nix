@@ -265,6 +265,7 @@
     enable = true;
     extraBackends = [
       # pkgs.hplipWithPlugin
+      pkgs.pantum-driver
       pkgs.samsung-unified-linux-driver
     ];
   };
@@ -296,6 +297,7 @@
       # pkgs.brgenml1lpr #  — Generic drivers for more Brother printers [1]
       # pkgs.brgenml1cupswrapper  # — Generic drivers for more Brother printers [1]
       # pkgs.cnijfilter2 # — Drivers for some Canon Pixma devices (Proprietary driver)
+      pkgs.pantum-driver
 
       pkgs.cups-filters
       pkgs.cups-browsed
