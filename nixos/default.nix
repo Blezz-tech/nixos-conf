@@ -270,6 +270,31 @@
     ];
   };
 
+  # services.vsftpd = {
+  #   enable = true;
+
+  #   localUsers = false;
+  #   writeEnable = true;
+
+  #   anonymousUser = true;
+  #   anonymousUserHome = "/home/jenya/.local/share/Steam/steamapps/common";
+
+  #   extraConfig = ''
+  #     pasv_enable=YES
+  #     pasv_min_port=40000
+  #     pasv_max_port=40500
+  #   '';
+  # };
+
+  # networking.firewall = {
+  #     allowedTCPPorts = [ 21];
+  #     allowedTCPPortRanges = [
+  #       { from = 40000; to = 40500; }
+  #     ];
+  #     connectionTrackingModules = [ "ftp" ];
+  # };
+
+
   services.avahi = {
     enable = true;
     nssmdns4 = true;
@@ -448,7 +473,7 @@
 
 
   environment.variables.EDITOR = "nvim";
-  environment.variables.IHP_EDITOR="code --goto";
+  environment.variables.IHP_EDITOR = "code --goto";
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Some programs need SUID wrappers, can be configured further or are
