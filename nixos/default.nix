@@ -295,6 +295,10 @@
   # };
 
 
+  # networking.firewall = {
+  #     allowedTCPPorts = [ 8080 ];
+  # };
+
   services.avahi = {
     enable = true;
     nssmdns4 = true;
