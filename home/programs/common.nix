@@ -147,6 +147,8 @@ in
     # Запись видео и потоковое вещание
     # obs-studio
 
+    kdePackages.kleopatra
+    # kdePackages.klevernotes
     # Игры
     prismlauncher
     # cataclysm-dda
