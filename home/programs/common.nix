@@ -204,7 +204,7 @@ in
     # sqlitebrowser
     # fd
     # parsec-bin
-    # gcc
+    gcc
     # geogebra6
     gnumake
     # bun
