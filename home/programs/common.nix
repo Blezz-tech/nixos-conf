@@ -60,7 +60,7 @@ in
   # Packages that should be installed to the user profile.
 
   home.packages = with pkgs; [
-    dbeaver-bin
+    # dbeaver-bin
 
     # nextcloud-client
     commitlint
@@ -150,7 +150,6 @@ in
     kdePackages.kleopatra
     # kdePackages.klevernotes
     # Игры
-    prismlauncher
     # cataclysm-dda
     # cmatrix
     # keeperrl
@@ -191,7 +190,7 @@ in
       python-pkgs.pyyaml
     ]))
     # kdePackages.plasma-keyboard
-    kdePackages.kolourpaint
+    # kdePackages.kolourpaint
     google-chrome
     jdk
     ffmpeg-full
@@ -204,7 +203,7 @@ in
     # far2l
     # sqlitebrowser
     # fd
-    parsec-bin
+    # parsec-bin
     # gcc
     # geogebra6
     gnumake
@@ -218,12 +217,12 @@ in
     imagemagick
     # zoom-us
     # omegat
-    arx-libertatis
+    # arx-libertatis
+    obsidian
 
-    loco
-    my-obsidian
+    # loco
     # sea-orm-cli
-    v2rayn
+    # v2rayn
     # cargo
     # rustc
     # rust-analyzer
@@ -235,7 +234,7 @@ in
     # cargo-make
     # tiled
     # pdfarranger
-    ihp-new
+    # ihp-new
     # vengi-tools
     # ldtk
     # easyocr

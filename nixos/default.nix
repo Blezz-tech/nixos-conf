@@ -2,7 +2,7 @@
 , ...
 }:
 {
-  programs.kdeconnect.enable = true;
+  # programs.kdeconnect.enable = true;
 
   # programs.java.enable = true;
 
@@ -146,20 +146,19 @@
 
     settings.experimental-features = [ "nix-command" "flakes" ];
     settings.auto-optimise-store = true;
-    settings.substituters = [
-      # "https://cache.nixos.org/"
-    ];
-    settings.trusted-substituters = [
-      # "https://digitallyinduced.cachix.org"
-    ];
-    settings.trusted-public-keys = [
-      # "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      # "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
-    ];
+    # settings.substituters = [
+    #   # "https://cache.nixos.org/"
+    # ];
+    # settings.trusted-substituters = [
+    #   # "https://digitallyinduced.cachix.org"
+    # ];
+    # settings.trusted-public-keys = [
+    #   # "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+    #   # "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE="
+    # ];
     settings = {
       # max-jobs = 1;
     };
-
 
     gc.automatic = true;
     gc.dates = "daily";
@@ -168,7 +167,6 @@
 
   imports = [
     ./hardware-configuration.nix
-    ./services
   ];
 
   i18n = {
@@ -205,16 +203,6 @@
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
-
-    # Configure network proxy if necessary
-    # proxy.default = "http://user:password@proxy:port/";
-    # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-    # proxy.default = "http://127.0.0.1:10808";
-    # proxy.allProxy = "socks5://127.0.0.1:10808";
-    # proxy.noProxy = "localhost,127.0.0.0/8,::1";
-
-    # wireless.enable = true;
   };
 
   # xdg_open should work in steam_run this way… well it’s not 
@@ -230,6 +218,8 @@
   # environment.plasma6.excludePackages = with pkgs; [
   #   kdePackages.konsole
   # ];
+
+  programs.kde-pim.enable = false;
 
   services.xserver = {
     enable = true;
@@ -253,61 +243,28 @@
     # libinput.enable = true;
   };
 
+  # scanning
+  # hardware.sane = {
+  #   enable = true;
+  #   extraBackends = [
+  #     # pkgs.hplipWithPlugin
+  #     pkgs.pantum-driver
+  #     pkgs.samsung-unified-linux-driver
+  #   ];
+  # };
+
+
   # Enable CUPS to print documents.
   # services.avahi = {
   #   enable = true;
   #   nssmdns4 = true;
-  #   openFirewall = true;
+  #   publish = {
+  #     enable = true;
+  #     addresses = true;
+  #     userServices = true;
+  #   };
+  #   # openFirewall = true;
   # };
-
-  # scanning
-  hardware.sane = {
-    enable = true;
-    extraBackends = [
-      # pkgs.hplipWithPlugin
-      pkgs.pantum-driver
-      pkgs.samsung-unified-linux-driver
-    ];
-  };
-
-  # services.vsftpd = {
-  #   enable = true;
-
-  #   localUsers = false;
-  #   writeEnable = true;
-
-  #   anonymousUser = true;
-  #   anonymousUserHome = "/home/jenya/.local/share/Steam/steamapps/common";
-
-  #   extraConfig = ''
-  #     pasv_enable=YES
-  #     pasv_min_port=40000
-  #     pasv_max_port=40500
-  #   '';
-  # };
-
-  # networking.firewall = {
-  #     allowedTCPPorts = [ 21];
-  #     allowedTCPPortRanges = [
-  #       { from = 40000; to = 40500; }
-  #     ];
-  #     connectionTrackingModules = [ "ftp" ];
-  # };
-
-
-  # networking.firewall = {
-  #     allowedTCPPorts = [ 8080 ];
-  # };
-
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    publish = {
-      enable = true;
-      addresses = true;
-      userServices = true;
-    };
-  };
 
   services.printing = {
     enable = true;
@@ -364,11 +321,9 @@
         "networkmanager"
         "wheel"
         "wireshark"
-        "docker"
         "scanner"
         "lp"
       ];
-      packages = [ ];
     };
   };
 
@@ -379,12 +334,12 @@
 
   programs.partition-manager.enable = true;
 
-  programs.steam = {
-    enable = true;
-    gamescopeSession.enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
+  # programs.steam = {
+  #   enable = true;
+  #   gamescopeSession.enable = true;
+  #   remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+  #   dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  # };
 
   # programs.wireshark.enable = true;
 
@@ -431,8 +386,6 @@
 
     # Для vivaldi
     kdePackages.kdialog
-
-    blezz-pkgs.discord-krisp-patcher
   ];
 
   fonts.packages = with pkgs; [
@@ -498,8 +451,6 @@
     settings.KbdInteractiveAuthentication = false;
   };
 
-  services.v2raya.enable = false;
-
   # programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
@@ -509,117 +460,55 @@
 
   system.stateVersion = "26.05";
 
-  nixpkgs.overlays = [
-    (final: prev: {
-      prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
-        patches = (old.patches or [ ]) ++ [
-          (final.fetchpatch {
-            url = "https://gist.githubusercontent.com/Blezz-tech/bc9acc9d02e4eb77c4a0b407f589da26/raw/a413cb08d722bda5b91a1d6ace78c9699ce86588/0001-fix-online-account.patch";
-            sha256 = "sha256-tB4AA4qiMI4sirTnBI857uS2ZfhiinpOZ3p2/jQ6dCc=";
-          })
-        ];
-      });
-    })
-    (final: prev: {
-      my-obsidian = prev.obsidian.overrideAttrs (oldAttrs: {
-        icon = builtins.fetchurl {
-          url = "file:///run/media/jenya/disk_d/obsidian-logo-gradient.svg";
-          sha256 = "sha256-EZsBuWyZ9zYJh0LDKfRAMTtnY70q6iLK/ggXlplDEoA=";
-        };
-      });
-    })
-    (self: super: {
-      blezz-pkgs = {
-        zapret = pkgs.zapret.overrideAttrs (prev: {
-          postInstall = (prev.postInstall or "") + ''
-            mkdir -p $out/files/
-            cp -r $src/files/fake/ $out/files/
-          '';
-        });
-
-        discord-krisp-patcher =
-          pkgs.writers.writePython3Bin "discord-krisp-patcher"
-            {
-              libraries = with pkgs.python3Packages; [
-                capstone
-                pyelftools
-              ];
-              flakeIgnore = [
-                "E501" # line too long (82 > 79 characters)
-                "F403" # 'from module import *' used; unable to detect undefined names
-                "F405" # name may be undefined, or defined from star imports: module
-              ];
-            }
-            (builtins.readFile ./pkgs/discord-krisp-patcher/main.py);
-        # Script get from: https://pastebin.com/raw/8tQDsMVd
-
-        zdyPackages =
-          let
-            versions = [
-              { name = "1_7_2b"; zdy_version = "1.7.2b"; zdy_hash = "sha256-59kG0UA+zUkpL/ZOwjSEpOlGJspgI8bQapxdv/FvzX8="; }
-              { name = "1_8_0"; zdy_version = "1.8.0"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
-            ];
-          in
-          builtins.listToAttrs (map
-            (v: {
-              name = v.name;
-              value = pkgs.callPackage ./pkgs/zapret-discord-youtube {
-                zdy_version = v.zdy_version;
-                zdy_hash = v.zdy_hash;
-              };
-            })
-            versions);
-      };
-    })
-
-    # (final: prev: {
-    #   kdePackages = prev.kdePackages.overrideScope (
-    #     kdeFinal: kdePrev: {
-    #       # https://old.reddit.com/r/NixOS/comments/1pdtc3v/kde_plasma_is_slow_compared_to_any_other_distro/
-    #       # https://github.com/NixOS/nixpkgs/issues/126590#issuecomment-3194531220
-    #       plasma-workspace =
-    #         let
-    #           # the package we want to override
-    #           basePkg = kdePrev.plasma-workspace;
-    #           # a helper package that merges all the XDG_DATA_DIRS into a single directory
-    #           xdgdataPkg = final.stdenv.mkDerivation {
-    #             name = "${basePkg.name}-xdgdata";
-    #             buildInputs = [ basePkg ];
-    #             dontUnpack = true;
-    #             dontFixup = true;
-    #             dontWrapQtApps = true;
-    #             installPhase = ''
-    #               mkdir -p $out/share
-    #               ( IFS=:
-    #                 for DIR in $XDG_DATA_DIRS; do
-    #                   if [[ -d "$DIR" ]]; then
-    #                     ${prev.lib.getExe prev.lndir} -silent "$DIR" $out
-    #                   fi
-    #                 done
-    #               )
-    #             '';
-    #           };
-    #           # undo the XDG_DATA_DIRS injection that is usually done in the qt wrapper
-    #           # script and instead inject the path of the above helper package
-    #           derivedPkg = basePkg.overrideAttrs {
-    #             preFixup = ''
-    #               for index in "''${!qtWrapperArgs[@]}"; do
-    #                 if [[ ''${qtWrapperArgs[$((index+0))]} == "--prefix" ]] && [[ ''${qtWrapperArgs[$((index+1))]} == "XDG_DATA_DIRS" ]]; then
-    #                   unset -v "qtWrapperArgs[$((index+0))]"
-    #                   unset -v "qtWrapperArgs[$((index+1))]"
-    #                   unset -v "qtWrapperArgs[$((index+2))]"
-    #                   unset -v "qtWrapperArgs[$((index+3))]"
-    #                 fi
-    #               done
-    #               qtWrapperArgs=("''${qtWrapperArgs[@]}")
-    #               qtWrapperArgs+=(--prefix XDG_DATA_DIRS : "${xdgdataPkg}/share")
-    #               qtWrapperArgs+=(--prefix XDG_DATA_DIRS : "$out/share")
-    #             '';
-    #           };
-    #         in
-    #         derivedPkg;
-    #     }
-    #   );
-    # })
-  ];
+  # nixpkgs.overlays = [
+  #   (final: prev: {
+  #     kdePackages = prev.kdePackages.overrideScope (
+  #       kdeFinal: kdePrev: {
+  #         # https://old.reddit.com/r/NixOS/comments/1pdtc3v/kde_plasma_is_slow_compared_to_any_other_distro/
+  #         # https://github.com/NixOS/nixpkgs/issues/126590#issuecomment-3194531220
+  #         plasma-workspace =
+  #           let
+  #             # the package we want to override
+  #             basePkg = kdePrev.plasma-workspace;
+  #             # a helper package that merges all the XDG_DATA_DIRS into a single directory
+  #             xdgdataPkg = final.stdenv.mkDerivation {
+  #               name = "${basePkg.name}-xdgdata";
+  #               buildInputs = [ basePkg ];
+  #               dontUnpack = true;
+  #               dontFixup = true;
+  #               dontWrapQtApps = true;
+  #               installPhase = ''
+  #                 mkdir -p $out/share
+  #                 ( IFS=:
+  #                   for DIR in $XDG_DATA_DIRS; do
+  #                     if [[ -d "$DIR" ]]; then
+  #                       ${prev.lib.getExe prev.lndir} -silent "$DIR" $out
+  #                     fi
+  #                   done
+  #                 )
+  #               '';
+  #             };
+  #             # undo the XDG_DATA_DIRS injection that is usually done in the qt wrapper
+  #             # script and instead inject the path of the above helper package
+  #             derivedPkg = basePkg.overrideAttrs {
+  #               preFixup = ''
+  #                 for index in "''${!qtWrapperArgs[@]}"; do
+  #                   if [[ ''${qtWrapperArgs[$((index+0))]} == "--prefix" ]] && [[ ''${qtWrapperArgs[$((index+1))]} == "XDG_DATA_DIRS" ]]; then
+  #                     unset -v "qtWrapperArgs[$((index+0))]"
+  #                     unset -v "qtWrapperArgs[$((index+1))]"
+  #                     unset -v "qtWrapperArgs[$((index+2))]"
+  #                     unset -v "qtWrapperArgs[$((index+3))]"
+  #                   fi
+  #                 done
+  #                 qtWrapperArgs=("''${qtWrapperArgs[@]}")
+  #                 qtWrapperArgs+=(--prefix XDG_DATA_DIRS : "${xdgdataPkg}/share")
+  #                 qtWrapperArgs+=(--prefix XDG_DATA_DIRS : "$out/share")
+  #               '';
+  #             };
+  #           in
+  #           derivedPkg;
+  #       }
+  #     );
+  #   })
+  # ];
 }
